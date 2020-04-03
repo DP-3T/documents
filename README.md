@@ -13,5 +13,6 @@ The following people are behind this design:
 **University College London**: Dr. Michael Veale  
 **CISPA**: Prof. Cas Cremers  
 **University of Oxford**: Dr. Reuben Binns  
+**TU Berlin / Fraunhofer HHI**: Prof. Thomas Wiegand
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
