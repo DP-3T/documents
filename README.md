@@ -9,7 +9,9 @@ The following people are behind this design:
 **EPFL**: Prof. Carmela Troncoso, Prof. Mathias Payer, Prof. Jean-Pierre Hubaux, Prof. Marcel Salathé, Prof. James Larus, Prof. Edouard   Bugnion, Dr. Wouter Lueks, Theresa Stadler, Dr. Apostolos Pyrgelis, Dr. Daniele Antonioli, Ludovic Barman, Sylvain Chatel  
 **ETHZ**: Prof. Kenneth Paterson, Prof. Srdjan Capkun, Prof. David Basin, Dennis Jackson  
 **KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
-**TU Delft**: Prof. Seda Guerses  
+**TU Delft**: Prof. Seda Gürses  
 **University College London**: Dr. Michael Veale  
 **CISPA**: Prof. Cas Cremers  
 **University of Oxford**: Dr. Reuben Binns  
+
+Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
