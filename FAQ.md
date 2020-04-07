@@ -40,10 +40,10 @@ using efficient representations (e.g., a cuckoo filter) this would take at least
 
 Sending observed contacts also increases the likelihood that a tech-savvy user
 creates fake contact events, which in turn can lead to unnecessary anxiety. To
-fake at-risk contacts, an infected user simply inserts additional EBIDs from
+fake at-risk contacts, an infected user simply inserts additional EphIDs from
 other users to his local storage. In DP3T, in which an infected user shares
-their own EBIDs, the barrier to fake contact events is much higher. The infected
-user would have to actively broadcast their own EBIDs via another device to fake
+their own EphIDs, the barrier to fake contact events is much higher. The infected
+user would have to actively broadcast their own EphIDs via another device to fake
 contacts with other users.
 
 
