@@ -98,11 +98,9 @@ protocol.
 
 ### P5: Why not use mixnets or other anonymous communication systems to query the server?
 
-Our design does not rely on anonymous communication systems to provide its
-privacy properties, it only uses a small amount of dummy messages to hide
-uploads to the backend and epidemiologists.
+Our design uses a small amount of dummy messages to provide traffic analysis protection for uploads to the backend and epidemiologists with respect to network adversaries. The use of a mixnet, Tor or other anonymous system would in addition conceal the IP address of users submitting reports with respect to the backend.  
 
-We considered using an anonymous communication system to efficiently query the server. However, we decided against doing so for the following reasons:
+We considered using an anonymous communication system. However, we decided against doing so for the following reasons:
  1. Relying on any form of anonymous communication system increases the
     complexity of the system. Both in terms of integrating anonymous
     communication into the app, as well as the server infrastructure needed to
@@ -115,6 +113,8 @@ We considered using an anonymous communication system to efficiently query the s
     system into account in our analysis. E.g., should we protect against a
     global passive adversary or not? How well does the system protect against
     intersection attacks?
+
+In future versions of the app, if an approppriate anonymous communication network appears, we may include the option of submitting data anonymously to the backend.
 
 ### P6: Why do infected people upload a seed (which enables recreating `EphIDs`) instead of their individual EphIDs ?
 
