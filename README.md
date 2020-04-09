@@ -15,6 +15,15 @@ The following people are behind this design:
 **University College London**: Dr. Michael Veale  
 **CISPA**: Prof. Cas Cremers  
 **University of Oxford**: Dr. Reuben Binns  
-**TU Berlin / Fraunhofer HHI**: Prof. Thomas Wiegand
+**TU Berlin / Fraunhofer HHI**: Prof. Thomas Wiegand  
+**University of Torino / ISI Foundation**: Prof. Ciro Cattuto
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
+
+## A note on the relationship between PEPP-PT and DP-3T
+
+The Decentralised Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual’s phone. It has been produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
+
+DP-3T is a free-standing effort started at EPFL and ETHZ that produced this protocol and that is implementing it in a soon-to-be-released, open-sourced app and server. DP-3T sits under the loose umbrella of the ‘Pan-European Privacy-Preserving Proximity Tracing’ (PEPP-PT) project. DP-3T is not the only protocol under this umbrella, which also endorses centralized approaches with very different privacy properties. Pandemics do not respect borders, so there is substantial value in PEPP-PT’s role of encouraging dialogue, knowledge-sharing and facilitating interoperability to enable trans-national roaming.
+
+As the systems endorsed by PEPP-PT have technical differences that yield very different policy-relevant properties, it is a mistake to use the term ‘PEPP-PT’ to describe a specific solution or to refer PEPP-PT as if it embodies a single approach rather than several very different ones.
