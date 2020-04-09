@@ -398,9 +398,10 @@ We include the epoch  t in the hash to ensure that replaying an $EphID$ outside 
 When patients are diagnosed, they upload a representation of the $EphID$s produced by the smartphone during the infectious window. Unlike the initial, low-cost approach, the patient first has the option to  redact their identifiers, by choosing the set of epochs  $T$ for which the patient wants to reveal their identifiers. For example, the patient may want to exclude monday morning and friday night. The phone then uploads the set  ${(t, seed+_t)  }$ for all epochs  $t $ in  $T$.
 
 Periodically (e.g., every 4 hours), the backend creates a new Cuckoo filter  F and for each
-pair  (t, seed  )  uploaded by an infected patients it inserts t 
+pair  (t, seed  )  uploaded by an infected patients it inserts:
 
-$TRUNCATE128(H(H(seed _t  )||t))$
+$H( TRUNCATE128( H( seed_t ) ) || t )$\footnote{Which is the same as $H(EphID_t) || t)$.}
+
 
 into the Cuckoo filter  $F$ . It then sends this filter to all smartphones in the system.
 
