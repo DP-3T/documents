@@ -5,7 +5,7 @@
 % This version is to facilitate easier edits/contributions and collaboration.
 %
 
-\documentclass[12pt,a4paper]{article}
+\documentclass[10.8pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -45,7 +45,7 @@
 \begin{center}{\bfseries\Large
 Decentralized Privacy-Preserving\\
 Proximity Tracing}\\[0.5cm]
- based on version: 3rd April 2020 -- non authoritative version \\
+ based on version: 8rd April 2020 -- non authoritative version \\
 
  \section*{Disclaimer/Provenance}
 
@@ -85,6 +85,9 @@ Dr. Aysajan Abidin
 \textbf{University of Oxford} : Dr. Reuben Binns
 
 \textbf{TU Berlin / Fraunhofer HHI} : Prof. Thomas Wiegand
+
+\textbf{University of Torino / ISI Foundation} :  Prof. Ciro Cattuto
+
 \end{center}
 \clearpage
 \singlespace
@@ -103,27 +106,72 @@ See \url{https://github.com/DP-3T/} for the correct versions.
 \pagebreak
 
 \section*{Executive Summary}
-This document proposes a system for secure and privacy-preserving proximity tracing (aka
-contact tracing) at large scale. Its goal is to simplify and accelerate the process of identifying people who have been in contact with an infected person, thus providing a technological foundation to help slow the spread of the SARS-CoV-2 virus. The system aims to minimize privacy and security risks for individuals and communities and guarantee the highest level of data protection.
 
-We are publishing this document to seek feedback from a broad audience on the high-level
-design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. This document is
-accompanied by an overview of the Data Protection compliance of the design.
+This document proposes a system for secure and privacy-preserving proximity tracing  (aka contact tracing)  at large scale. This system provides a technological foundation to help slow the spread of the SARS-CoV-2 virus by simplifying and accelerating the process of notifying people who have been in contact with an infected person. The system design aims to minimise privacy and security risks for individuals and communities and guarantee the highest level of data protection.
 
-The goal of proximity tracing is to determine who has been in close physical proximity to an infected person, without revealing the contact’s identity or where this contact occurred. To achieve this goal, users continually run a smartphone app that broadcasts an ephemeral, pseudo-random ID representing the user and also record pseudo-random IDs observed from smartphones in close proximity. Whenever a patient is diagnosed, he or she can upload some anonymous data from their phone to a central server. This step should only be done  with the approval of a health authority and the consent of the individual. Before, no data is communicated to any entity. Other instances of the app can use the anonymous data from the server to locally compute whether the app’s user was in physical proximity and potentially infected by an infected person and to inform the user of the risk. Additionally, the system enables users to voluntarily provide information to epidemiologists, in a privacy-preserving manner, to enable studies of the evolution of disease and to assist in finding better policies to prevent further infections.
+The goal of proximity tracing is to determine who has been in close physical proximity to an infected person, without revealing the contact’s identity or where this contact occurred. To achieve this goal, users continually run a smartphone app that broadcasts an ephemeral, pseudo-random ID representing the user and also record pseudo-random IDs observed from smartphones in close proximity. Whenever a patient is diagnosed for COVID-19, she can upload some anonymous data from her phone to a central server. This step should only be done with the approval of a health authority and the explicit permission of the individual. Before, all data remains exclusively on the user’s phone. Other instances of the app can use the anonymous data from the server to locally compute whether the app’s user was in physical proximity to an infected person and the risk that an encounter led to a propagation of the virus. In case the app detects a high risk, it will inform the user. Additionally, the system enables users to voluntarily provide information to epidemiologists, in a privacy-preserving manner, to enable studies of the evolution of the disease and to assist in finding better policies to prevent further infections.
 
 The system provides the following security and privacy protections:
-\begin{itemize}\itemsep0pt
-\item[-] \textbf{Ensures data minimization}. The central server only observes anonymous identifiers of infected people without any proximity information; health authorities learn no information (beyond when a user manually reaches out to them after being notified);
+
+\begin{description}
+\item[Ensures data minimization] The central server only observes anonymous identifiers of infected people without any proximity information; health authorities learn no information (beyond when a user manually reaches out to them after being notified);
 and the epidemiologists obtain an anonymized proximity graph with minimal information.
-\item[-] \textbf{Prevents abuse of data}. As the different entities in the system receive the minimum amount of information tailored to their requirements, none of them can abuse the data for other purposes, nor can they be coerced or subpoenaed to make other data available.
-\item[-] \textbf{Prevents tracking of non-infected users}. No entity, including the backend, can track non-infected users based on broadcasted ephemeral identifiers.
-\item[-] \textbf{Graceful dismantling}. The system will organically dismantle itself after the end of the epidemic. Infected patients will stop uploading their data to the central server,
-and people will stop using the app. Data on the server is removed after 14 days.
-\end{itemize}
+\item[Prevents abuse of data] As the different entities in the system receive the minimum amount of information tailored to their requirements, none of them can abuse the data for other purposes, nor can they be coerced or subpoenaed to make other data available.
+\item[Prevents tracking of non-infected users] No entity, including the backend, can track non-infected users based on broadcasted ephemeral identifiers.
+\item[Graceful dismantling] The system will organically dismantle itself after the end of the epidemic. Infected patients will stop uploading their data to the central server, and people will stop using the app. Data on the server is removed after 14 days.
+\end{description}
+
+We are publishing this document to seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. In particular, we seek feedback on the unlinkable design, as it presents overall better privacy properties. This document is accompanied by an overview of the data protection compliance of the design.
+
 \clearpage
-\section*{Goals and Requirements}
-\subsection*{System Goals}
+\section*{Changelog}
+
+
+7 April 2020
+
+General:
+
+\begin{itemize}
+\item Numbered sections for easier referencing.
+Goals and requirements:
+\item Clarify app sends notification (Section 2)
+\item Add detail about most relevant information for epidemiological analysis (Section
+1.1)
+\item Add non-goals of the system (response issue \#33, Section 1.1)
+\end{itemize}
+
+Previous design (renamed:   Low-cost decentralized proximity tracing,  in Section 2)
+
+\begin{itemize}
+\item Clarification on data sent to epidemiologists (Section 2, Epidemiologists)
+\item Slight tweak to design: send the day  t  explicitly when reporting an infected key
+$SK_t$  , be clear that $ t$  is a global rather than local counter (Section 2, Setup) 
+\item Added second operation point in scalability (Section 2, Scalability)
+\item Interoperability: added possibility of mobile network carrier, and changed hard
+coded to config file (response issue \#26, Section 2, Interoperability)
+\end{itemize}
+
+Added alternative design  ( Unlinkable decentralized proximity tracing , in Section 3)
+
+\begin{itemize}
+\item Added a new design that: prevents broadcast of seeds, provides unlinkability between EphIDs, enables users to redact EphIDs that they do not want published
+\end{itemize}
+
+Security and Privacy analysis
+\begin{itemize}
+\item Clarified that no notification is automatically sent to the health authority (response
+issue \#52)
+\item Added introduction to threat model (response issue \#47, Section 4.1)
+\item Removed redacting mitigation from low-cost design (not possible due to hash
+chain)
+\item Added replay attack to create fake contacts on low-cost design (Section 4.3)
+\item Added security and privacy analysis of unlinkable design (Sections 4.2 and 4.3)
+\item Added comparison with both unlinkable design and low-cost design in the table
+(Section 5.4)
+\end{itemize}
+
+\section{Goals and Requirements}
+\subsection{System Goals}
 \textbf{1) Enable quick notification of contact persons at risk and give guidance on next
 steps}\\
 In Switzerland, the proximity tracing (also known as contact tracing) process is legally
@@ -139,9 +187,22 @@ data would enable epidemiologists to improve their recommendations to policy mak
 health authorities about the most important and effective measures during the containment
 phase of this and future pandemics.
 
-The application should provide users with the possibility to \textbf{\textit{voluntarily share data with epidemiologists}} and research groups to enable these groups to reconstruct the interaction graph among infected and at-risk users (referred to as a \textbf{\textit{proximity graph}}).
-\subsection*{System requirements}
-\textbf{1) Functional requirements}\\
+The application should provide users with the possibility to \textbf{\textit{voluntarily share data with epidemiologists}} and research groups to enable these groups to reconstruct the interaction graph among infected and at-risk users (referred to as a \textbf{\textit{proximity graph}}). The information most relevant to the analysis carried out by epidemiologists is  relative timing information : at which phase of the infection did a contact occur?
+
+\subsection{Out of scope goals}
+
+The app does not aim to provide these functionalities:
+
+\begin{description}
+\item[Tracking infected patients ] once infected patients report themselves, the app does
+not attempt to track them, nor does it provide a mechanism to ensure that they comply with medical orders. Recall that the goal of the app is to avoid asymptomatic users unknowingly spreading a disease. Diagnosed users are assumed to be responsible and take precautions if necessary to go into public, for instance to a doctor appointment. We do not attempt to detect or prevent misbehavior. The reason being that the gain in utility (one irresponsible person being under control) does not justify the loss of privacy for other well-behaved infected users. Moreover, this is not a location-tracking app and cannot determine when a user is “in public.”
+\item[Finding hotspots or infected users’ trajectories ] the app does not attempt to identify locations that have a concentration of infected people. This is a design decision. We limit the purpose of the application to the two goals specified above, which enable us to collect and process very little data. In particular it avoids collecting location data, which is highly sensitive and very difficult to publish in a privacy-preserving way.
+\end{description}
+
+\subsection{System requirements}
+
+\textbf{1) Functional requirements}
+
 To achieve the system goals outlined above, the application must fulfill these functional
 requirements:
 \begin{itemize}\itemsep0pt
@@ -195,7 +256,9 @@ be achieved if both server- and client-side applications can run on widely avail
 smartphones and server hardware
 \end{itemize}
 \clearpage
-\section*{Decentralized proximity tracing}
+
+
+\section{Design 1: Low-cost Decentralized proximity tracing}
 We propose a privacy-friendly, decentralized solution that reveals minimal information to the backend server. To facilitate proximity tracing, smartphones locally generate ephemeral bluetooth identifiers (\texttt{EphIDs}) and broadcast them. Other smartphones observe these \texttt{EphIDs} and store them together with the duration and a coarse indication of time (e.g., “The morning of April 2”). See Figure \ref{AA}.
 
 The proximity tracing process is supported by a backend server that shares infection
@@ -210,9 +273,16 @@ backend a compact representation of their \texttt{EphIDs} for the infectious per
 \caption{Processing and storing of observed \texttt{EphIDs}.}
 \label{AA}
 \end{figure}
-\subsection*{Setup}
-\textit{Generating a key}. Smartphones generate a random initial daily key $\texttt{SK}_0$. As we explain below, smartphones use hash chaining to compute daily secret keys $\texttt{SK}_t$ . From each day key, they generate a set of \texttt{EphIDs} to broadcast during that day. Smartphones store the last 14 keys $\texttt{SK}_t$ (corresponding to an infectious window of 14 days, ultimately, the length of this window is a parameter that should be determined by the health authorities).
-\subsection*{Creating ephemeral IDs ( EphIDs )}
+
+\subsection{Setup}
+
+\textbf{Generating a key} Let $t$ be the current day (e.g., indexed by some fixed staring point for the system). 
+Smartphones generate a random initial daily key $SK_0$. 
+
+
+\subsection{Creating ephemeral IDs ( EphIDs )}
+
+
 \texttt{\textit{EphID}} Constraints. Given the completeness requirement, it is necessary that smartphones can observe and record as many \texttt{EphIDs} as possible. This precludes the use of connection-based communication between smartphones, as establishing connections limits the amount of exchanges of \texttt{EphIDs}. Instead, we rely on Bluetooth Low Energy beacons. These beacons’ payload is 16 bytes, which technically limits the size of our system’s \texttt{EphIDs}.
 
 \texttt{\textit{EphID} Generation}. Smartphones generate a stream of secret day keys $\texttt{SK}_\texttt{t}$ , by computing
@@ -226,28 +296,40 @@ Smartphones locally generate $\texttt{EphID}_\texttt{i}$s to use during day \tex
 \[\texttt{EphID}_1\  \vert\ \vert\ \ldots\ \vert\ \vert\ \texttt{EphID}_\texttt{n}\ =\ \texttt{PRG} (\ \texttt{PRF}(\texttt{SK}_\texttt{t} ,\ “\texttt{broadcast key}”)\ )\]
 
 
-where \texttt{PRF} is a pseudo-random function (e.g., HMAC-SHA256), “\texttt{broadcast key}” is a fixed and public string, and PRG is a stream cipher (e.g., AES in counter mode, or Salsa20) producing \texttt{n} $\ast$ \texttt{16} bytes, which we split into 16-byte chunks to obtain the \texttt{n} ephemeral Bluetooth identifiers \texttt{EphID} of the day.
+where \texttt{PRF} is a pseudo-random function (e.g., HMAC-SHA256), “\texttt{broadcast key}” is a fixed and public string, and PRG is a stream cipher (e.g., AES in counter mode) producing \texttt{n} $\ast$ \texttt{16} bytes, which we split into 16-byte chunks to obtain the \texttt{n} ephemeral Bluetooth identifiers \texttt{EphID} of the day.
 
 Smartphones pick \textbf{a random order} in which to broadcast the \texttt{EphID} during the day. Each \texttt{EphID} is broadcast for (24 $\ast$ 60)/\texttt{n}  minutes
-\subsection*{Local storage of observed \texttt{EphIDs}}
+\subsection{Local storage of observed \texttt{EphIDs}}
+
 Smartphones locally store each observed \texttt{EphID} together with the corresponding proximity, duration, and other auxiliary data, and a coarse time indication (e.g., “The morning of April 2”). See Figure \ref{AA}.
-\subsection*{Decentralized proximity tracing}
+
+Local storage of observed $EphID$s and keys $SK_t$
+
+Smartphones locally store each observed $EphID$ together with the corresponding proximity, duration, and other auxiliary data, and a coarse time indication (e.g., “The morning of April 2”). See Figure \ref{AA}. Besides, each device stores the keys $SK_t$ it generated during the past 14 days. This parameter, which defines the maximum period for which any data (both observed and generated $EphID$s) are stored on the device is a system parameter and is determined by guidance from health authorities.
+
+\subsection{Decentralized proximity tracing}
 The decentralized proximity tracing process requires the participation of infected patient’s smartphones, all other smartphones, the backend, and the health authority. The backend acts \textbf{solely}  as a communication platform and does not perform any processing.
 
-Once the health authority triggers proximity tracing for an individual (Figure \ref{PT}, step 1), the patient instructs their phone to send to the backend the key $\texttt{SK}_\texttt{t}$ corresponding to the first day in which the app user was considered to be infectious (Figure \ref{PT}, step 2). Note that given the key $\texttt{SK}_\texttt{t}$ , everyone can compute all ephemeral identifiers \texttt{EphID} used by the infected patient starting from epoch t by repeating the process described in “\texttt{EphID} generation” above.
+The health authority is responsible for informing patients of (positive) test results, authorizing uploads from phones to the backend, and determining the contagious window, i.e., during what time the patient was contagious and might have infected others. Epidemiologists estimate that the contagious window starts 1 to 3 days before the onset of symptoms. The start of the contagious window determines for which time frame phones upload information.
+
+For safety reasons, health authorities often notify patients by phone about positive test results. Therefore we propose that when administering the test, health authorities provide the patient with an inactive authorization code. If the test is positive, health authorities activate the authorization code, and contact the patient to inform them of the result and ask them to start the proximity tracing process.
+
+
+Once the health authority triggers proximity tracing for an individual (Figure \ref{PT}, step 1), the patient instructs their phone to send to the backend the key $\texttt{SK}_\texttt{t}$ corresponding to the first day in which the app user was considered to be infectious (Figure \ref{PT}, step 2). Note that given the key $\texttt{SK}_\texttt{t}$ , everyone can compute all ephemeral identifiers \texttt{EphID} used by the infected patient starting from epoch $t$ by repeating the process described in “\texttt{EphID} generation” above.
 
 After reporting their current $\texttt{SK}_\texttt{t}$, the smartphone of the infected patient picks a new completely random key
 
 Periodically, the backend sends the $\texttt{SK}_\texttt{t}$ of infected patients to all other smartphones in the system (Figure \ref{PT}, step 3). If an update is needed, it can also send to the smartphones the latest risk-scoring algorithm parameters provided by the health authority. Each smartphone uses this key to reconstruct the list of \texttt{EphIDs} of an infected person and checks if it has observed any of these \texttt{EphIDs} in the past (i.e., before the corresponding key $\texttt{SK}_\texttt{t}$ was published). If so, the smartphone owner may be at risk. The smartphone uses the risk-scoring algorithm with its local records corresponding to the infectious \texttt{EphID} , to determine the owner’s risk score. See Figure \ref{PT} step 4.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{fig/PT}
 \caption{proximity tracing process.}
 \label{PT}
 \end{figure}
-\subsection*{Notification of Risk}
+\subsection{Notification of Risk}
 If the risk score computed in the previous step is below a threshold determined by the health authority, the smartphone does nothing. Otherwise, the smartphone displays a notification that the user has been in close proximity to an infected patient. The notification advises the user on what to do and where to find more information.
-\subsection*{Interoperability}
+\subsection{Interoperability}
 To enable interoperability between countries, the smartphone records the countries that a
 user has visited. This can either happen automatically, in the background, based on GPS
 location data or through a manual entry by the user (e.g., if GPS was not available or
@@ -256,21 +338,104 @@ regularly requests data (containing $\texttt{SK}_\texttt{t}$’s from infected u
 
 When the smartphone determines its owner has a high risk score, the smartphone contacts
 its local health authority as if it was not roaming.
-\subsection*{Sharing data with epidemiologists}
-When installing the app, users will be asked if they want to opt-in to sharing data with
-epidemiologists in case they have been in contact with an infected person. If users opt in, the app will regularly (e.g., every day) upload a dummy package to the epidemiologists to defeat traffic analysis. No \textit{real data}  is uploaded at this time.
 
-After a patient receives a notification that they are now at risk, the app again asks users to confirm that they still want to opt-in to sharing data with the epidemiologists. If so, at the next transmission time, the app will send \textit{anonymous} data about all contact events the user had with each \textit{infected individual} over the past period to a selected research center. In our scheme, \textit{infected individuals} are represented by their keys $\texttt{SK}_\texttt{t}$. The data shared includes a tag that indicates whether the user herself has been infected and information about the duration of encounters or the distance between the two individuals. However, any location or precise timing information about contact events will never be shared. The data submitted enables epidemiologists to study the \textit{proximity graph} around an \textit{infected individual} and understand which circumstances and encounters led to an infection. However, it does not reveal any information about other encounters the user has had with non-infected people.
-\subsection*{Scalability}
+\subsection{Sharing data with epidemiologists}
+
+When installing the app, users are asked if they want to opt-in to data sharing with epidemiologists. The data sharing is strictly limited to cases where there has been a contact with an infected person. No data is shared if there has never been a contact to an infected person. However, if users opt-in, the app will regularly (e.g., every day) upload fixed-size dummy data to the epidemiologists to defeat traffic analysis.
+
+After a patient receives a notification that they are at risk, the app again prompts users to confirm their permission to share data with epidemiologists. If permission is given, at the next transmission time, the app sends to a selected research center  anonymous data about contact events the user had  with each infected individual o  ver the past period. In the low-cost design, infected individuals are represented by their keys  SK t. 
+
+For each infected contact person, the user uploads a tuple consisting of a tag (boolean value) indicating if the user herself has been tested positive, the  SK t of the contact and metadata about the encounters. This metadata includes the number of encounters the user had with the infected individual and relative timing information about each encounter, i.e. during which phase of the infectious period the contacts occurred. Time is reported as the number of days  relative to the onset of symptoms (or an estimate in case there were no symptoms) , i  .e., relative to the corresponding day  t that the infected patient has reported to the health official. This information is enough for epidemiologists to build the first degree contact graph needed for their analysis.
+
+No location or precise timing information about contact events will ever be shared. The data submitted enables epidemiologists to study the  proximity graph around an infected individual and to understand which circumstances and encounters led to an infection. However, it does not reveal any information about other encounters the user has had with non-infected people.
+
+\subsection{Scalability}
 The decentralized design scales very well. For each infected user, the backend needs to
 store a 32 bytes key for the duration of the infectious window. Storage cost at the backend is therefore not a problem. Throughout the day, smartphones download the 32 byte keys of newly diagnosed patients. This data is static, and can therefore be effectively served through a content delivery network.
 
-Smartphones download a small amount of data every day. For 40.000 new infections per
-day, smartphones download 1.25 MB each day. They require a few seconds of computation
-time to regenerate the ephemeral keys \texttt{EphID}, and to check if they are included in the local list of observed \texttt{EphIDs}.
+Smartphones download a very small amount of data every day. For 40.000 (approximately the cumulative of 5 european countries at their contagion peak) new infections per day, smartphones download 1.30 MB each day. For a smaller country such as Switzerland with 2.000 infections a day (at the contagion peak), smartphones need to download 66 kB each day. 
+
+They require a few seconds of computation time to regenerate the ephemeral keys $EphID$ , and to check if they are included in the local list of observed  $EphID$s ..
+
 \clearpage
-\section*{Security and privacy considerations}
-\subsection*{Threat model}
+
+\section{Design 2: Unlinkable decentralized proximity tracing}
+
+In this section we present a variant of the low-cost design from the previous section that offers better privacy properties at the cost of larger volume of downloads to smartphones. In this design, there is no need to disseminate a public list of the seeds corresponding to infectious individuals. Instead, the ephemeral identifiers of infectious individuals are hashed and stored in a Cuckoo filter, which is then distributed to users of the system.
+
+This design offers several advantages over the earlier proposal. It prevents malicious users from linking the ephemeral identifiers of infectious individuals, enables infected users to redact their identifiers corresponding to sensitive locations or times, and supports flexible time periods in which users are considered infectious.
+
+\subsection{Setup}
+
+No setup is needed.
+
+\subsection{Generating ephemeral IDs}
+
+Smartphones generate the ephemeral Bluetooth identifier  $EphID$ t for epoch $ t$ as follows.
+
+The smartphone draws a random 32-byte per-epoch seed $ seed_t$  and sets: 
+
+$EphID_t  = TRUNCATE128( H( seed_t  ) ) $
+
+Where  $H$ is a cryptographic hash function, and  $TRUNCATE128$ truncates the output to 128 bits. Smartphones store the seeds corresponding to epochs in the last 14 days. They delete older seeds.
+
+\subsection{Local storage of observed EphIDs}
+
+For each observed  $EphID $ the smartphone stores contact events:
+
+\begin{itemize}
+\item The hashed identity $ H(EphID||t)$ , where $ H$  is a cryptographic hash function,
+\item The proximity,
+\item The duration,
+\item Other auxiliary data,
+\item And a coarse time indication (e.g., “The morning of April 2”).
+\end{itemize}
+
+We include the epoch  t in the hash to ensure that replaying an $EphID$ outside the epoch in which it was originally broadcast can never cause a fake at-risk event (regardless of whether the $EphID$ corresponds to a person who is later marked as infected).
+
+\subsection{Decentralized proximity tracing}
+
+When patients are diagnosed, they upload a representation of the $EphID$s produced by the smartphone during the infectious window. Unlike the initial, low-cost approach, the patient first has the option to  redact their identifiers, by choosing the set of epochs  $T$ for which the patient wants to reveal their identifiers. For example, the patient may want to exclude monday morning and friday night. The phone then uploads the set  ${(t, seed+_t)  }$ for all epochs  $t $ in  $T$.
+
+Periodically (e.g., every 4 hours), the backend creates a new Cuckoo filter  F and for each
+pair  (t, seed  )  uploaded by an infected patients it inserts t 
+
+$TRUNCATE128(H(H(seed _t  )||t))$
+
+into the Cuckoo filter  $F$ . It then sends this filter to all smartphones in the system.
+
+Each smartphone uses this filter  $F$ to determine if its user has been in contact with an infected person. To this end, the phone takes all the recorded hashes and checks if they are included in the filter  $F$ . If so, the smartphone user may be at risk. The smartphone computes the user’s risk score by applying the risk-scoring algorithm to the local records corresponding to identifiers included in the filter  $F$ . Cuckoo filters have a low, but non-zero, probability of false positives, that is reporting that they contain an element that was not in the input set. In order to avoid unnecessarily alarming users, we select the parameters of the Cuckoo filter such that false positives are highly unlikely to occur even with heavy usage of the system over a number of years.
+
+The use of a Cuckoo filter hides the set of ephemeral identifiers belonging to infected individuals from the general public. The system uses a Cuckoo filter in conjunction with inputs that are obtained by truncation of cryptographic hashes of random values (the seeds). The inputs to the filter are sparse amongst the set of all possible inputs (128-bit strings). These two factors makes enumeration attacks against the filter an unattractive attack vector for adversaries, while still making it possible for users who have observed particular ephemeral Bluetooth identifiers to check for their inclusion in the filter. Attacks that attempt to reverse the filter and directly recover inputs from values held in the filter do not result in exposure of ephemeral IDs because of the extra layer of hashing that is performed on ephemeral IDs before entering them into the filter.
+
+\subsection{Notification of risk and interoperability}
+
+Same as the low-cost approach.
+
+\subsection{Sharing data with epidemiologists}
+
+\emph{Note: we are actively discussing with epidemiologists if the data provided by this design is sufficient to achieve their objectives}
+
+As in the low-cost design: users have to opt-in explicitly to share data with epidemiologists. This sharing is limited to cases where the user has been in contact with an infected person. If users opt-in, the app will regularly (e.g., every day) upload fixed-size dummy data to the epidemiologists to defeat traffic analysis.
+
+After a patient receives a notification that they are at risk, the app prompts users to confirm their permission to share data with epidemiologists. If permission is given, at the next transmission time, the app sends  to a selected research center \emph{ anonymous and aggregated data} about contact events the user had with infected individuals.
+
+The app sends to the server a tag (boolean value) indicating if the user herself has been tested positive, and a list of the  number of unique infected  EphIDs  observed during each day of the past 14 days.
+
+As in the low-cost design: no location or precise timing information about contact events will ever be shared.
+
+\subsection{Scalability}
+
+This design requires more bandwidth and storage. The backend needs to store cuckoo filters containing the hashed identities of infected people during an infectious period. Smartphones regularly download new cuckoo filters containing the latest hashed identities of patients. This data is static, and can therefore be effectively served through a content delivery network. The computational cost on the phone is likely smaller, as phones only need to do one lookup per stored identifier per cuckoo filter sent by the backend.
+
+Smartphones download a manageable amount of data every day. We assume that the contagious window of infected patients is on average 5 days. For 40.000 new infections per day (approximately the cumulative total of 5 European countries at their contagion peak) smartphones then need to download 110 MB each day. For a smaller country, such as Switzerland, with 2.000 infections a day (at contagion peak), smartphones need to download 5.5 MB each day (assuming a 14 day history). The computation time to check if the previously observed identifiers are contained in the new cuckoo filter is negligible.
+
+\section{Security and privacy considerations}
+
+\subsection{Threat model}
+
+In this section we describe the potential attackers that we assume when carrying out our security and privacy analysis. For each of these attackers we describe their capabilities and what kind of risk they pose for the system. In the next section, we analyze the security and privacy of the system with respect to these adversaries.
+
 \textbf{Regular user}. A typical user of the system that is assumed to be able to install and use the application by navigating its user interface (UI). They will exclusively look at information available via the app UI to infer private information about other users.
 
 \textbf{Tech-savvy user} (Blackhat/Whitehat hacker, NGOs, Academic researchers, etc.) .
@@ -299,8 +464,9 @@ It should be noted however that in many instances, for individuals or companies 
 
 \textbf{State-level adversary (Law enforcement, intelligence agencies)}. Has the combined
 capabilities of the tech-savvy user and the eavesdropper. In addition, a state-level adversary can obtain subpoenas that give them the capabilities of the health authority, epidemiologists or the backend. Their goal is to obtain information about the population or to target particular individuals. They may be interested in past information, already stored in the system, or future information that will enable them to trace target individuals based on observed \texttt{EphIDs}.
-\subsection*{Privacy}
-\subsubsection*{Privacy Concerns}
+\subsection{Privacy}
+
+\subsubsection{Privacy Concerns}
 \textbf{Global interaction graph}. The global interaction graph reflects the social relationships of all users in the system. A labelled edge indicates an interaction between two adjacent users at a specific time. Knowledge of this graph is not necessary for proximity tracing nor for analyzing the spread of SARS-CoV-2. Therefore, \textit{no party} needs to learn the global interaction graph. Only the relevant subset of this graph, such as for example the proximity graph (below), should be revealed to the authorised entities.
 
 \textbf{Proximity graph}. The proximity graph is a subset of the global interaction graph. It encodes contacts between infected users and others individuals. Every edge is adjacent to at least one infected patient. Edges can be labeled with coarse-grained timing information (e.g., “contact on the 4th of April”). This information is \textit{essential for epidemiologists} but not for any other party in the system.
@@ -310,7 +476,9 @@ capabilities of the tech-savvy user and the eavesdropper. In addition, a state-l
 \textbf{At-risk individuals}. At-risk individuals are people that have recently been in contact with somebody who has been infected with SARS-CoV-2. At-risk individuals need to know that they are at risk so that they can take appropriate measures. The health authority needs to know who is at risk so that they can notify them. No other parties in the system need to know this information.
 
 \textbf{Location traceability}. To perform proximity tracing or to analyze the virus’ spread, location traces are not required, e.g. GPS coordinates. Therefore, no party in the system needs to have access to them, or be able to easily trace individuals based on the Bluetooth signals that the apps broadcast.
-\subsubsection*{Privacy Analysis}
+
+\subsubsection{Privacy Analysis of low-cost design}
+
 \textbf{Interaction graph}. The system does not reveal any information about the interaction between two users to any entity other than the two users themselves. The \texttt{EphIDs} revealed by infected users do not allow any inference about the people they have been in contact with. The system thus prevents any one party from learning the interaction graph.
 
 \textbf{Proximity graph}. By construction, the proximity graph (containing interactions between infected patients and other users) is only revealed to epidemiologists, with the specific, separate consent of a user, and not to any other party.
@@ -380,23 +548,55 @@ Furthermore, the transmit power of BLE beacons needs to be reduced in other to l
 exposure and risks related to eavesdropping attacks.
 
 Finally, we note that if a small, extremely cautious portion of the population is concerned with these attacks and decides not to participate, this will not greatly impair the effectiveness of the deployment. As long as a large portion of the population runs the app, the number of at-risk identifications will be large enough to significantly reduce the rate of infections.
-\subsection*{Security}
-\subsubsection*{Security Concerns}
+
+\subsubsection{Privacy analysis of unlinkable design}
+
+The privacy of the unlinkable design is slightly better than that of the low-cost design. The design provides the same level of protection for the interaction graph (nobody learns it) and the proximity graph (only ] epidemiologists learn it). We address the remaining differences point by point.
+
+\textbf{Location traceability}.  In this unlinkable design, the  EphIDs remain unlinkable for all users against a local attacker. This unlinkability also holds for infected patients, so long as the server is honest. However, if the server is malicious, then it can infer which ephemeral identifiers belong to an infected user through timing information or other metadata created when their ephemeral identifiers are uploaded to the server.
+
+\textbf{At-risk individuals}.  The seeds revealed to the server by infected people in the unlinkable design  are independent of their contacts (the people they interacted with). Hence, they do not give any information about people at risk.
+
+The rest of the analysis is the same.
+
+\textbf{Infected individuals}.  Determining the infection status of individuals is slightly more difficult in the unlinkable design because a local attacker cannot use the linkability of  EphIDs of infected patients to narrow down the identity of an infected patient.
+Tech-savvy adversaries can still make inferences about infected patients by again modifying the app to record which EphID they receive when. They can then use the downloaded filters to determine which of these EphIDs correspond to an infected person and correlate their infection times with an external log of who they saw and when. However, they do not know if EphIDs from different epochs correspond to the same infected person or different people.
+
+As a result of this unlinkability, estimating the percentage of infected people using BLE equipment operating from a single location is more difficult. The adversary can receive all EphIDs within 20-100m range. But because of unlinkability, the adversary cannot deduplicate  EphIDs that are later revealed to belong to an infected person: the adversary never learns whether they belong to the  same infected person or not. This makes estimating a percentage of infected people much harder. The attacker either needs to mount an antenna at a location where people only pass a fixed number of times a day, or use video recording to do deduplication.
+
+Retroactive attacks in the unlinkable design are equally difficult. The phone only stores coarse time information, and while the hashed identifier contains the exact epoch in which it was received, this information cannot be recovered because the high-entropy input EphID is unknown.
+
+The unlinkable design enables infected individuals to redact periods of time that they consider sensitive and for which they prefer not to disclose their contacts. This can alleviate concerns in a close-knit or small community in which users may be afraid that community members learn about infections via the app, instead of informing the affected individuals in person.
+
+\subsection{Security}
+\subsubsection{Security Concerns}
 \textbf{Fake contact events}. A fake contact event could make a person believe that they are at-risk, even though they have never been in contact with an infected person. Attackers could try to generate such fake contact events.
 
 \textbf{Suppressing at-risk contacts}: There is a risk that either an infected person or the backend server could prevent other individuals from learning they are at risk, e.g., by modifying the app’s local storage. This violates the integrity of the system and would lead to an increased health risk for contact persons who rely on the system to alert them.
 
 \textbf{Prevent contact discovery}: A malicious actor could disrupt the system, e.g. by jamming Bluetooth signals, and prevent contact discovery.
-\subsubsection*{Security Analysis}
+
+\subsubsection{Security Analysis of the low-cost design}
+
 \textbf{Fake contact events}. Fake contact events cannot be completely avoided. A malicious tech-savvy user can always use a large antenna to artificially increase their broadcast range. If the broadcasted identifiers belong to a (later) infected person, then any recipient will conclude that they are now at risk.
 
-In the decentralized system, smartphones compute risk scores purely based on the \texttt{EphID}s they have seen and the \texttt{EphID}s of infected people. Therefore, to create a fake contact event, an attacker must modify one of these two. The former can only be changed by using Bluetooth broadcasts. The latter can only be changed by (1) being infected with SARS-Cov-2, and then (2) reporting somebody else’s key $\texttt{SK}_\texttt{t}$ so that that key is treated as infected.
+An attacker can record an individual’s ephemeral identifier and broadcast it to victims at a different location and/or time, as long as it is relayed on the same day. If that individual is later confirmed as infected, the victims will incorrectly believe they are at risk.
+
+An attacker could be motivated to claim another user’s EphID as their own and report that it should be marked as infectious. This is prevented in the low-cost design by requiring users to upload their seed values from which their EphIDs are derived. As these EphIDs are derived from the seed using cryptographic hash functions, an attacker cannot learn another user’s seed by observing their broadcasts.
 
 \textbf{Suppressing at-risk contacts}. Hiding at-risk contacts is possible in any proximity tracing system. Infected users can choose to not participate at all; to temporarily not broadcast Bluetooth identifiers, or not to upload their data once diagnosed.
 
 \textbf{Prevent contact discovery}. Any proximity tracing system based on Bluetooth low energy is susceptible to jamming attacks by active adversaries. Such jamming attacks will cause the normal recording of \texttt{EphID}s to stop working, hence preventing contact discovery. This is an inherent problem of this approach.
-\section*{Comparison with a centralized approach}
-\subsection*{A centralized, on-demand trace upload}
+
+
+\subsubsection{Security Analysis of the unlinkable design}
+
+The unlinkable design has the same security properties as the low-cost design with respect to suppressing at-risk contacts and preventing contact discovery.
+
+\textbf{Fake contact events}.  In the unlinkable design, ephemeral identifiers are cryptographically linked to the  epoch in which they are broadcast. To create fake at-risk events, the attacker must therefore receive and rebroadcast EphIDs  within the same epoch. S  uch an “online” relay attack is unavoidable in location tracing systems based on connectionless Bluetooth broadcasts.
+
+\section{Comparison with a centralized approach}
+\subsection{A centralized, on-demand trace upload}
 In a centralized approach, instead of the smartphones gathering information to learn whether the owner is at risk, it is the central server who identifies at-risk users and notifies those users' smartphones.
 
 As the central server needs means to identify users, it must hold a long-term
@@ -412,7 +612,7 @@ they can instruct their smartphone to send the recorded list of observations to 
 \caption{Processing and storing of observed \texttt{EphID}s.}
 \label{ZZ}
 \end{figure}
-\subsubsection*{Proximity tracing}
+\subsubsection{Proximity tracing}
 The proximity tracing process is executed by the backend after a diagnosed patient has
 made available to the backend their list of observations [(\texttt{EphID}, epoch, duration)] for the relevant period of time. The backend recovers the long-term pseudo-identifiers of the at-risk users from the reported observed \texttt{EphID}s and triggers a process to identify them. See Figure \ref{ZY}.
 \begin{figure}[H]
@@ -421,15 +621,15 @@ made available to the backend their list of observations [(\texttt{EphID}, epoch
 \caption{proximity tracing for centralized design}
 \label{ZY}
 \end{figure}
-\subsubsection*{Interoperability}
+\subsubsection{Interoperability}
 Because \texttt{EphID}s are generated by the backend, if there exist more than one backend (e.g., one backend per country), each backend can only recover their own long term
 pseudo-identifiers. Therefore, if infected people have spent time in another country during the infectious period, the backend will receive observed \texttt{EphID}s collected in that country that it cannot interpret. This means that the centralized design requires a “routing” mechanism to ensure that \texttt{EphID}s arrive at the backends that can interpret them. Options to achieve this goal can be to include a country code in the \texttt{EphID} , or to broadcast non-interpretable \texttt{EphID}s  to all other backends to make sure that it reaches home.
-\subsubsection*{Sharing data with epidemiologists}
+\subsubsection{Sharing data with epidemiologists}
 In the centralized design, the smartphones never learn which contact events correspond to
 contact events with infected individuals, and therefore cannot provide the relevant
 information to epidemiologists. To provide this service, the central server must keep all
 relevant information and share it with researchers.
-\subsubsection*{Privacy Comparison}
+\subsubsection{Privacy Comparison}
 \textbf{Interaction graph}. The centralized system reveals the interaction graph of each infected user to the backend server. This is by design, as the server maps each time-stamped ephemeral identifier back to a permanent pseudonym to enable contact tracing. The subset of the full interaction graph learned by the server grows quickly as every newly infected user uploads their entire contact history, which can be linked to existing nodes in the graph. Even though the nodes in the graph are pseudonymous, this is a serious privacy concern because graph data is easy to reidentify.
 
 \textbf{Proximity graph}. While in the decentralized design, the proximity graph is only selectively revealed to researchers, the centralised design allows the backend server to learn this information as well. This violates the privacy requirement about limiting inference to minimum necessary and to authorised entities only.
@@ -441,7 +641,7 @@ relevant information and share it with researchers.
 \textbf{Infected individuals}. The centralised and decentralised contact tracing systems share the
 inherent privacy limitation that they can be exploited by an eavesdropper to learn whether an individual user got infected and by a tech-savvy user to reveal which individuals in their contact list might be infected now. However, the centralised design does not allow proactive and retroactive linkage attacks by tech-savvy users to learn which contacts are infected because the server never reveals the \texttt{EphID}s of infected users.
 
-\subsubsection*{Security Comparison}
+\subsubsection{Security Comparison}
 \textbf{Fake contact events}. Creating fake at-risk events is easy in the centralised design and can be done retroactively by any tech-savvy infected patient. It does not require broadcasting. It suffices with adding the target \texttt{EphID}s to the list of observed events prior to uploading it to the backend.
 
 \textbf{Suppressing at-risk contacts}. Hiding at-risk contacts is possible in any proximity tracing system.
@@ -449,48 +649,49 @@ inherent privacy limitation that they can be exploited by an eavesdropper to lea
 \textbf{Prevent contact discovery}. Any proximity tracing system based on Bluetooth low energy is susceptible to jamming attacks by active adversaries.
 \begin{table}[H]
 \centering
-\begin{tabular}{p{4cm}p{5cm}p{5cm}}\hline
- & \textbf{Decentralised} & \textbf{centralised}\\ \hline
+
+\begin{tabular}{p{4cm}p{5cm}p{5cm}p{5cm}}\hline
+ & \textbf{Decentralised} &  \textbf{Decentralised} & \textbf{centralised} \\
+ & \emph{low cost design} &  \emph{unlinkable design} & \emph{} \\
+  \hline
  \multicolumn{3}{l}{\textbf{Privacy Concerns (who can learn what)}}\\
- \textit{Interaction graph} & - & Backend / State-level \\
- \textit{Proximity graph} & Epidemiologist & Epidemiologist / Backend / State-level\\
-\textit{Location tracking} & Tech-savvy user & Backend / State-level\\
+ 
+ \textit{Interaction graph} & - & - &Backend / State-level \\
+ 
+ \textit{Proximity graph} & Epidemiologist &  Epidemiologist & Epidemiologist / Backend / State-level\\
+ 
+\textit{Location tracking} & Tech-savvy user & - & Backend / State-level\\
 \small Of infected users & \small During infectious period & Always \small \\
-\textit{Location tracking} & Backend/state-level & Backend / State-level\\
+
+\textit{Location tracking} & Backend/state-level & - & Backend / State-level\\
 \small Of non-infected users & & \small Always\\
-At-risk individuals & Tech-savvy user / Eavesdropper & Eavesdropper / Backend /\\
+
+At-risk individuals & Tech-savvy user / Eavesdropper & Tech-savvy user / Eavesdropper &  Eavesdropper / Backend /\\
  & & State-level\\
-\textit{Infected individuals} & Tech-savvy user / Eavesdropper & Tech-savvy user / Eavesdropper\\
-\textit{Percentage infected} & Tech-savvy external with & State-level\\
-\textit{individuals} & antenna & \\ \hline
-\multicolumn{3}{l}{\textbf{Security Concerns}}\\
-\textit{Fake contact events} & Yes & Yes \\
- & \small Physical proximity + amplified broadcast & \small Infected tech-savvy user / Backend /\\
- & \small (with knowledge of infected EphID) & \small State-level\\
+\textit{Infected individuals} & Tech-savvy user / Eavesdropper & Tech-savvy user / Eavesdropper &  Tech-savvy user / Eavesdropper\\
+
+\textit{Percentage infected} & Tech-savvy external with & Noise estimate only & state-level\\
+\textit{individuals} & antenna &  Tech-savvy with external antenna \\ \hline
+
+\multicolumn{4}{l}{\textbf{Security Concerns}}\\
+
+\textit{Fake contact events} & Yes & Yes & Yes\\
+ & \small Physical proximity + amplified broadcast with knowledge of infected EphID &  \small Physical proximity + amplified broadcast with knowledge of infected EphID & \small Infected tech-savvy user / Backend / State level\\
 \textit{Suppressing at-risk} & Yes & Yes \\
-\textit{contacts} & \small Tech-savvy user (own contacts only) & Tech-savvy user / Backend / State-level\\
-\textit{Prevent contact} & Yes & Yes \\
-\textit{discovery} & \small Tech-savvy user + broadcast & \small Tech-savvy user / Backend / State-level\\ \hline
+\textit{contacts} & \small Tech-savvy user (own contacts only) & \small Tech-savvy user (own contacts only) &  Tech-savvy user / Backend / State-level\\
+\textit{Prevent contact} & Yes & Yes & Yes \\
+\textit{discovery} & \small Tech-savvy user + broadcast & \small Tech-savvy user + broadcast  & \small Tech-savvy user / Backend / State-level\\ \hline
 \end{tabular}
 \end{table}
+
+
 \clearpage
-\section*{Conclusion}
-In this whitepaper, we have outlined a reference design for a decentralized approach to
-proximity tracing, and we have described evaluation criteria to assess the level of privacy provided by any proximity tracing solution. A key requirement driving our design is to minimize exposure of private data, limiting privacy leakage.
+\section{Conclusion}
+In this whitepaper, we have outlined two decentralized designs to perform proximity tracing in a privacy-preserving manner. A key requirement for both designs is to minimize exposure of private data, limiting privacy leakage. One design results in an extremely lightweight system, and the other provides extra privacy properties at a small increase in bandwidth. We have also provided evaluation criteria to assess the level of privacy provided by any proximity tracing solution.
 
-Our proposed decentralized design relies on smartphones to locally compute the risk for an
-individual user to have contracted the virus based on exposure to infected persons. Data
-about specific contact events, i.e. interactions between individuals, always remains on users’ phones and risk calculation happens locally, according to the guidelines set by the health authorities. In addition, users may voluntarily and privately share data about interactions with infected persons (but never contact events itself) with epidemiologists to aid the investigation into the spread of SARS-CoV-2. The decentralised design gives users fine-grained control over the information they share and all data sharing happens under the user’s explicit permission.
+Our decentralized designs rely on smartphones to locally compute the risk for an individual user to have contracted the virus based on exposure to infected people. Data about specific contact events, i.e. interactions between individuals, always remains on users’ phones and risk calculation happens locally, according to the guidelines set by the health authorities. In addition, users may voluntarily and privately share data about interactions with infected people (but never contact events itself) with epidemiologists to aid the investigation into the spread of SARS-CoV-2. The decentralised design gives users fine-grained control over the information they share and all data sharing happens under the user’s explicit permission.
 
-We have presented criteria for the evaluation of security and privacy aspects of proximity
-tracing and have thoroughly evaluated our decentralized design. Our design scales to a
-large number of users with minimal local computation and minimal centralization. Compared
-to a central design in which the backend would compute risks and inform users, our design
-protects interaction graphs from the backend, and only a determined tech-savvy adversary
-can learn any extra information besides the one made visible by the app. The centralized
-system, in comparison, leaks a lot of unnecessary information about contacts to the
-backend, and requires large amounts of trust in a central entity.
+We have presented criteria for the evaluation of security and privacy aspects of proximity tracing and have thoroughly evaluated our decentralized designs. Both designs scale to a large number of users with minimal local computation and minimal centralization. Compared to a central design in which the backend would compute risks and inform users, our design protects interaction graphs from the backend, and only a determined tech-savvy adversary can learn any extra information besides the one made visible by the app. The centralized system, in comparison, leaks a lot of unnecessary information about contacts to the backend, and requires large amounts of trust in a central entity.
 
-We strongly urge governments, health authorities, and researchers that any deployment of
-proximity tracing follows a decentralized design similar to our system to avoid the creation of centralized systems that have the potential to become surveillance infrastructures. We are currently working on a reference implementation of the decentralized design which will be released openly during the next weeks.
+We strongly urge governments, health authorities, and researchers that any deployment of proximity tracing follows a decentralized design similar to our system to avoid the creation of centralized systems that  have the potential to become surveillance infrastructures.  We are currently working on a reference implementation of the decentralized design which will be released openly during the next weeks.
 \end{document}
