@@ -6,7 +6,6 @@ all: test
 
 test: $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDFLAGS) $(LIBS)
-	./test
 
 .c.o:
 	$(CC) -Icuckoofilter-utopiaprince $(CFLAGS) $(INCLUDES) -c $<

@@ -83,7 +83,10 @@ int main(int argc, char ** argv) {
     // Periodically (e.g., every 4 hours), the backend creates a new Cuckoo filter F and for each pair (t, seed ) uploaded by an infected patients it inserts
         
     size_t cfsize =(FAKE_INFECTED + INFECTED + 100) * 32;
-    printf("Cuckoo filter block of %d Mb\n", (int)(0.5 + cfsize / 1024 / 1024));
+    printf("Cuckoo filter block of %d Mb - tables is %d Mb\n",
+           (int)(0.5 + cfsize / 1024 / 1024),
+           (int)(0.5 + ((cfsize / CUCKOO_HASH_LEN) / 4 + (cfsize / CUCKOO_HASH_LEN) / 4 /4 ) * 32) / 1024 / 1024);
+           
     assert(0==cuckoo_filter_init(cfsize));
     
     printf("\nBackend gathering\n");

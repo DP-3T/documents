@@ -39,23 +39,6 @@ struct hash_slot_cache {
         size_t offset;  /* offset on flash memory */
 };
 
-static inline int is_pow_of_2(uint32_t x)
-{
-    return !(x & (x-1));
-}
-
-static inline uint32_t next_pow_of_2(uint32_t x)
-{
-    if (is_pow_of_2(x))
-        return x;
-    x |= x>>1;
-    x |= x>>2;
-    x |= x>>4;
-    x |= x>>8;
-    x |= x>>16;
-    return x + 1;
-}
-
 struct hash_table {
     struct hash_slot_cache **buckets;
     struct hash_slot_cache *slots;
@@ -471,7 +454,7 @@ int cuckoo_filter_init(size_t size)
     cuckcoo_store_base_addr = malloc(cuckcoo_store_size);
     if (cuckcoo_store_base_addr == NULL) {
         return -1;
-    }
+    };
     
     hash_table.slot_num = cuckcoo_store_size / CUCKOO_HASH_LEN;
     

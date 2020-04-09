@@ -1,15 +1,7 @@
 Cuckoo Filter
 =============
 
-This used to be:
-
-	A key-value filter using cuckoo hashing, substituting for bloom filter.
-
-and the master version still lives at:
-
-	https://github.com/begeekmyfriend/CuckooFilter.git
-
-But it was heavily modified for different bit lengths & is now a simple key store; no values.
+A key-value filter using cuckoo hashing, substituting for bloom filter.
 
 Usage
 -----
