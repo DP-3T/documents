@@ -13,10 +13,10 @@ We would like help *translating the comic*! Please translate (fonts are Patrick 
 ## Language versions
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
-[German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0) 
+[German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
 [Spanish](es) (by Vanesa Sánchez Cortés) (CC-0) 
 
 ## 1-page version
-Nicky has also created a one-page version, with fewer panes, which, like the others, is totally free for journalists and others to reuse, as it is CC-0.
+Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
 
 ![One page comic](en/shortened_onepage.png)
