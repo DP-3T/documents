@@ -45,14 +45,14 @@ The depth of the Cuckoo filter shall be 4.
 
 The Cuckoo filter shall be serialised as:
 
--	Depth:			unsigned 32 bit integer (A)
--   	Number of slots: 	unsigned 32 bit integer (S)
-- 	Number of buckets:	unsigned 32 bit integer (B)
--	Buckets B x ( A x slotsID)
- -	with the slotID an unsigned 32 bit integer. 
--	Slots(numbered 0 .. slotsID) 	S x ( key )
- -	with the key a 31 bit  unsigned int;
- -	the topbit denotes a populated (0) or empty (1) slot.
+- Depth:			unsigned 32 bit integer (A)
+- Number of slots: 	unsigned 32 bit integer (S)
+- Number of buckets:	unsigned 32 bit integer (B)
+ - Buckets B x ( A x slotsID)
+- with the slotID an unsigned 32 bit integer. 
+- Slots(numbered 0 .. slotsID) 	S x ( key )
+ - with the key a 31 bit  unsigned int;
+ - the topbit denotes a populated (0) or empty (1) slot.
 
 ### Cuckoo filter publication
 
