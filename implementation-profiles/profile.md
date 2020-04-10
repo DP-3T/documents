@@ -60,14 +60,27 @@ The filter should be published prefixed by an RFC3161 timestamp.
 
 
 
-
 ## Design 1
 
-The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the `key’ and the string  “broadcast key” (without trailing \0, i.e. exactly those 13 US-ASCII characters is the plaintext.
-
-The PRG used is AES128 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1
-
-and the plaintext 128 bits of 0’s.
+The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the `key’ and the string  “Decentralized Privacy-Preserving Proximity Tracing” (without trailing \0, i.e. exactly those 50 US-ASCII characters is the plaintext.
 
 
+Test vectors:
+
+	SK: 
+		0000000000000000000000000000000000000000000000000000000000000000
+	SK derivation:
+		66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
+
+
+The PRG used is AES128 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1 and the plaintext 128 bits of 0’s.
+
+	IV: 00000000000000000000000000000000        
+	eph: 0 - Ephemeral(day:0, token:c7044845a6a0da7a61687e1bb08afca4)
+ 
+	IV: 00000000000000000000000000000001
+	eph: 1 - Ephemeral(day:0, token:a747e729bf2e3de3ec6ecbdb0f889f5b)
+
+	IV: 00000000000000000000000000000002
+	eph: 2 - Ephemeral(day:0, token:034015608c5a55672315cb614f5a94a3)
 
