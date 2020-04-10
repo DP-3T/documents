@@ -11,6 +11,6 @@ The original URL of the comic is https://ncase.me/contact-tracing/. The whole we
 We would like help *translating the comic*! Please translate (fonts are Patrick Hand and Open Sans) and if you send the files or notify m.veale@ucl.ac.uk, we will upload them to the repo for others to use. If possible, we would appreciate you also licensing your translations CC-0.
 
 ## Language versions
-[English](public_engagement/cartoon/en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
-[French](public_engagement/cartoon/fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0). 
-[German](public_engagement/cartoon/de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
+[English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
+[French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
+[German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
