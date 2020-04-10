@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <strings.h>
+#include <sys/stat.h>
 
 #include <openssl/sha.h>
 #include <openssl/err.h>
@@ -45,28 +46,32 @@ int main(int argc, char ** argv) {
     print_ephid(&ephid);
     
     uint32_t t = 0;
-    
-#define N_MET          (50*1000)
-#define INFECTED           (100)
-#define FAKE_INFECTED (500*1000)
-
+   
+#if 1
+#define N_MET          (100*1000)    // People I met on a given day
+#define INFECTED              (8)    // invected people met
+#define FAKE_INFECTED   (10*1000)    // list of invecsted peopel
+#else
+#define N_MET          (100)    // People I met on a given day
+#define INFECTED         (6)    // invected people met
+#define FAKE_INFECTED   (10)    // list of invecsted peopel
+#endif
     printf("\ncreating infected patients\n");
     dp3t_eph_seed_t * invected_seeds = (dp3t_eph_seed_t*) malloc(sizeof(dp3t_eph_seed_t) * INFECTED);
     assert(invected_seeds);
     for(int i = 0; i < INFECTED; i++) {
         assert(DPT3T_OK == generate_eph_seed (&(invected_seeds[i])));
     }
-    
+
+    printf("\nLocal gathering\n");
     typedef struct localrec_t {
         uint8_t * hash;
         void *some_auxdata;
     } localrec_t;
+    
     localrec_t * records = (localrec_t *)malloc( sizeof(localrec_t) * N_MET);
     assert(records);
-    
-    
-    printf("\nLocal gathering\n");
-    
+
     for(int i = 0; i < N_MET; i++) {
         dp3t_eph_t ephid_received; // as received
         
@@ -79,17 +84,20 @@ int main(int argc, char ** argv) {
         assert(DPT3T_OK == populate_cfentry(records[i].hash,&ephid_received, t));
         if (i<10) { printf("%s %03d: ",i == N_MET/2 ? "---->" :"local", i); print_hex(records[i].hash, EPHID_HASHLEN);};
     };
+    printf("\nSort to get random order for check\n");
+    qsort(records, N_MET, sizeof(localrec_t), &hcmp);
+
     
+    // these are all sent to the server.
+    //
     // Periodically (e.g., every 4 hours), the backend creates a new Cuckoo filter F and for each pair (t, seed ) uploaded by an infected patients it inserts
-        
+    //
     size_t cfsize =(FAKE_INFECTED + INFECTED + 100) * 32;
-    printf("Cuckoo filter block of %d Mb - tables is %d Mb\n",
-           (int)(0.5 + cfsize / 1024 / 1024),
-           (int)(0.5 + ((cfsize / CUCKOO_HASH_LEN) / 4 + (cfsize / CUCKOO_HASH_LEN) / 4 /4 ) * 32) / 1024 / 1024);
-           
-    assert(0==cuckoo_filter_init(cfsize));
     
-    printf("\nBackend gathering\n");
+    cuckoo_ctx_t * ctx = cuckoo_filter_init(cfsize);
+    assert(ctx);
+    
+    printf("\nBackend - server takes the list of recived seeds and puts them into a filter\n");
     {
         // first add some invected people
         //
@@ -99,7 +107,7 @@ int main(int argc, char ** argv) {
             generate_eph_ephid(&(invected_seeds[i]), &ephid);
             
             assert(DPT3T_OK == populate_cfentry(buff,&ephid, t));
-            if (cuckoo_filter_put(buff)) {
+            if (cuckoo_filter_put(ctx, buff) != CUCKOO_OK) {
                 printf("Error on stuff 1\n");
                 break;
             }
@@ -112,28 +120,62 @@ int main(int argc, char ** argv) {
             uint8_t fake[EPHID_HASHLEN];
             assert(1 == RAND_bytes(fake, sizeof(fake)));
             if (i < 10) {printf("remo %03d: ",i); print_hex(fake, sizeof(fake));};
-            if (cuckoo_filter_put(fake)) {
+            if (cuckoo_filter_put(ctx, fake) != CUCKOO_OK) {
                 printf("Error on stuff 2 at %d\n", i);
                 break;
             }
             
         }
     };
+    show_hash_slots(ctx);
+    size_t filelen = 0;
+    assert(CUCKOO_OK == cuckoo_filter_serialize(ctx, NULL, &filelen));
+    uint8_t * buff;
+    assert(buff=malloc(filelen));
+    assert(CUCKOO_OK == cuckoo_filter_serialize(ctx, buff, &filelen));
+    FILE * out;
+    assert( out = fopen("to-phone.cfbin","w"));
+    assert(fwrite(buff,1, filelen, out) == filelen);
+    assert(fclose(out) == 0);
+    printf("written %d byte file\n", filelen);
     
-    printf("\nSort to get random order for check\n");
-    qsort(records, N_MET, sizeof(localrec_t), &hcmp);
+    free(buff);
+    cuckoo_free(ctx);
     
+    // now load this file on the client and check
+    struct stat statbuf;
+    assert(0 ==  stat("to-phone.cfbin", &statbuf));
+    filelen = statbuf.st_size;
+    assert(buff=malloc(filelen));
+
+    FILE * in;
+    assert( in = fopen("to-phone.cfbin","r"));
+    assert(filelen == fread(buff,1,filelen,in));
+    assert(fclose(in) == 0);
+    printf("Transfered %d byte filter to the phone\n", filelen);
+
+    ctx = cuckoo_filter_init_from_file(buff, filelen);
+    
+    // show_hash_slots(ctx);
+
     printf("\nChecking for contaminated patients\n");
+    
     // Now check if we can find the needle in this haystack
     int contaminated = 0;
     for(int i = 0; i < N_MET; i++) {
-        uint8_t * val = cuckoo_filter_get(records[i].hash);
-        if (val) contaminated++;
-        if (i < 10) printf("%s %03d: ",val ? "found" : "nope ", i);
-        if (i < 10) print_hex(records[i].hash, EPHID_HASHLEN);
+        cuckoo_return_t hit = cuckoo_filter_exists(ctx, records[i].hash);
+        switch(hit) {
+            case CUCKOO_OK:
+                contaminated++;
+                break;
+            case CUCKOO_NOTFOUND:
+                break;
+            default:
+                printf("ERROR !");
+        }
     };
-    printf("Got %d contaminated out of %d in my list and %d in the filter\n",contaminated, N_MET, INFECTED + FAKE_INFECTED);
-    assert(contaminated == INFECTED);
-    
+    printf("Got %d==%d contaminated out of %d in my list and %d in the filter\n",contaminated, INFECTED, N_MET, INFECTED + FAKE_INFECTED);
+    // assert(contaminated == INFECTED);
+    cuckoo_free(ctx);
 }
 
