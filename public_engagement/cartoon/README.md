@@ -15,7 +15,7 @@ We would like help *translating the comic*! Please translate (fonts are Patrick 
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
 [German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
 [Spanish](es) (by Vanesa Sánchez Cortés) (CC-0)  
-[Finnish](fi) (by Salu Ylirisku) (CC-0)
+[Finnish](fi) (by Salu Ylirisku) (CC-0)  
 [Thai](th) (by Jai Govindani [@govindani](https://twitter.com/govindani)) (CC-0)
 
 ## 1-page version
