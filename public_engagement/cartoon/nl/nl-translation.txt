@@ -1,0 +1,161 @@
+= Paneel 1 = 
+Bescherm mensenlevens en mensenrechten
+Hoe bron- en contactopsporing apps COVID-19 en Big Brother kunnen tegengaan.
+
+= Paneel 2 =
+Een probleem met COVID-19:
+Je bent grofweg 2 dagen voor dat je weet dat je geïnfecteerd bent al besmettelijk
+
+Maar het kost grofweg 3 dagen om besmettelijk te worden, dus als we mensen die aan jou zijn blootgesteld in quarantaine plaatsen op de dag dat je geïnfecteerd bent….
+
+Stoppen we de verspreiding, door het een stap voor te zijn!
+
+* Maar hoe zit dat met asymptotisch mensen? Deze blijken geen grote rol te spelen in de verspreiding van COVID-19. Zie de citaten aan het einde. 
+
+= Paneel 3 =
+Dit noemen we bron- en contactopsporing. Het is een belangrijk deel van hoe Zuid-Korea en Taiwan COVID-19 in bedwang houden, en wat wij dus ook moeten doen. 
+
+We hoeven zelfs niet alle mensen met wie je in contact bent geweest op te sporen! We hoeven slechts ~60% van ze te vinden
+
+* ~60%? Nogmaals, zie de citaten aan het einde!
+
+= Paneel 4 =
+…maar we moeten ze wel snel vinden. Traditionele bron- en contactopsporing met interviews is te langzaam. 
+
+Daarom hebben we bron- en contactopsporing apps nodig. 
+
+Maar moeten we voor onze gezondheid dan privacy opofferen?
+
+= Paneel 5 = 
+Echt niet!     
+
+= Paneel 6 =
+It is absoluut mogelijk om mensenlevens EN mensenrechten te beschermen met een vrij simpele methode. Met behulp van Alice & Bob kijken we hoe die methode werkt.
+ 
+= Paneel 7 =
+Alice krijgt een  bron- en contactopsporing app! (& de code daarvan is voor iedereen in te zien, zodat men kan verifiëren dat het daadwerkelijk als volgt werkt…)
+
+Elke vijf minuten zendt haar telefoon, via Bluetooth, willekeurig uniek gebrabbel uit naar alle apparaten in de buurt
+
+* Vijf minuten is slechts een voorbeeld! And technisch gezien is het “pseudo willekeurig” aangezien het geen quantum….doet er NIET toe!     
+
+= Paneel 8 =  
+Omdat de berichten willekeurig zijn & geen gebruik maken van GPS, bevatten ze GEEN informatie over Alice haar identiteit, locatie of wat dan maar ook.
+
+Enfin – terwijl haar telefoon willekeurige berichten verstuurt, luistert haar telefoon ook naar berichten van telefoons in de buurt.  
+
+= Paneel 9 =
+Bijvoorbeeld die van Bob. 
+Bob heeft ook een privacy respecterende bron- en contactopsporing app die compatibel is met (of dezelfde als) die van Alice. Als Alice & Bob bij elkaar in de buurt blijven voor meer dan vijf minuten dan wisselen hun telefoons uniek gebrabbel uit. 
+
+= Paneel 10 =
+Allebei de telefoons onthouden alle berichten die ze hebben verstuurd en ontvangen gedurende de laatste 14 dagen. Nogmaals: doordat de willekeurige berichten geen enkele informatie bevatten is de privacy van Alice beschermt tegen Bob en vice versa!
+
+* 14 dagen is ook slechts een voorbeeld! Epidemiologen ontdekken wellicht dat de “besmettelijke periode” in werkelijkheid korter of langer is.
+
+= Paneel 11 =
+De volgende dag heeft Alice een droge hoest en koorts. 
+Alice wordt getest.
+Alice heeft COVID-19. Alice heeft haar dag niet. 
+
+= Paneel 12 =
+Maar ze zal niet nodeloos hoeven te lijden! Alice verzend haar “Wat ik heb gezegd” berichten naar een ziekenhuis database met behulp van een eenmalige code ontvangen van haar dokter. (De code is om spam tegen te gaan). Alice kan ook bepaalde berichten van tijdstippen die ze privé wil houden verbergen, bijvoorbeeld van avonden thuis. 
+
+= Paneel 13 = 
+De database slaat het gebrabbel van Alice d’r telefoon op. Wederom: de willekeurige berichten geven het ziekenhuis GEEN INFORMATIE over waar Alice was, met wie ze was, wat ze aan het doen waren of zelfs hoeveel mensen Alice ontmoette. Het is allemaal betekeningsloos voor het ziekenhuis... 
+
+*Ziekenhuizen uit verschillende landen kunnen boodschappen uitwisselen, maar omdat ze geen informatie bevatten is dit geen inbreuk op de privacy. 
+
+= Paneel 14 =
+Maar niet voor Bob! 
+De telefoon van Bob controleert regelmatig de lijst van het ziekenhuis met willekeurige berichten van COVID-19 gevallen en kijkt daarmee of het een van deze berichten in de afgelopen 14 dagen heeft “gehoord” van telefoons in de buurt. 
+
+(Het gebrabbel geeft Bob GEEN ANDERE PERSOONLIJKE INFORMATIE)
+
+* Het daadwerkelijke DP-3T protocol is zelfs nog beter beveiligd! Het maakt gebruik van een “koekoek filter” zodat telefoons alleen die COVID-19 berichten krijgen die het heeft gehoord, zonder bekendmaking van ALLE COVID-19 berichten.
+
+= Paneel 15 =  
+Als het, bijvoorbeeld, zes of meer berichten van COVID-19 gevallen heeft gehoord (6x5= 30min totale blootstelling) waarschuwt de telefoon dat Bob in zelf-quarantaine moet gaan.
+
+En daarmee, doorbreekt Bob de ketting van overdracht, een stap voor het virus!  
+
+* Wederom deze getallen zijn slechts voorbeelden  
+
+= Paneel 16 =
+Et voila!
+
+Dit is hoe digitale bron- en contactopsporing pro-actief bij kan dragen aan het voorkomen van de verspreiding van COVID-19, alsmede het beschermen van onze rechten. 
+
+Dankjewel Alice & Bob. Blijf gezond.
+
+= CITATEN = 
+Citaten: 
+Deze strip is een ruwe samenvatting van het DP-3T protocol zoals bekend op 9 april 2020. Het daadwerkelijke protocol is complexer en zelfs nog veiliger! Zie hun paper: 
+
+github.com/DP3T/documents
+
+Er is ook nog een vergelijkbaar privacy beschermd systeem genaamd TCN Protocol. Bekijk dat hier: 
+
+github.com/TCNCoalition/TCN
+
+En tenslotte, is hier de studie van de Universiteit van Oxford die aantoont dat bron- en contactopsporing apps COVID-19 kunnen tegengaan zonder lange termijn lockdowns!
+
+Ferretti & Wymant et al. “Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing” Science(2020)
+
+Laatste paneel
+Deze strip is in het publiek domein. 
+
+Dat betekent dat je al toestemming hebt om dit te herpubliceren op je eigen nieuws site. Sterker nog, we zouden het fantastisch vinden als het in je  bron- en contactopsporing app bijsluit! (Mits het daadwerkelijk het beschreven privacy-beschermde protocol volgt)
+
+(Je hebt ook al toestemming om deze strip te vertalen! De gebruikte lettertypen zijn “Patrick Hand” en “Open Sans” 
+
+Door Nicky Case
+Met enorm veel hulp van
+Prof. Carmela Troncoso (beveiliging) 
+& Prof. Marcel Salathé (epidemiologie) 
+
+Nederlandse vertaling: Björn Wijers, https://burobjorn.nl (CC-0)
+===========================================================================================================================================================================================================
+
+__De een pagina variant__ 
+
+Hoe privacy respecterende bron- en contactopsporing werkt
+
+= Paneel 1 = 
+De telefoon van Alice zendt elke paar minuten een willekeurige boodschap uit. 
+
+= Paneel 2 =
+Alice zit naast Bob. Hun telefoons wisselen berichten uit.
+
+= Paneel 3 =
+Beide telefoons onthouden wat ze de afgelopen 14 dagen hebben gezegd en gehoord.
+
+= Paneel 4 =
+Als Alice COVID-19 krijgt, stuurt ze haar verzonden berichten naar een ziekenhuis
+
+= Paneel 5 =
+Omdat het willekeurige berichten zijn, worden er geen gegevens aan het ziekenhuis onthuld
+
+= Paneel 6 =
+… maar de telefoon van Bob kan wel bepalen of het berichten heeft “gehoord” van COVID-19 gevallen! 
+
+= Paneel 7 = 
+Als het genoeg berichten heeft “gehoord”, duidt dit erop dat Bob lang genoeg was blootgesteld en wordt hij gewaarschuwd. 
+
+= Paneel 8= 
+En dat is hoe bron- en contactopsporing onze gezondheid EN onze privacy kan beschermen!
+
+Nederlandse vertaling: Björn Wijers, https://burobjorn.nl (CC-0)
+===============================================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+      
