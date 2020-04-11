@@ -48,9 +48,9 @@ int main(int argc, char ** argv) {
     uint32_t t = 0;
    
 #if 1
-#define N_MET          (100*1000)    // People I met on a given day
-#define INFECTED              (8)    // invected people met
-#define FAKE_INFECTED   (10*1000)    // list of invecsted peopel
+#define N_MET                      (20*1000)    // People I met on a given day
+#define INFECTED                         (7)    // invected people I met in the last days.
+#define FAKE_INFECTED   (1500*1000-INFECTED)    // list of infected people on the national list
 #else
 #define N_MET          (100)    // People I met on a given day
 #define INFECTED         (6)    // invected people met
@@ -82,7 +82,6 @@ int main(int argc, char ** argv) {
         };
         records[i].hash = malloc(EPHID_HASHLEN);
         assert(DPT3T_OK == populate_cfentry(records[i].hash,&ephid_received, t));
-        if (i<10) { printf("%s %03d: ",i == N_MET/2 ? "---->" :"local", i); print_hex(records[i].hash, EPHID_HASHLEN);};
     };
     printf("\nSort to get random order for check\n");
     qsort(records, N_MET, sizeof(localrec_t), &hcmp);
@@ -107,7 +106,7 @@ int main(int argc, char ** argv) {
             generate_eph_ephid(&(invected_seeds[i]), &ephid);
             
             assert(DPT3T_OK == populate_cfentry(buff,&ephid, t));
-            if (cuckoo_filter_put(ctx, buff) != CUCKOO_OK) {
+            if (cuckoo_filter_put(ctx, buff, EPHID_HASHLEN) != CUCKOO_OK) {
                 printf("Error on stuff 1\n");
                 break;
             }
@@ -119,15 +118,14 @@ int main(int argc, char ** argv) {
         for(int i = 0; i < FAKE_INFECTED; i++) {
             uint8_t fake[EPHID_HASHLEN];
             assert(1 == RAND_bytes(fake, sizeof(fake)));
-            if (i < 10) {printf("remo %03d: ",i); print_hex(fake, sizeof(fake));};
-            if (cuckoo_filter_put(ctx, fake) != CUCKOO_OK) {
-                printf("Error on stuff 2 at %d\n", i);
+            if (cuckoo_filter_put(ctx, fake, EPHID_HASHLEN) != CUCKOO_OK) {
+                printf("Failted to insert fake one at %d\n", i);
                 break;
             }
             
         }
     };
-    show_hash_slots(ctx);
+    // show_hash_slots(ctx);
     size_t filelen = 0;
     assert(CUCKOO_OK == cuckoo_filter_serialize(ctx, NULL, &filelen));
     uint8_t * buff;
@@ -137,7 +135,7 @@ int main(int argc, char ** argv) {
     assert( out = fopen("to-phone.cfbin","w"));
     assert(fwrite(buff,1, filelen, out) == filelen);
     assert(fclose(out) == 0);
-    printf("written %d byte file\n", filelen);
+    printf("written %lu byte file\n", filelen);
     
     free(buff);
     cuckoo_free(ctx);
@@ -152,18 +150,17 @@ int main(int argc, char ** argv) {
     assert( in = fopen("to-phone.cfbin","r"));
     assert(filelen == fread(buff,1,filelen,in));
     assert(fclose(in) == 0);
-    printf("Transfered %d byte filter to the phone\n", filelen);
+    printf("Transfered %lu byte filter to the phone\n", filelen);
 
-    ctx = cuckoo_filter_init_from_file(buff, filelen);
+    printf("Checking for contaminated patients on the phone\n");
+    assert(ctx = cuckoo_filter_init_from_file(buff, filelen));
     
     // show_hash_slots(ctx);
-
-    printf("\nChecking for contaminated patients\n");
     
-    // Now check if we can find the needle in this haystack
+    // Now check if we can find the needles in this haystack
     int contaminated = 0;
     for(int i = 0; i < N_MET; i++) {
-        cuckoo_return_t hit = cuckoo_filter_exists(ctx, records[i].hash);
+        cuckoo_return_t hit = cuckoo_filter_exists(ctx, records[i].hash, EPHID_HASHLEN);
         switch(hit) {
             case CUCKOO_OK:
                 contaminated++;
@@ -174,7 +171,7 @@ int main(int argc, char ** argv) {
                 printf("ERROR !");
         }
     };
-    printf("Got %d==%d contaminated out of %d in my list and %d in the filter\n",contaminated, INFECTED, N_MET, INFECTED + FAKE_INFECTED);
+    printf("Got %d (false positives %d) contaminated out of %d in my list and %d in the filter\n",contaminated, contaminated-INFECTED, N_MET, INFECTED + FAKE_INFECTED);
     // assert(contaminated == INFECTED);
     cuckoo_free(ctx);
 }

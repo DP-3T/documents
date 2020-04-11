@@ -7,6 +7,10 @@
 #include <stdint.h>
 #include <string.h>
 #include <assert.h>
+#include <ctype.h>
+
+#include <openssl/sha.h>
+#include <openssl/err.h>
 
 #include "cuckoo_filter.h"
 
@@ -17,8 +21,11 @@
 /* Cuckoo hash */
 typedef  uint32_t cuckoo_tag_t;
 
-#define cuckoo_hash_lsb(key, count)  ((cuckoo_tag_t)(((size_t *)(key))[0] & (count - 1)))
-#define cuckoo_hash_msb(key, count)  ((cuckoo_tag_t)(((size_t *)(key))[1] & (count - 1)))
+// CUCKOO_HASH_LEN == 32 bytes == 4x8 uint32_ts
+//
+#define cuckoo_hash_lsb(key, bucket_num)     ((cuckoo_tag_t)(((uint32_t *)(key))[0] & ((bucket_num) - 1)))
+#define cuckoo_hash_msb(key, bucket_num)     ((cuckoo_tag_t)(((uint32_t *)(key))[1] & ((bucket_num) - 1)))
+#define cuckoo_hash_verify(key, bucket_num)  ((cuckoo_tag_t)(((uint32_t *)(key))[2] & ((bucket_num) - 1)))
 
 /* The log entries store key-value pairs on flash and
  * each entry is assumed just one sector size fit.
@@ -40,6 +47,7 @@ struct hash_table {
 typedef struct cuckoo_ctx_rec {
     size_t cuckcoo_store_size;
     size_t cuckoo_entries;
+    size_t limit_verify;
     
     struct hash_table hash_table;
     uint8_t *cuckcoo_store_base_addr;
@@ -57,6 +65,12 @@ struct hash_slot_cache {
 static inline int is_pow_of_2(uint32_t x)
 {
     return !(x & (x-1));
+}
+
+static inline size_t bitlength(size_t x) {
+    int bits = 0;
+    for(;x; bits++) x = x >> 1;
+    return bits;
 }
 
 static inline uint32_t next_pow_of_2(uint32_t x)
@@ -103,7 +117,8 @@ static uint8_t *key_verify(cuckoo_ctx_t * ctx, uint8_t *key, size_t offset)
 {
     int i;
     uint8_t *read_addr = ctx->cuckcoo_store_base_addr + offset;
-    for (i = 0; i < CUCKOO_HASH_LEN; i++) {
+    
+    for (i = 0; i < ctx->limit_verify; i++) {
         if (key[i] != *read_addr) {
             return NULL;
         }
@@ -172,7 +187,7 @@ KICK_OUT:
     return 0;
 }
 
-static int cuckoo_hash_get(cuckoo_ctx_t * ctx, struct hash_table *table, uint8_t *key, uint8_t **read_addr, int noverify)
+static int cuckoo_hash_get(cuckoo_ctx_t * ctx, struct hash_table *table, uint8_t *key, uint8_t **read_addr)
 {
     int i, j;
     uint8_t *addr;
@@ -180,6 +195,7 @@ static int cuckoo_hash_get(cuckoo_ctx_t * ctx, struct hash_table *table, uint8_t
     size_t tag[2];
     struct hash_slot_cache *slot;
     
+    ///
     tag[0] = cuckoo_hash_lsb(key, table->bucket_num);
     tag[1] = cuckoo_hash_msb(key, table->bucket_num);
     
@@ -194,7 +210,7 @@ static int cuckoo_hash_get(cuckoo_ctx_t * ctx, struct hash_table *table, uint8_t
         if (cuckoo_hash_msb(key, table->bucket_num) == slot[i].tag) {
             if (slot[i].status == OCCUPIED) {
                 offset = slot[i].offset;
-                addr = noverify ? ((uint8_t *)1) : key_verify(ctx, key, offset);
+                addr = key_verify(ctx, key, offset);
                 if (addr != NULL) {
                     if (read_addr != NULL) {
                         *read_addr = addr;
@@ -296,7 +312,7 @@ static int cuckoo_hash_put(cuckoo_ctx_t * ctx, struct hash_table *table, uint8_t
             }
         }
     }
-
+    
 #ifdef CUCKOO_DBG
     show_hash_slots(ctx, table);
 #endif
@@ -357,9 +373,11 @@ static void cuckoo_rehash(cuckoo_ctx_t * ctx, struct hash_table *table)
 {
     int i;
     struct hash_table old_table;
+#if 0
     printf("Rehash old: %lu + %luKb",
            sizeof(struct hash_slot_cache),
            ctx->hash_table.bucket_num * sizeof(struct hash_slot_cache *)/1024);
+#endif
     
     /* Reallocate hash slots */
     old_table.slots = table->slots;
@@ -400,42 +418,60 @@ static void cuckoo_rehash(cuckoo_ctx_t * ctx, struct hash_table *table)
          * hashing collision! Be careful of that!
          */
         assert(!cuckoo_hash_put(ctx, table, key, &offset));
-        if (cuckoo_hash_get(ctx, &old_table, key, NULL,0) == DELETED) {
+        if (cuckoo_hash_get(ctx, &old_table, key, NULL) == DELETED) {
             cuckoo_hash_delete(ctx, table, key);
         }
     }
+
+#if 0
     printf(", new: %lub + %luKb buckets=%lu slots=%lu depth=%d\n",
            sizeof(struct hash_slot_cache),
            ctx->hash_table.bucket_num * sizeof(struct hash_slot_cache *)/1024,
            ctx->hash_table.bucket_num , ctx->hash_table.slot_num, ASSOC_WAY);
+#endif
     
     free(old_table.slots);
     free(old_table.buckets);
 }
 
-uint8_t *cuckoo_filter_get(cuckoo_ctx_t * ctx, uint8_t *key)
+uint8_t *cuckoo_filter_get(cuckoo_ctx_t * ctx, uint8_t *_key, size_t _klen)
 {
     uint8_t *read_addr = (uint8_t *)!0;
+
+    assert(CUCKOO_HASH_LEN == SHA256_DIGEST_LENGTH);
     
+    uint8_t key[CUCKOO_HASH_LEN];
+    SHA256(_key,_klen,key);
+
     /* Read data from the log entry on flash. */
-    if (cuckoo_hash_get(ctx, &(ctx->hash_table), key, &read_addr,0) != OCCUPIED)
+    if (cuckoo_hash_get(ctx, &(ctx->hash_table), key, &read_addr) != OCCUPIED)
         return NULL;
     
     return read_addr;
 }
 
-cuckoo_return_t cuckoo_filter_exists(cuckoo_ctx_t * ctx, uint8_t *key)
+cuckoo_return_t cuckoo_filter_exists(cuckoo_ctx_t * ctx, uint8_t *_key, size_t _klen)
 {
-    if (cuckoo_hash_get(ctx, &(ctx->hash_table), key, NULL,1) != OCCUPIED)
+    assert(CUCKOO_HASH_LEN == SHA256_DIGEST_LENGTH);
+    
+    uint8_t key[CUCKOO_HASH_LEN];
+    SHA256(_key,_klen,key);
+    
+    if (cuckoo_hash_get(ctx, &(ctx->hash_table), key, NULL) != OCCUPIED)
         return CUCKOO_NOTFOUND;
     
     return CUCKOO_OK;
 }
 
-cuckoo_return_t cuckoo_filter_put(cuckoo_ctx_t * ctx, uint8_t *key)
+cuckoo_return_t cuckoo_filter_put(cuckoo_ctx_t * ctx, uint8_t *_key, size_t _klen)
 {
+    assert(CUCKOO_HASH_LEN == SHA256_DIGEST_LENGTH);
+    
+    uint8_t key[CUCKOO_HASH_LEN];
+    SHA256(_key,_klen,key);
+
     /* Important: Reject duplicated keys keeping from eternal collision */
-    int status = cuckoo_hash_get(ctx, &(ctx->hash_table), key, NULL,1);
+    int status = cuckoo_hash_get(ctx, &(ctx->hash_table), key, NULL);
     if (status == OCCUPIED) {
         return 0;
     } else if (status == DELETED) {
@@ -444,6 +480,7 @@ cuckoo_return_t cuckoo_filter_put(cuckoo_ctx_t * ctx, uint8_t *key)
         /* Find new log entry offset on flash. */
         size_t offset = next_entry_offset(ctx);
         if (offset == INVALID_OFFSET) {
+            assert(1);
             return -1;
         }
         
@@ -453,6 +490,7 @@ cuckoo_return_t cuckoo_filter_put(cuckoo_ctx_t * ctx, uint8_t *key)
             cuckoo_hash_put(ctx,&(ctx->hash_table), key, &offset);
         }
         if (offset == INVALID_OFFSET) {
+            assert(1);
             return -1;
         };
         assert(offset <= ctx->cuckcoo_store_size - sizeof(struct cuckoo_entry));
@@ -498,17 +536,17 @@ cuckoo_ctx_t * cuckoo_filter_init(size_t size)
     if (!ctx)
         return NULL;
     
-    // we need to keep the size a nice power of two - as the tags
-    // are essentially a 'hash' on count bucket_num; i.e. bucket_num
-    // is the number of bits.
-    //
+    size = size * sizeof(struct cuckoo_entry);
+    
     if (size < 32 * 1024) size = 32 * 1024;
+    
     size = next_pow_of_2((size / CUCKOO_HASH_LEN + 1));
     
     bzero(ctx,sizeof(cuckoo_ctx_t));
     ctx->cuckcoo_store_size = size;
+    ctx->limit_verify = CUCKOO_HASH_LEN;
     
-    ctx->hash_table.slot_num = size; CUCKOO_HASH_LEN;
+    ctx->hash_table.slot_num = size / CUCKOO_HASH_LEN;
     ctx->hash_table.slot_num /= 4;
     ctx->hash_table.bucket_num = ctx->hash_table.slot_num / ASSOC_WAY;
     
@@ -517,23 +555,38 @@ cuckoo_ctx_t * cuckoo_filter_init(size_t size)
 
 cuckoo_ctx_t * cuckoo_filter_init_from_file(uint8_t * inbuff, size_t leninbuf) {
     uint8_t *p = inbuff;
-
+    
     cuckoo_file_hdr * hdr = (cuckoo_file_hdr *)inbuff;
     p += sizeof(cuckoo_file_hdr);
     
-    if (ntohl(hdr->version) != VERSION)
+    if (ntohl(hdr->magic) != CUCKOO_MAGIC)
         return NULL;
-    if (ntohl(hdr->depth) != ASSOC_WAY)
+    if (hdr->magic == CUCKOO_MAJOR)
+        return NULL;
+    if (hdr->depth != ASSOC_WAY)
         return NULL;
     
     cuckoo_ctx_t * ctx = malloc(sizeof(cuckoo_ctx_t));
     if (!ctx)
         return NULL;
+    
     bzero(ctx,sizeof(cuckoo_ctx_t));
     
     ctx->hash_table.slot_num = ntohl(hdr->slot_num);
     ctx->hash_table.bucket_num = ntohl(hdr->bucket_num);
-    ctx->cuckcoo_store_size = ctx->hash_table.slot_num * CUCKOO_HASH_LEN * 4;
+    ctx->limit_verify = hdr->limit_verify;
+    ctx->cuckcoo_store_size = ctx->hash_table.slot_num * sizeof(struct cuckoo_entry);
+    
+    assert(next_pow_of_2(ctx->hash_table.bucket_num) == ctx->hash_table.bucket_num);
+    ctx->hash_table.bucket_num = next_pow_of_2(ctx->hash_table.bucket_num);
+    
+    assert(ctx->limit_verify <= CUCKOO_HASH_LEN);
+    
+    printf("slots %lu, buckets %lu\n",ctx->hash_table.slot_num,ctx->hash_table.bucket_num);
+    
+    size_t len = sizeof(hdr) + ctx->hash_table.bucket_num * ASSOC_WAY * (sizeof(uint32_t) + ctx->limit_verify);
+    
+    assert(len <= leninbuf);
     
     if (cuckoo_populate_initial(ctx) == NULL)
         return NULL;
@@ -547,10 +600,18 @@ cuckoo_ctx_t * cuckoo_filter_init_from_file(uint8_t * inbuff, size_t leninbuf) {
             
             slot[j].tag = v & (~(1<<31));
             slot[j].status = (v & (1<<31)) ? OCCUPIED : AVAILIBLE;
-            
             p+=sizeof(uint32_t);
+            
+            slot[j].offset = next_entry_offset(ctx);
+            if (j) assert(slot[j].offset);
+            uint8_t *q = ctx->cuckcoo_store_base_addr + slot[j].offset;
+            bzero(q,CUCKOO_HASH_LEN);
+            memcpy(q,p,ctx->limit_verify);
+            ctx->cuckoo_entries++;
+            p+=ctx->limit_verify;
         };
     };
+    printf("Read %lu, expected %lu = %d\n", p-inbuff,leninbuf, (int)(p-inbuff-leninbuf));
     
     assert(p-inbuff == leninbuf);
     
@@ -559,26 +620,31 @@ cuckoo_ctx_t * cuckoo_filter_init_from_file(uint8_t * inbuff, size_t leninbuf) {
 
 cuckoo_return_t cuckoo_filter_serialize(cuckoo_ctx_t * ctx, uint8_t * outbuffOrNull, size_t * lenoutbuf) {
     cuckoo_file_hdr hdr = {
-        .version = htonl(0xD3000100),
-        .depth = htonl(ASSOC_WAY),
+        .magic = htonl(CUCKOO_MAGIC),
+        .major_version = CUCKOO_MAJOR,
+        .minor_version= CUCKOO_MAJOR,
+        .depth = ASSOC_WAY,
         .slot_num = htonl((uint32_t) ctx-> hash_table.slot_num),
         .bucket_num =htonl((uint32_t) ctx-> hash_table.bucket_num),
     };
     
-    size_t len = sizeof(hdr)
-                 + ctx->hash_table.bucket_num * ASSOC_WAY * sizeof(uint32_t)
-                 //+ ctx->hash_table.slot_num * sizeof(uint32_t)
-    ;
+    size_t verify_hash_len = 2 + (bitlength(ctx->hash_table.bucket_num-1)>>3);
+    assert(verify_hash_len<= ctx->limit_verify);
+    
+    hdr.limit_verify = ctx->limit_verify = verify_hash_len;
+
+    size_t len = sizeof(hdr) + ctx->hash_table.bucket_num * ASSOC_WAY * (sizeof(uint32_t) + verify_hash_len);
+    
     
     if (outbuffOrNull == NULL) {
         *lenoutbuf = len;
         return CUCKOO_OK;
     };
-
+    
     uint8_t * p = outbuffOrNull;
     memcpy(p, &hdr, sizeof(hdr));
     p += sizeof(hdr);
-
+    
     for(size_t i = 0; i < ctx->hash_table.bucket_num; i++) {
         struct hash_slot_cache *slot = ctx->hash_table.buckets[i];
         for (int j = 0; j < ASSOC_WAY; j++) {
@@ -596,10 +662,27 @@ cuckoo_return_t cuckoo_filter_serialize(cuckoo_ctx_t * ctx, uint8_t * outbuffOrN
             v = htonl(v);
             // printf(" %p %x\n", p-outbuffOrNull, v);
             *(uint32_t *)p = v;
-            p+=sizeof(uint32_t);
-        };
-    };
+            p += sizeof(uint32_t);
+            
+            uint8_t * q = ctx->cuckcoo_store_base_addr + slot[j].offset;
+            memcpy(p,q,verify_hash_len);
+            p+=verify_hash_len;
+            
+        }; // ASSOC_WAY
+    }; // buckets
     assert(len == p - outbuffOrNull);
+    
+    printf("%lu Buckets, %lu Slots, %d way, 2x %lu + %lu = %lu bits of a %d bit hash revealed\n",
+           ctx->hash_table.bucket_num,
+           ctx->hash_table.slot_num,
+           ASSOC_WAY,
+           bitlength(ctx->hash_table.bucket_num-1),
+           verify_hash_len,
+           2*(bitlength(ctx->hash_table.bucket_num-1)) + 8 * verify_hash_len,
+           CUCKOO_HASH_LEN * 8
+           );
+           
+
     return CUCKOO_OK;
 };
 
@@ -618,7 +701,11 @@ void show_hash_slots(cuckoo_ctx_t * ctx)
         
         struct hash_slot_cache *slot = table->buckets[i];
         for (j = 0; j < ASSOC_WAY; j++) {
-            printf("\t%8x/%02x/%08lx", slot[j].tag, slot[j].status, slot[j].offset);
+            printf("\t%8x/%02x/%08lx/", slot[j].tag, slot[j].status, slot[j].offset);
+            for(int k = 0; k < 8; k++) {
+                uint8_t c = (ctx->cuckcoo_store_base_addr +  slot[j].offset)[k];
+                printf("%c",isprint(c) ? c : '.');
+            };
         }
         printf("\n");
     }
