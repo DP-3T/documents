@@ -39,21 +39,46 @@ Test vector:
 	H(EphID || t)
 	        109708e29597623f56fd365ba92f1c717ca23994aabd7939822909c465cb10a5 (32 bytes)
 
-### Cuckoo filter and serialisation
+### Cuckoo filter and serialisation version 1.00
+
+(Aligned with https://github.com/dirkx/DP-3T-Documents/tree/editable-version/impl/design-2-openssl-C)
 
 The depth of the Cuckoo filter shall be 4.
 
+The hash shall be a SHA256. 
+
+The key shall be 32 bytes which are used as follows:
+
+	byte  0..3		up to Z bits for the LSB of the Cuckoo hash
+	byte  4..7		up to Z bits for the MSB of the Cuckoo hash
+	byte  8..		up to `verifylimit' bytes.
+		
+Where <Z> is the number of bits needed for the number of buckets (e.g Z=19 if the buckets are is 524288). 
+
+Where verify limit is set as low as is feasible given the acceptable false positive rates.
+
 The Cuckoo filter shall be serialised as:
 
-- Depth:			unsigned 32 bit integer (A)
-- Number of slots: 	unsigned 32 bit integer (S)
-- Number of buckets:	unsigned 32 bit integer (B)
- - Buckets B x ( A x slotsID)
-- with the slotID an unsigned 32 bit integer. 
-- Slots(numbered 0 .. slotsID) 	S x ( key )
- - with the key a 31 bit  unsigned int;
- - the topbit denotes a populated (0) or empty (1) slot.
+    Magic string 	4	bytes D3, D3, 3D, 3D
+    Major version	1	byte, currently 1 for this version
+    Minor version 	1	byte, currently 0
+    <Depth>			1	byte, fixed to 4
+    <verifylimit>	1	byte
+    <N buckets>		4	bytes, unsigned 32 bit integer, network order
+    <N slots>		4	bytes, unsigned 32 bit integer, network order
+  
+Followed by
 
+    <N buckets> with each
+    	<Depth> slots with each
+    		is occupied			1 bit
+    		partial hash		31 bits, network order, of which <Z> are relevant.
+    		verify hash			<verifylimit> bytes of the verify hash
+ 
+With the partial hash being limited to the number of bits needed for N buckets.  
+
+And with the Hash 
+ 
 ### Cuckoo filter publication
 
 The filter should be published prefixed by an RFC3161 timestamp. 
