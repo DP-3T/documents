@@ -16,7 +16,7 @@ We would like help *translating the comic*! Please translate (fonts are Patrick 
 [German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
 [Spanish](es) (by Vanesa Sánchez Cortés) (CC-0)  
 [Finnish](fi) (by Salu Ylirisku) (CC-0)  
-[Thai](th) (by Jai Govindani [@govindani](https://twitter.com/govindani)) (CC-0)
+[Brazilian Portuguese](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)
 
 ## 1-page version
 Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
