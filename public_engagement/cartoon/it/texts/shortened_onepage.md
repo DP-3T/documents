@@ -15,3 +15,5 @@ Dato che i messaggi hanno un contenuto casuale, nessuna informazione viene rivel
 Se un certo numero di messaggi è stato "ascoltato", significa che Bob è stato esposto al contagio per un tempo abbastanza lungo e verrà avvisato.
 
 Ecco come il contact tracing può salvaguardare la tua salute e la tua privacy.
+
+di Nicky Case (ncase.me). CC0/pubblico dominio, sentitevi liberi di ri-postare ovunque!
