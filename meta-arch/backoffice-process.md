@@ -32,10 +32,12 @@
 
 In (most?) countries a patient has a right to not be informed of a test result in certain contexts.
 
-*	In this	case - the patient generates the hash / 6 + 4 digits -prior- to consultation; and shares the 10 digits with the medical professional.
+*	In this	case - the patient generates the hash / 6 + 4 digits -prior- to consultation and test; and shares the 10 digits with the medical professional.
 
-*	Once the patient has left the room - the professinal may or may not use these to initiate the process
+*	Once the patient has left the room - the professinal may or may not use these to initiate the process once the rest results are in.
 
-In this case - the user inteface of the appMUST be careful to not disclose this sharing.
+In this case - the user inteface of the app MUST be careful to not disclose this sharing.
+
+In this case - the data needs to be kept for a while. It is not sensitive (it requires to the signature of the medical professonal - and professional standars dictate that this only can be given after reviewing the result in the contect of the indivudual patient).
 
 
