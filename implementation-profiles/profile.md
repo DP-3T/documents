@@ -7,6 +7,8 @@ Against version 2020/4/8 of the whitepaper
 
 Byte sequences are 8 bit octed strings.
 
+In both designs - the CDN's webserver its Date: header set (RFC 2616, section 14.18) can be used, during the daily fetch, as the authoritative time specifier.
+
 ### Generating Empheral IDs
 
 The H is an SHA256 as per per RFC 6234
