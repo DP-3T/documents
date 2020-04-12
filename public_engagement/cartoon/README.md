@@ -10,6 +10,8 @@ The original URL of the comic is https://ncase.me/contact-tracing/. The whole we
 
 We would like help *translating the comic*! Please translate (fonts are Patrick Hand and Open Sans) and if you send the files or notify m.veale@ucl.ac.uk, we will upload them to the repo for others to use. If possible, we would appreciate you also licensing your translations CC-0.
 
+There is a folder full of [empty panels](empty_panels) for ease of preparation (thanks[mtwestra](www.github.com/mtwestra)).
+
 ## Language versions
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
@@ -17,7 +19,9 @@ We would like help *translating the comic*! Please translate (fonts are Patrick 
 [Spanish](es) (by Vanesa Sánchez Cortés) (CC-0)  
 [Finnish](fi) (by Salu Ylirisku) (CC-0)  
 [Brazilian Portuguese](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
-[Catalan](ca) (by Xavi R. Pinteño) (CC-0)
+[Catalan](ca) (by Xavi R. Pinteño) (CC-0)  
+[Dutch](nl) [Dutch Version 2](nl2) (by GH:[maaike](www.github.com/maaike), GH:[BjornW](www.github.com/bjornw); GH:[mtwestra](www.github.com/mtwestra)) (CC-0)  
+[Slovak](sk) (by Martin Nagy) (CC-0)
 
 ## 1-page version
 Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
