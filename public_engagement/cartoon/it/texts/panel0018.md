@@ -10,4 +10,4 @@ ncase.me + patreon.com/ncase
 
 con l'enorme aiuto di
 Prof. Carmela Troncoso (sicurezza)
-e Prof. Marcel Salathé (epidemiologia)
+e Prof. Marcel Salathé (epidemiologia)  
