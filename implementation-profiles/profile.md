@@ -45,9 +45,7 @@ Test vector:
 
 (Aligned with https://github.com/dirkx/DP-3T-Documents/tree/editable-version/impl/design-2-openssl-C)
 
-The depth of the Cuckoo filter shall be 4.
-
-The hash shall be a SHA256. 
+The hash shall be a SHA256 (Note; given a reveal 60-90 bits - perhaps not so crucial).
 
 The key shall be 32 bytes which are used as follows:
 
@@ -62,10 +60,10 @@ Where verify limit is set as low as is feasible given the acceptable false posit
 The Cuckoo filter shall be serialised as:
 
     Magic string 	4	bytes D3, D3, 3D, 3D
-    Major version	1	byte, currently 1 for this version
-    Minor version 	1	byte, currently 0
+    Version			1	byte, major/minor, currently set to 0x10 for version 1.0
     <Depth>			1	byte, fixed to 4
-    <verifylimit>	1	byte
+    <bits-hash>		1	byte, without the occupy bit.
+    <bits-verify>	1	byte
     <N buckets>		4	bytes, unsigned 32 bit integer, network order
     <N slots>		4	bytes, unsigned 32 bit integer, network order
   
@@ -73,9 +71,12 @@ Followed by
 
     <N buckets> with each
     	<Depth> slots with each
-    		is occupied			1 bit
-    		partial hash		31 bits, network order, of which <Z> are relevant.
-    		verify hash			<verifylimit> bytes of the verify hash
+    		sequence of ( bit-hash + 1 )/ 8 rounded up bytes:	
+	    		is occupied		1 			bit
+    			partial hash	bits-hash	bits
+    			padding			*			any padding bits set to 0 if bits-hash +1 not a multiple of 8
+       		verify hash			bits-verify	bits
+    			padding			*			any padding bits set to 0 if bits-verify +1 not a multiple of 8
  
 With the partial hash being limited to the number of bits needed for N buckets.  
 
