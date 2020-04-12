@@ -28,5 +28,14 @@
 
 *	The backend receives this data, verifies the S/MIME signature, verifies that the hash contained in it matches that of the submitted seed and queues the seeds up to the next aggregation cycle.
 
-	
+## Special case for a patient that excercises his right to not know the results of the test.
+
+In (most?) countries a patient has a right to not be informed of a test result in certain contexts.
+
+*	In this	case - the patient generates the hash / 6 + 4 digits -prior- to consultation; and shares the 10 digits with the medical professional.
+
+*	Once the patient has left the room - the professinal may or may not use these to initiate the process
+
+In this case - the user inteface of the appMUST be careful to not disclose this sharing.
+
 
