@@ -19,10 +19,20 @@ The following people are behind this design:
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 
-## A note on the relationship between PEPP-PT and DP-3T
+## Apple and Google Proposal
 
-The Decentralised Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual’s phone. It has been produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
+Apple and Google have released a [joint specification](https://www.apple.com/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/) describing their system support for privacy-preserving proximity tracing on iOS and Android . Their proposal is very similar to our early proposal named ["Low-cost decentralized proximity tracing"](https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf).
+ 
+D3PT appreciates the endorsement of these two companies for our solution and is happy to work with both of them to implement our app on both platforms.
+ 
+But, we also strongly believe that Apple and Google should adopt our subsequent enhancements, detailed in later versions of our [white paper](https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf), which increase user privacy. We also strongly encourage both companies to allow an external audit of their code to ensure its functionality corresponds to its specification.
 
-DP-3T is a free-standing effort started at EPFL and ETHZ that produced this protocol and that is implementing it in a soon-to-be-released, open-sourced app and server. DP-3T sits under the loose umbrella of the ‘Pan-European Privacy-Preserving Proximity Tracing’ (PEPP-PT) project. DP-3T is not the only protocol under this umbrella, which also endorses centralized approaches with very different privacy properties. Pandemics do not respect borders, so there is substantial value in PEPP-PT’s role of encouraging dialogue, knowledge-sharing and facilitating interoperability to enable trans-national roaming.
+## The relationship between DP-3T and PEPP-PT
 
-As the systems endorsed by PEPP-PT have technical differences that yield very different policy-relevant properties, it is a mistake to use the term ‘PEPP-PT’ to describe a specific solution or to refer PEPP-PT as if it embodies a single approach rather than several very different ones.
+The Decentralised Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual's phone. It was produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
+
+DP-3T is a free-standing effort started at EPFL and ETHZ that produced this protocol and that is implementing it in a soon-to-be-released, open-sourced app and server.
+
+DP-3T participates in the loose umbrella of the 'Pan-European Privacy-Preserving Proximity Tracing' (PEPP-PT) project. DP-3T is not the only protocol under this umbrella. PEPP-PT also endorses centralized approaches with very different privacy properties. Pandemics do not respect borders, so there is substantial value in PEPP-PT's role of encouraging dialogue, knowledge-sharing, and interoperability.
+
+Nevertheless, as the systems endorsed by PEPP-PT have technical differences that yield very different privacy properties, it is a mistake to use the term 'PEPP-PT' to describe a specific solution or to refer to PEPP-PT as if it embodies a single approach rather than several very different ones.
