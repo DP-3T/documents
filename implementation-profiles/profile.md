@@ -45,17 +45,17 @@ Test vector:
 
 (Aligned with https://github.com/dirkx/DP-3T-Documents/tree/editable-version/impl/design-2-openssl-C)
 
-The hash shall be a SHA256 (Note; given a reveal 60-90 bits - perhaps not so crucial).
+The key shall be the hash as resulting from 2020/4/12 version of the Whitepaper: H(TRUNCATE128(H(seed))||i). No further hasing is required.
+
+Note - hash propably not needed - less than 20% exposed.
 
 The key shall be 32 bytes which are used as follows:
 
-	byte  0..3		up to Z bits for the LSB of the Cuckoo hash
-	byte  4..7		up to Z bits for the MSB of the Cuckoo hash
-	byte  8..		up to `verifylimit' bytes.
+	byte  0..3		up to <bits-hash bits for the LSB of the Cuckoo hash
+	byte  4..7		up to <bits-hash bits for the MSB of the Cuckoo hash
+	byte  8..		up to `<bits-verify>' bytes.
 		
-Where <Z> is the number of bits needed for the number of buckets (e.g Z=19 if the buckets are is 524288). 
-
-Where verify limit is set as low as is feasible given the acceptable false positive rates.
+Where <bits-hash> and <bits-verify> are set as low as is feasible given the acceptable false positive rates.
 
 The Cuckoo filter shall be serialised as:
 
@@ -80,11 +80,11 @@ Followed by
  
 With the partial hash being limited to the number of bits needed for N buckets.  
 
-And with the Hash 
+So this, 1.0, version of the serialisation does not pack the bits; both hashes are padded to the a full byte.
  
 ### Cuckoo filter publication
 
-The filter should be published prefixed by an RFC3161 timestamp. 
+The filter should be published prefixed by a RFC3161 timestamp. 
 
 
 
