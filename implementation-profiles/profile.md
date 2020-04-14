@@ -1,5 +1,30 @@
 # DP3-T Implementation profile 
-Against version 2020/4/8 of the whitepaper
+
+Against version 2020/4/20 of the whitepaper
+
+## Design 1
+
+The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the 'key’ and the string  “Broadcast key"” (without trailing \0, i.e. exactly those 13 US-ASCII characters is the plaintext (i.e ASCII, not UTF8 with a 2 byte UTF8 bom prefix as in the apple/google proposals")
+
+For a seed of 32 0 bytes:
+	00000000000000000000000000000000
+
+the PRF is the HMAC of that seed taken as a key and the string as the plaintext  (with as per RFC 2014 definition of seed/plaintext). This results into:
+
+	d59d48e21935f3389e3bd3eb02cf66989190b7b09ed6c0a4b9616f49455c4f9a
+
+The PRG is used as the key in AES128 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1 and the plaintext 128 bits of 0’s for each day:
+
+0	8fd521e6c47060efcbfdb9b801c30743
+1	d86e56bb702117b8cf20dc4aadd42310
+2	964ae662b3f174814660846d4f9c11e2
+3	374d270a0c559ad1e4672fb1688ae5ad
+4	b5d017a67940300cd28b59a94f739c0e
+5	3208756abf0314be9ffc27a0c391ee91
+6	75b14e4879cd0d5b06cf2b460ab5559a
+7	6ebfd0d03f8ba78086054f313af52c81
+8	c3db7c504dd6172d1e48804bedbaebba
+
 
 ## Design 2
 
@@ -87,28 +112,4 @@ So this, 1.0, version of the serialisation does not pack the bits; both hashes a
 The filter should be published prefixed by a RFC3161 timestamp. 
 
 
-
-## Design 1
-
-The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the `key’ and the string  “Decentralized Privacy-Preserving Proximity Tracing” (without trailing \0, i.e. exactly those 50 US-ASCII characters is the plaintext.
-
-
-Test vectors:
-
-	SK: 
-		0000000000000000000000000000000000000000000000000000000000000000
-	SK derivation:
-		66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925
-
-
-The PRG used is AES128 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1 and the plaintext 128 bits of 0’s.
-
-	IV: 00000000000000000000000000000000        
-	eph: 0 - Ephemeral(day:0, token:c7044845a6a0da7a61687e1bb08afca4)
- 
-	IV: 00000000000000000000000000000001
-	eph: 1 - Ephemeral(day:0, token:a747e729bf2e3de3ec6ecbdb0f889f5b)
-
-	IV: 00000000000000000000000000000002
-	eph: 2 - Ephemeral(day:0, token:034015608c5a55672315cb614f5a94a3)
 
