@@ -4,7 +4,7 @@ This repository contains a proposal for a secure and decentralized privacy-prese
 
 By publishing this document we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
 
-Open source implementations for iOS, Android, and the back-end server is available on the [other DP-3T repositories](https://github.com/DP-3T/). An explanatory comic [is also available in many languages](public_engagement/cartoon).
+Open source implementations for iOS, Android, and the back-end server are available on the [other DP-3T repositories](https://github.com/DP-3T/). An explanatory comic [is also available in many languages](public_engagement/cartoon).
 
 If you have a similar project and you believe it would be beneficial to collaborate or exchange ideas drop an email here: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 
