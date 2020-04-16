@@ -4,9 +4,20 @@ Against version 2020/4/20 of the whitepaper
 
 ## Design 1
 
-The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the 'key’ and the string  “Broadcast key"” (without trailing \0, i.e. exactly those 13 US-ASCII characters is the plaintext (i.e ASCII, not UTF8 with a 2 byte UTF8 bom prefix as in the apple/google proposals")
+The PRF used is HMAC-SHA256 as per RFC 6234 and RFC 2104 - and and where Skt_ is used as the 'key’ and the string  “Broadcast key"” (without trailing \0, i.e. exactly those 13 US-ASCII characters is the plaintext (i.e ASCII, not UTF8 with a 2 byte UTF8 bom prefix as in the apple/google proposals"):
+
+     const unsigned char plaintext[ 13 ] = {
+             0x42, 0x72, 0x6f, 0x61, 0x64, 0x63, 0x61, 
+             0x73, 0x74, 0x20, 0x6b, 0x65, 0x79
+     };
+
+**Attention**: in some places in the documents/reference pager the string 'broadcast key' is used (first char lowercase).
+
+
+#### Example PRF
 
 For a seed of 32 0 bytes:
+
 	00000000000000000000000000000000
 
 the PRF is the HMAC of that seed taken as a key and the string as the plaintext  (with as per RFC 2014 definition of seed/plaintext). This results into:
@@ -103,10 +114,10 @@ Followed by
        		verify hash			bits-verify	bits
     			padding			*			any padding bits set to 0 if bits-verify +1 not a multiple of 8
  
-With the partial hash being limited to the number of bits needed for N buckets.  
+With the partial hash being limited to the number of bits needed for N buckets. 
 
-So this, 1.0, version of the serialisation does not pack the bits; both hashes are padded to the a full byte.
- 
+So this, 1.0, version of the serialisation does not pack the bits; both hashes are padded to the a full byte. Version numbers are semantically meaningful.
+
 ### Cuckoo filter publication
 
 The filter should be published prefixed by a RFC3161 timestamp. 
