@@ -11,7 +11,7 @@ including:
 
 * Prof. Edouard Buginon: Co-Founder of VMWare, Former Vice President at Cisco
 * Prof. Srdjan Capkun: ERC Awardee, Fellow of the ACM, Director of the Zurich Information and Privacy Centre
-* Prof. James Larus: Former Director of Research and Strategy for Micorsoft eXtreme Computing Group
+* Prof. James Larus: Former Director of Research and Strategy for Microsoft eXtreme Computing Group
 * Prof. Kenny Paterson: Fellow of the International Association of Cryptologic Research, Former Manager at Hewlett-Packard Laboratories Europe
 * Prof. Mathias Payer: ERC Awardee
 * Prof. Bart Preneel: Former President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research.
