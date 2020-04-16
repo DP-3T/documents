@@ -13,17 +13,17 @@ the PRF is the HMAC of that seed taken as a key and the string as the plaintext 
 
 	d59d48e21935f3389e3bd3eb02cf66989190b7b09ed6c0a4b9616f49455c4f9a
 
-The PRG is used as the key in AES128 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1 and the plaintext 128 bits of 0’s for each day:
+The PRG is used as the key in AES256 in counter mode; with the IV set to a 128 bit unsigned number in network order (i.e the first IV is a byte array if [  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 ]) we start at 0, not 1 and the plaintext 128 bits of 0’s for each day:
 
-0	8fd521e6c47060efcbfdb9b801c30743
-1	d86e56bb702117b8cf20dc4aadd42310
-2	964ae662b3f174814660846d4f9c11e2
-3	374d270a0c559ad1e4672fb1688ae5ad
-4	b5d017a67940300cd28b59a94f739c0e
-5	3208756abf0314be9ffc27a0c391ee91
-6	75b14e4879cd0d5b06cf2b460ab5559a
-7	6ebfd0d03f8ba78086054f313af52c81
-8	c3db7c504dd6172d1e48804bedbaebba
+	0	8fd521e6c47060efcbfdb9b801c30743
+	1	d86e56bb702117b8cf20dc4aadd42310
+	2	964ae662b3f174814660846d4f9c11e2
+	3	374d270a0c559ad1e4672fb1688ae5ad
+	4	b5d017a67940300cd28b59a94f739c0e
+	5	3208756abf0314be9ffc27a0c391ee91
+	6	75b14e4879cd0d5b06cf2b460ab5559a
+	7	6ebfd0d03f8ba78086054f313af52c81
+	8	c3db7c504dd6172d1e48804bedbaebba
 
 
 ## Design 2
