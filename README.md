@@ -9,13 +9,13 @@ We are a international consortium of technologists, legal experts, engineers and
 We are led from EPFL in Switzerland by Prof. Carmela Troncoso a leading expert in privacy, and call upon experts from various countries including Belgium, Germany, Italy, the Netherlands, Switzerland and the United Kingdom. Our team consists of people with a wide range of experience
 including:
 
-* Prof. Edouard Buginon*: Co-Founder of VMWare, Former Vice President at Cisco
-* Prof. Srdjan Capkun*: ERC Awardee, Fellow of the ACM, Director of the Zurich Information and Privacy Centre
-* Prof. James Larus*: Former Director of Research and Strategy for Micorsoft eXtreme Computing Group
-* Prof. Kenny Paterson*: Fellow of the International Association of Cryptologic Research, Former Manager at Hewlett-Packard Laboratories Europe
-* Prof. Mathias Payer*: ERC Awardee
-* Prof. Bart Preneel*: Former President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research.
-* Prof. Nigel Smart*: ERC Awardee, Former Vice-President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research, Co-Founder of UnBound Tech.
+* Prof. Edouard Buginon: Co-Founder of VMWare, Former Vice President at Cisco
+* Prof. Srdjan Capkun: ERC Awardee, Fellow of the ACM, Director of the Zurich Information and Privacy Centre
+* Prof. James Larus: Former Director of Research and Strategy for Micorsoft eXtreme Computing Group
+* Prof. Kenny Paterson: Fellow of the International Association of Cryptologic Research, Former Manager at Hewlett-Packard Laboratories Europe
+* Prof. Mathias Payer: ERC Awardee
+* Prof. Bart Preneel: Former President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research.
+* Prof. Nigel Smart: ERC Awardee, Former Vice-President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research, Co-Founder of UnBound Tech.
 
 In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
 
