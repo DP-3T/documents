@@ -16,13 +16,16 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
 [German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
-[Spanish](es) (by Vanesa Sánchez Cortés) (CC-0)  
+[Spanish](es) (by Vanesa Sánchez Cortés, @VanesaKershawi) (CC-0)  
 [Finnish](fi) (by Salu Ylirisku) (CC-0)  
 [Brazilian Portuguese](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
 [Catalan](ca) (by Xavi R. Pinteño) (CC-0)  
-[Dutch](nl) [Dutch Version 2](nl2) (by GH:[maaike](www.github.com/maaike), GH:[BjornW](www.github.com/bjornw); GH:[mtwestra](www.github.com/mtwestra)) (CC-0)  
+[Dutch](nl) (by A: GH:[maaike](www.github.com/maaike), B: GH:[BjornW](www.github.com/bjornw); GH:[mtwestra](www.github.com/mtwestra)) (CC-0)  
 [Slovak](sk) (by Martin Nagy) (CC-0)  
 [Hindi](hi) (currently short version only, by Vikas Dhiman GH:[wecacuee](https://github.com/wecacuee))
+[Arabic](ar) (by GH:ezzeldinadel)  
+[Italian](it) (by A: GH:therealpecus, B: GH:robypez, C:Sergio Guida, D:Alberto di Meglio - we did not have Italian, and then lots of translations came before we could upload. Thanks all) (CC-0)  
+[Norwegian](no) (by Johannes Brodwall)
 
 ## 1-page version
 Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
