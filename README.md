@@ -4,7 +4,7 @@ This repository contains a proposal for a secure and decentralized privacy-prese
 
 # Who we are
 
-We are a international consortium of technologists, legal experts, engineers and epidemiologists with a wide range of experience who are interested in ensuring that any proximity tracing technology does not result in governments obtaining surveillance capabilities which will endager civil society.
+We are a international consortium of technologists, legal experts, engineers and epidemiologists with a wide range of experience who are interested in ensuring that any proximity tracing technology does not result in governments obtaining surveillance capabilities which will endanger civil society.
 
 We are led from EPFL in Switzerland by Prof. Carmela Troncoso a leading expert in privacy, and call upon experts from various countries including Belgium, Germany, Italy, the Netherlands, Switzerland and the United Kingdom. Our team consists of people with a wide range of experience
 including:
