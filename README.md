@@ -21,7 +21,10 @@ In this repository you will find various documents defining our specification. T
 
 By publishing these documents we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. We feel it is vital that designs are made public so the wider community can verify their claimed privacy gaurantees before they are deployed across a whole population.
 
-Open source implementations for iOS, Android, and the back-end server are available on the [other DP-3T repositories](https://github.com/DP-3T/). An explanatory comic [is also available in many languages](public_engagement/cartoon).
+Open source implementations for iOS, Android, and the back-end server are available on the [other DP-3T repositories](https://github.com/DP-3T/). DP-3T alphas are public for testing and feedback: [Android](https://github.com/DP-3T/dp3t-app-android) and [iOS](https://github.com/DP-3T/dp3t-app-ios).
+
+An explanatory comic [is also available in many languages](public_engagement/cartoon).
+
 
 If you have a similar project and you believe it would be beneficial to collaborate or exchange ideas drop an email here: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 
