@@ -1,6 +1,6 @@
 # Comic auf Deutsch
 
-![Download als PDF](https://github.com/DP-3T/documents/raw/master/public_engagement/cartoon/de/comic-de.pdf)
+[Download des Comics als PDF](https://github.com/DP-3T/documents/raw/master/public_engagement/cartoon/de/comic-de.pdf)
 
 ![Seite 1](de_panel0001.png)
 ![Seite 2](de_panel0002.png)
