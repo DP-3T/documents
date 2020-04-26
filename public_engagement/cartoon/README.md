@@ -26,6 +26,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Arabic](ar) (by GH:ezzeldinadel) (CC-0)  
 [Italian](it) (by A: GH:therealpecus, B: GH:robypez, C:Sergio Guida, D:Alberto di Meglio - we did not have Italian, and then lots of translations came before we could upload. Thanks all) (CC-0)  
 [Norwegian](no) (by Johannes Brodwall) (CC-0)  
+[Lithuanian](lt) (by Ieva Mockute) (CC-0) 
 
 ## 1-page version
 Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
