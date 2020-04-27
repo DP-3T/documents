@@ -191,6 +191,9 @@ privatlivs-beskyttende protokol)
       & Prof. Marcel Salathé (epidemiologi)  
 
 
+Dansk oversættelse: Jonas Bardino, https://github.com/jonasbardino (CC-0)
+
+
 = Kort udgave =
 Tekst til den korte udgave
 
@@ -236,3 +239,5 @@ og det er er ''sådan'' kontaktsporings kan beskytte både dit helbred og dit pr
 
 ^^^af Nicky Case (ncase.me). CC0/public domain, videresen gerne hvor som helst!
 
+
+Dansk oversættelse: Jonas Bardino, https://github.com/jonasbardino (CC-0)
