@@ -6,7 +6,7 @@ Alice's phone broadcasts a random message every few minutes.
 Telefon Alicji rozsyła wiadomości o losowej treści co kilka minut.
 
 Alice sits next to Bob. Their phones exchange messages.
-Alicja siedzi obok Roberta.  Ich telefony wymieniają wiadomości.
+Alicja siedzi obok Roberta. Ich telefony wymieniają wiadomości.
 
 WHAT I SAID
 TO CO WYSŁAŁEM
@@ -34,5 +34,3 @@ Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert by
 
 And that's how contact tracing can protect our health and privacy!
 I w taki sposób śledzenie kontaktu międzyludzkiego może chronić twoje zdrowie i prywatność jednocześnie.
-
-
