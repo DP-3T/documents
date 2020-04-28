@@ -32,6 +32,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Portuguese (Brazilian)](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
 [Slovak](sk) (by Martin Nagy) (CC-0)  
 [Spanish](es) (by Vanesa Sánchez Cortés, @VanesaKershawi) (CC-0)  
+[Turkish](tr) (by GH:alpsayin) (CC-0)
 
 ## 1-page version
 Nicky has also created a one-page version, with fewer panes and more simplified content, which, like the others, is totally free for journalists and others to reuse, as it is CC-0. This has less detail on the protocol than the larger versions so please refer to both if you are looking to adapt it for a newspaper article or similar.
