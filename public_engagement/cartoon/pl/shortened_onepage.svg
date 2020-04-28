@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12374369"
-     inkscape:cx="2131.5811"
-     inkscape:cy="7382.1841"
+     inkscape:zoom="0.10005015"
+     inkscape:cx="2995.3708"
+     inkscape:cy="2280.9046"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -94,15 +94,15 @@
        id="text907"
        inkscape:label="header"><tspan
          sodipodi:role="line"
-         id="tspan905"
          x="658.51562"
          y="-548.35504"
-         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.18520828">JAK DZIAŁA ŚLEDZENIE KONTAKTU MIĘDZYLUDZKIEGO</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.18520828"
+         id="tspan1087">JAK DZIAŁA ANONIMOWE MONITOROWANIE</tspan><tspan
          sodipodi:role="line"
          x="658.51562"
          y="-515.66876"
          style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.18520828"
-         id="tspan1087">BEZ UJAWNIANIA DANYCH OSOBOWYCH</tspan></text>
+         id="tspan80">KONTAKTÓW MIĘDZYLUDZKICH</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot933"
@@ -213,37 +213,22 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara939-6-0-5-1">...ale telefon Roberta może sprawdzić, czy nie odebrał którejś z wiadomości od zarażonej osoby.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
-       id="flowRoot933-3-7-2-97-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.18520832,0,0,0.18520832,214.77523,582.6458)"
-       inkscape:transform-center-x="422.27498"
-       inkscape:transform-center-y="-26.458332"
-       inkscape:label="panel7"><flowRegion
-         id="flowRegion935-6-9-3-3-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle"><rect
-           id="rect937-0-2-7-6-3"
-           width="2113.4736"
-           height="831.24603"
-           x="108.57143"
-           y="1725.7146"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara939-6-0-5-1-1">Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert był wystawiony zbyt długo i otrzyma ostrzeżenie.</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
        id="flowRoot933-3-7-2-97-2-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.18520832,0,0,0.18520832,650.14453,574.7991)"
-       inkscape:transform-center-x="422.27498"
-       inkscape:transform-center-y="-26.458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.01382291"
+       transform="matrix(0.1826831,0,0,0.1826831,654.72676,583.59904)"
+       inkscape:transform-center-x="416.51748"
+       inkscape:transform-center-y="-26.09758"
        inkscape:label="panel8"><flowRegion
          id="flowRegion935-6-9-3-3-9-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle"><rect
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle;stroke-width:1.01382291"><rect
            id="rect937-0-2-7-6-3-7"
-           width="2294.1699"
-           height="744.48645"
-           x="108.57143"
-           y="1725.7146"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara939-6-0-5-1-1-8">I w taki sposób śledzenie kontaktu międzyludzkiego może chronić twoje zdrowie i prywatność jednocześnie.</flowPara></flowRoot>    <text
+           width="2463.876"
+           height="930.35449"
+           x="11.596801"
+           y="1677.2273"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle;stroke-width:1.01382291" /></flowRegion><flowPara
+         id="flowPara939-6-0-5-1-1-8"
+         style="stroke-width:1.01382291">W taki sposób monitorowanie kontaktów międzyludzkich może chronić twoje zdrowie i prywatność jednocześnie.</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.36505318px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';letter-spacing:0px;word-spacing:0px;fill:#acacac;fill-opacity:1;stroke:none;stroke-width:1"
        x="667.84412"
@@ -445,5 +430,22 @@
          y="626.94794"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#747474;fill-opacity:1;stroke-width:0.33716634"
          id="tspan1136">ODEBRAŁEM</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot933-3-7-2-9-0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.14999998;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.07248163"
+       transform="matrix(0.17269137,0,0,0.17269137,187.58067,613.61066)"
+       inkscape:transform-center-x="393.73634"
+       inkscape:transform-center-y="-24.670196"
+       inkscape:label="panel5"><flowRegion
+         id="flowRegion935-6-9-3-2-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.14999998;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle;stroke-width:1.07248163"><rect
+           id="rect937-0-2-7-2-3"
+           width="2594.5071"
+           height="788.45685"
+           x="108.57143"
+           y="1725.7146"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:168px;line-height:1.14999998;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';text-align:center;text-anchor:middle;stroke-width:1.07248163" /></flowRegion><flowPara
+         style="line-height:1.14999998;text-align:center;text-anchor:middle;stroke-width:1.07248163"
+         id="flowPara218">Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert miał kontakt z osobami zakażonymi zbyt długo i otrzyma ostrzeżenie.</flowPara></flowRoot>  </g>
 </svg>
