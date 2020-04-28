@@ -34,11 +34,36 @@ Nie musimy nawet wykryć wszystkich przypadków! Wystarczy znaleźć około 60% 
 
 panel0004.png
 
+...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow.
+...ale potrzebujemy znaleźć je szybko. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
+
+Hence, why we need contact tracing apps.
+Dlatego potrzebujemy aplikacji do monitorowania.
+
+But do we have to sacrifice privacy for health?
+Ale czy musimy poświęcić naszą prywatność w zamian za zdrowie?
+
 panel0005.png
+
+HECK NO!
+NIE MA MOWY!
+MOWY NIE MA!
 
 panel0006.png
 
+It's entirely possible to protect peoples' lives AND liberties, with a really simple process!
+Całkowicie możliwa jest jednoczesna ochrona zdrowia i prywatności, używając pewnego prostego procesu!
+
+Let's see how it works, with the help of Alice & Bob...
+Z pomocą Alicji i Bartka zobaczymy jak to działa...
+
 panel0007.png
+
+Alice gets a tracing app! (& its code is open to the public, so folks can verify it in fact does the following...)
+
+Every 5 minutes, her phone says uniquely random gibberish to all nearby devices, using Bluetooth.
+
+* 5 minutes is just an example! and technically it's "pseudorandom", since it's not quantum... does NOT matter.
 
 panel0010.png
 
