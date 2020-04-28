@@ -1,6 +1,5 @@
 HOW PRIVACY-FIRST CONTACT TRACING WORKS
-JAK DZIAŁA ZORIENTOWANE NA PRYWATNOŚĆ ŚLEDZENIE KONTAKTU MIĘDZYLUDZKIEGO
-JAK DZIAŁA ŚLEDZENIE KONTAKTU MIĘDZYLUDZKIEGO BEZ UJAWNIANIA DANYCH OSOBOWYCH
+JAK DZIAŁA ANONIMOWE MONITOROWANIE KONTAKTÓW MIĘDZYLUDZKICH
 
 Alice's phone broadcasts a random message every few minutes.
 Telefon Alicji rozsyła wiadomości o losowej treści co kilka minut.
@@ -33,4 +32,4 @@ If it "heard" enough messages, meaning Bob was exposed for a long enough time, h
 Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert był wystawiony zbyt długo i otrzyma ostrzeżenie.
 
 And that's how contact tracing can protect our health and privacy!
-I w taki sposób śledzenie kontaktu międzyludzkiego może chronić twoje zdrowie i prywatność jednocześnie.
+I w taki sposób monitorowanie kontaktów międzyludzkich może chronić twoje zdrowie i prywatność jednocześnie.
