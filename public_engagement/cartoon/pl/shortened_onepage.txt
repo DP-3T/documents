@@ -29,7 +29,7 @@ Ponieważ treści wiadomości są losowe, to szpital nie uzyskuje żadnych danyc
 ...ale telefon Roberta może sprawdzić, czy nie odebrał którejś z wiadomości od zarażonej osoby.
 
 If it "heard" enough messages, meaning Bob was exposed for a long enough time, he'll be alerted.
-Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert był wystawiony zbyt długo i otrzyma ostrzeżenie.
+Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert miał kontakt z osobami zakażonymi zbyt długo i otrzyma ostrzeżenie.
 
 And that's how contact tracing can protect our health and privacy!
-I w taki sposób monitorowanie kontaktów międzyludzkich może chronić twoje zdrowie i prywatność jednocześnie.
+W taki sposób monitorowanie kontaktów międzyludzkich może chronić twoje zdrowie i prywatność jednocześnie.
