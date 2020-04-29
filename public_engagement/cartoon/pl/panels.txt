@@ -4,7 +4,7 @@ PROTECTING LIVES & LIBERTY
 OCHRONA ŻYCIA I PRYWATNOŚCI
 
 how contact tracing apps can foil both COVID-19 and Big Brother
-jak aplikacją monitorująca kontakty międzyludzkie możne chronić zarówno przed COVID-19 jak i rządem
+jak aplikacja monitorująca kontakty międzyludzkie możne chronić zarówno przed COVID-19 jak i rządem
 
 
 panel0002.png
@@ -16,10 +16,10 @@ You're contagious ~2 days before you know you're infected.
 Zaraża się około 2 dni nim się wie, że jest się chorym.
 
 But it takes ~3 days to become contagious, so if we quarantine folks exposed to you the day you know you're infected...
-Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz gdy one się dowie o swojej chorobie...
+Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz gdy on się dowie o swojej chorobie...
 
 We stop the spread, by staying one step ahead!
-Zatrzymam rozprzestrzenianie się wirusa i będziemy jeden krok przed nim!
+Zatrzymam rozprzestrzenianie się wirusa i będziemy o jeden krok przed nim!
 
 * what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
 * a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu
@@ -58,7 +58,7 @@ It's entirely possible to protect peoples' lives AND liberties, with a really si
 Całkowicie możliwa jest jednoczesna ochrona zdrowia i prywatności, używając pewnego prostego procesu!
 
 Let's see how it works, with the help of Alice & Bob...
-Z pomocą Alicji i Bartka zobaczymy jak to działa...
+Z pomocą Alicji i Roberta zobaczymy jak to działa...
 
 panel0007.png
 
