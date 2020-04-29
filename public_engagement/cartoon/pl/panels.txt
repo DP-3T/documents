@@ -21,6 +21,8 @@ Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujem
 We stop the spread, by staying one step ahead!
 Zatrzymam rozprzestrzenianie się wirusa i będziemy jeden krok przed nim!
 
+* what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
+
 panel0003.png
 
 This is called "contact tracing". It's a core part of how South Korea & Taiwan are already containing COVID-19, and what we must do, too.
@@ -38,7 +40,7 @@ panel0004.png
 ...ale potrzebujemy znaleźć je szybko. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
 
 Hence, why we need contact tracing apps.
-Dlatego potrzebujemy aplikacji do monitorowania.
+Dlatego potrzeba aplikacji do monitorowania.
 
 But do we have to sacrifice privacy for health?
 Ale czy musimy poświęcić naszą prywatność w zamian za zdrowie?
