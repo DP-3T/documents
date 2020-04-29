@@ -22,6 +22,7 @@ We stop the spread, by staying one step ahead!
 Zatrzymam rozprzestrzenianie się wirusa i będziemy jeden krok przed nim!
 
 * what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
+* a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu
 
 panel0003.png
 
@@ -32,7 +33,7 @@ We wouldn't even need to find all the contacts! We only need to find ~60% of the
 Nie musimy nawet wykryć wszystkich przypadków! Wystarczy znaleźć około 60% z nich...
 
 * ~60%? again, see citations at the end!
-* odnośnie 60% zobacz cytaty na końcu!
+* odnośnie 60% zobacz przypisy na końcu!
 
 panel0004.png
 
