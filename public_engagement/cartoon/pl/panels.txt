@@ -37,7 +37,7 @@ Nie musimy nawet wykryć wszystkich przypadków! Wystarczy znaleźć około 60% 
 panel0004.png
 
 ...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow.
-...ale potrzebujemy znaleźć je szybko. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
+...ale potrzebujemy je szybko znaleźć. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
 
 Hence, why we need contact tracing apps.
 Dlatego potrzeba aplikacji do monitorowania.
