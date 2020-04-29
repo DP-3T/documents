@@ -53,7 +53,7 @@ Alice henter sig en kontaktsporings-app!
 (& dens kildekode er endda offentligt tilgængelig, så enhver kode-kyndig kan
 kontrollere at den faktisk gør som her beskrevet ...)
 
-Hvert 5. minut ''siger'' Alices telefon tilfældigt sludder over Bluetooth til
+Hvert 5. minut "siger" Alices telefon tilfældigt sludder over Bluetooth til
 alle andre enheder i nærheden. Hver besked er unik og bruges kun én gang.
 
 * 5 minutter er bare et eksempel! Og rent teknisk er det "pseudo-tilfældigt", i
@@ -112,7 +112,7 @@ Databasen gemmer Alices sludder:
     Hvad COVID-19-ramte sagde
 
 Igen: de tilfældige beskeder afslører INGEN INFORMATION til hospitalet om hvor
-Alice var, hvem hun var sammen med, hvad de lavede, eller ''hvor'' mange
+Alice var, hvem hun var sammen med, hvad de lavede, eller ''hvor mange''
 mennesker Alice mødte! De er meningsløse for hospitalet...
 
 * forskellige landes hospitaler kunne udveksle beskederne, men i og med de ikke
