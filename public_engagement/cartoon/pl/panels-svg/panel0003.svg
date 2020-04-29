@@ -6,11 +6,42 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1706.6667 2560"
-   height="2560"
-   width="1706.6667"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="72"
+   inkscape:export-xdpi="72"
+   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0003.png"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   sodipodi:docname="panel0003.svg"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="1706.6667"
+   height="2560"
+   viewBox="0 0 1706.6667 2560">
+  <sodipodi:namedview
+     inkscape:snap-global="false"
+     inkscape:snap-page="true"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox="false"
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="509"
+     inkscape:cy="1513.0261"
+     inkscape:cx="1018.0592"
+     inkscape:zoom="0.20429687"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="718"
+     inkscape:window-width="857"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -24,11 +55,40 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6" />
+     id="defs6">
+    <mask
+       id="mask93"
+       maskUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         id="path95" />
+    </mask>
+    <mask
+       id="mask101"
+       maskUnits="userSpaceOnUse">
+      <rect
+         y="2557.6377"
+         x="3518.8103"
+         height="545.83112"
+         width="1502.1385"
+         id="rect103"
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953" />
+    </mask>
+  </defs>
+  <rect
+     sodipodi:insensitive="true"
+     inkscape:label="background"
+     y="4.9541842e-07"
+     x="1.074161e-06"
+     height="2560"
+     width="1706.6667"
+     id="rect97"
+     style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377952" />
   <image
-     y="0"
-     x="0"
-     id="image10"
+     sodipodi:insensitive="true"
+     id="image157"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAeACAIAAAAeqW1RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
 IGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
@@ -1066,5 +1126,80 @@ BAEYAACAIPz/AdeNEsE9t32hAAAAAElFTkSuQmCC
 "
      preserveAspectRatio="none"
      height="2560"
-     width="1706.6667" />
+     width="1706.6667"
+     x="0"
+     y="0" />
+  <text
+     id="text10"
+     y="202.39328"
+     x="106.94682"
+     style="font-style:normal;font-weight:normal;font-size:133.333px;line-height:1.1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     xml:space="preserve"><tspan
+       id="tspan26"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="202.39328"
+       x="106.94682"
+       sodipodi:role="line">Nazywamy to &quot;monitorowaniem</tspan><tspan
+       id="tspan166"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="349.95309"
+       x="106.94682"
+       sodipodi:role="line">kontaktów międzyludzkich&quot;. To</tspan><tspan
+       id="tspan168"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="497.51291"
+       x="106.94682"
+       sodipodi:role="line">tak Korea Południowa i Taiwan</tspan><tspan
+       id="tspan170"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="645.07269"
+       x="106.94682"
+       sodipodi:role="line">zatrzymały rozprzestrzenianie</tspan><tspan
+       id="tspan172"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="792.63251"
+       x="106.94682"
+       sodipodi:role="line">się COVID-19, i my też musimy</tspan><tspan
+       id="tspan174"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       y="940.19238"
+       x="106.94682"
+       sodipodi:role="line">to zrobić.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:133.333px;line-height:1.1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     x="111.78283"
+     y="1947.1765"
+     id="text188"><tspan
+       sodipodi:role="line"
+       x="111.78283"
+       y="1947.1765"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
+       id="tspan186">Nie musimy nawet wykryć</tspan><tspan
+       id="tspan210"
+       sodipodi:role="line"
+       x="111.78283"
+       y="2094.7363"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">wszystkich przypadków!</tspan><tspan
+       id="tspan212"
+       sodipodi:role="line"
+       x="111.78283"
+       y="2242.2961"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">Wystarczy znaleźć około 60%</tspan><tspan
+       id="tspan214"
+       sodipodi:role="line"
+       x="111.78283"
+       y="2389.856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">z nich...</tspan></text>
+  <text
+     id="text224"
+     y="2507.5867"
+     x="39.767483"
+     style="font-style:normal;font-weight:normal;font-size:74.6667px;line-height:1.1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999995"
+       y="2507.5867"
+       x="39.767483"
+       sodipodi:role="line"
+       id="tspan222">* odnośnie ~60% zobacz cytaty na końcu!</tspan></text>
 </svg>
