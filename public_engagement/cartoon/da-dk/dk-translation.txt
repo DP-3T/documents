@@ -2,30 +2,32 @@
 Tekst til den fulde udgave af striben
 
 == Panel 1 ==
-Beskyt liv og frihed
-Hvordan kontaktsporings-apps kan hindre både COVID-19 og Big Brother
+BESKYT LIV & FRIHED
+Hvordan apps til kontaktsporing kan slå både COVID-19 og Big Brother
+[Alternativt: kan få has på? spille et puds?]
 
 == Panel 2 ==
 Et af problemerne med COVID-19:
-du kan smitte ~2 dage ''før'' du ved du er smittet.
+Du kan allerede smitte ca. 2 dage ''før'' du opdager at du er smittet.
 
     virus udbredes stadig!
 
-Men det tager ~3 dage før du selv smitter, så hvis vi sætter folk i karantæne,
-hvis de har været nær dig indtil den dag du ved du er smittet ...
+Men det tager ca. 3 dage fra du smittes til du selv smitter. Så hvis vi får
+personer, som har været i kontakt med dig i karantæne, samme dag som du erfarer
+at du er smittet ...
 
-kan vi stoppe smittespredningen, ved at holde os ét skridt foran!
+... kan vi holde os ét skridt foran og stoppe smittespredningen!
 
-* hvad med smittede som ikke udviser symptomer? det viser sig at de ikke spiller
+* hvad med smittede, som slet ikke får symptomer? Det viser sig at de ikke spiller
   en væsentlig rolle i spredning af COVID-19! mere i kilderne til sidst.
 
 == Panel 3 ==
-Idéen kaldes "kontaktsporing". Det er en hjørnesten i hvordan Sydkorea og Taiwan
-allerede ''aktivt'' inddæmmer COVID-19, og hvad vi også må gøre.
+Idéen kaldes "kontaktsporing". Det er krumtappen i hvordan Sydkorea og Taiwan
+allerede ''aktivt'' inddæmmer COVID-19, og hvad vi også skulle gøre.
 
-Vi behøver ikke engang at finde alle kontakterne! Det er nok at finde ~60% af dem...
+Vi behøver ikke engang at finde alle kontakterne! Det er nok at finde ca. 60% af dem...
 
-* ~60%? igen, mere derom i kilderne til sidst!
+* ca. 60%? igen, mere om det i kilderne til sidst!
 
 == Panel 4 ==
 ... men vi ''skal'' finde dem hurtigt. Traditionel kontaktsporing med personlige
@@ -33,47 +35,47 @@ interviews går for langsomt.
 
 Derfor har vi brug for ''apps'' til kontaktsporing.
 
-Men behøver vi virelig at ofre privatliv for helbredets skyld?
+Men skal det absolut være på bekostning af vores privatliv?
 
 == Panel 5 ==
-For dælen
+Nej, nej
 
          NEJ!
 
 == Panel 6 ==
-Det er fuldt ud muligt at beskytte folks liv OG frihedsrettigheder med en
-virkelig enkel fremgangsmåde!
+Vi kan sagtens beskytte folks liv OG frihedsrettigheder på en
+helt enkel måde!
 
 Lad os se hvordan det fungerer med hjælp fra Alice & Bob ... 
 
 == Panel 7 ==
-Alice får sig en kontaktsporings-app!
-(& dens kildekode er endda åben for offentligheden så alle kode-kyndige kan
-verificere at den faktisk gør som følger ...)
+Alice henter sig en kontaktsporings-app!
+(& dens kildekode er endda offentligt tilgængelig, så enhver kode-kyndig kan
+kontrollere at den faktisk gør som her beskrevet ...)
 
-Hvert 5. minut siger hendes telefon unik tilfældig sludder til alle andre
-enheder i nærheden med Bluetooth på.
+Hvert 5. minut ''siger'' Alices telefon tilfældigt sludder over Bluetooth til
+alle andre enheder i nærheden. Hver besked er unik og bruges kun én gang.
 
-* 5 minutter er bare et eksempel! og rent teknisk er det "pseudo-tilfældigt", i
+* 5 minutter er bare et eksempel! Og rent teknisk er det "pseudo-tilfældigt", i
   og med det ikke er kvante... det er IKKE vigtigt.
 
 == Panel 8 ==
-Fordi beskederne er tilfældige & og ikke bruger GPS, indeholder de INGEN
-INFORMATION om Alices identitet, position eller lignende.
+Beskederne er tilfældige og bruger ikke GPS. De indeholder INGEN
+INFORMATION om Alices identitet, lokation eller noget sådant.
 
 Imens hendes telefon udsender tilfældige beskeder, ''lytter'' den også efter
 beskeder fra telefoner i nærheden.
 
 == Panel 9 ==
-For eksempel Bobs.
+For eksempel fra Bobs.
 
-Bob har også en kontaktsporings-app med privatliv i højsædet, som er kompatibel
-(eller identisk) med den Alice bruger.
+Bob har også en privatlivssikret kontaktsporings-app, som er kompatibel
+(eller identisk) med Alices.
 
     *host*
 
 Hvis Alice & Bob opholder sig tæt på hinanden i mere end 5 minutter udveksler
-deres telefoner unik sludder.
+deres telefoner unikt sludder.
 
 == Panel 10 ==
 Begge deres telefoner husker alle de beskeder de har sagt & hørt i de seneste 14
@@ -81,71 +83,70 @@ dage.
 
   Hvad jeg sagde     Hvad jeg hørte
 
-Igen: fordi de tilfældige beskeder INGEN INFORMATION giver om Alice, forbliver
-hendes privatliv fuldt ud skærmet fra Bob og omvendt! 
+Igen: de tilfældige beskeder indeholder INGEN INFORMATION om Alice. Derfor
+forbliver hendes privatliv skjult for Bob og omvendt! 
 
-* 14 dage er også bare et eksempel! epidemiologer opdager måske senere at
-"smitteperioden" faktisk er kortere eller længere.
+* 14 dage er også bare et eksempel! Epidemiologer opdager måske senere at
+"smitteperioden" faktisk varer kortere eller længere.
 
 == Panel 11 ==
-Næste dag udvikler Alice en tør hoste og feber.
+Næste dag får Alice tør hoste og feber.
 Hun bliver testet.
 
 Alice har COVID-19.
 Det er en skidt dag for Alice.
 
 == Panel 12 ==
-Men hun skal ikke lide til ingen nytte!
-Alice uploader sine "Hvad jeg sagde"-beskeder til en hospitalsdatabase vha en
-engangskode hun får fra sin læge (koden er for at forhindre spam).
+Men hun skal ikke lide forgæves!
+Alice uploader sine "Hvad jeg sagde"-beskeder til en hospitalsdatabase v.h.a. en
+engangskode fra sin læge (koden er for at forhindre spam).
 
         Hvad jeg sagde
 
-Alice kan også ''skjule'' beskeder om tidspunkter hun vil holde privat,
+Alice kan også ''skjule'' beskeder om tidspunkter hun vil holde for sig selv,
 eksempelvis hjemmeaftener!
 
 == Panel 13 ==
 Databasen gemmer Alices sludder:
 
-    Hvad COVID-19 tilfælde sagde
+    Hvad COVID-19-ramte sagde
 
 Igen: de tilfældige beskeder afslører INGEN INFORMATION til hospitalet om hvor
 Alice var, hvem hun var sammen med, hvad de lavede, eller ''hvor'' mange
 mennesker Alice mødte! De er meningsløse for hospitalet...
 
 * forskellige landes hospitaler kunne udveksle beskederne, men i og med de ikke
-  indeholder information krænkes intet privatliv derved. 
+  indeholder information krænkes stadig intet privatliv. 
 
 == Panel 14 ==
 ... men ikke for Bob!
 
-    Hvad COVID-19 tilfælde sagde
+    Hvad COVID-19-ramte sagde
     
                                       Hvad jeg hørte
 
-Bobs telefon kigger jævnligt på hospitalets liste af tilfældige beskeder fra
-COVID-19 tilfælde, og ser om den "hørte" nogen af dem fra telefoner i nærheden
-over de seneste 14 dage.
+Bobs telefon tjekker jævnligt hospitalets liste med tilfældige beskeder fra
+COVID-19-ramte, og ser om den har "hørt" nogen af dem før fra telefoner i nærheden
+de seneste 14 dage.
 
-(Beskedernes sludder giver Bob INGEN ANDRE PERSONOPLYSNIGER.)
+(Beskedernes sludder giver INGEN ANDRE PERSONOPLYSNIGER til Bob.)
 
-* den virkelige protokol i DP-3T er ENDNU mere sikker! den bruger et
-  "gøge-filter (cuckoo filter)" så telefoner KUN kender til de COVID-19 beskeder
-  de hørte, uden at afsløre ALLE COVID-19 beskeder.
+* den ægte DP-3T-protokol er ENDNU mere sikker! Den bruger et såkaldt
+  "cuckoo filter", så telefoner KUN bliver bekendt med de COVID-19 beskeder
+  de selv hørte, uden at afsløre ALLE øvrige COVID-19 beskeder.
 
 == Panel 15 ==
-Hvis den f.eks. hørte beskeder fra 6 eller flere COVID-19 tilfælde (6 x 5 min =
-30 min smitte-eksponering i alt) giver telefonen Bob en advarsel om at gå i
-selv-karantæne.
+Hvis den f.eks. hørte beskeder fra 6 eller flere COVID-19-ramte (6 x 5 min =
+30 min eksponeringstid) advarer telefonen Bob om at gå i hjemme-karantæne.
 
-Så Bob afskærer smittekæden - et skridt foran virussen!
+Dermed bryder Bob smittekæden - et skridt foran virussen!
 
-* igen er tallene her bare eksempler!
+* disse tal er igen bare eksempler!
 
 == Panel 16 ==
 Det var det!
 
-Det er sådan digital kontaktsporing proaktivt kan hindre spredningen af COVID-19
+Det er sådan digital kontaktsporing proaktivt kan inddæmme spredningen af COVID-19
 ''samtidig'' med at vores rettigheder beskyttes.
 
 Tak, Alice & Bob!
@@ -155,16 +156,16 @@ Pas godt på jer selv.
 == Citations ==
 Kilder:
 
-Denne tegneserie er en kort opsummering af DP-3T protokollen, som den så ud den
+Denne tegneserie er en grov opsummering af DP-3T protokollen, som den så ud den
 9. april 2020. Den virkelige løsning er mere kompleks og ''endnu mere'' sikker!
-Se materialet bag:
+Se materialet bag på:
 github.com/DP-3T/documents
 
 Der findes også den lignende privatlivssikrende '''TCN Protocol''':
 github.com/TCNCoalition/TCN
 
 og slutteligt er der studierne fra Oxford Universitet, som viste at
-kontaktsporings-apps kunne inddæmme COVID-19... ''uden'' langtids nedlukninger!
+kontaktsporings-apps kunne inddæmme COVID-19... ''uden'' lang tids nedlukninger!
 
 Ferretti & Wymant et al. "Quantifying SARS-CoV-2 transmission suggests epidemic
 control with digital contact tracing."  Science (2000)
@@ -174,15 +175,17 @@ Denne tegneserie-stribe er
 
 PUBLIC DOMAIN
 
-Det vil sige du ''har'' allerede tilladelse til at videresende den på din egen
-nyhedsside. Ja, vi ville sådan set elske om du integrerede den i din egen
+Det vil sige du allerede ''har'' tilladelse til at dele den på din egen
+nyhedsside. Ja, hvorfor ikke endda integrere den i din egen
 kontaktsporings-app! (så længe den ''faktisk'' følger den beskrevne
-privatlivs-beskyttende protokol)
+privatlivssikrende protokol)
 
 (Du har også allerede tilladelse til at oversætte den! De brugte skrifttyper er
-"Patrick Hand" og "Open Sans")
+"Patrick Hand" og "Open Sans".
 
+Brug gerne den engelske originaludgave som forlæg!)
 
+[behold evt originalsproget ref her?]
     af Nicky Case
     ncase.me + patreon.com/ncase
 
@@ -220,22 +223,22 @@ Begge telefoner husker hvad de sagde & hørte de seneste 14 dage,
 Hvis Alice får COVID-19 sender hun ''sine'' beskeder til et hospital.
 
 == Panel 5 ==
-   Hvad COVID-19 tilfælde sagde
+   Hvad COVID-19-ramte sagde
 
-Fordi beskederne er tilfældige afsløres derved ingen information til hospitalet...
+Fordi beskederne er tilfældige afsløres ingen privat information til hospitalet...
 
 == Panel 6 ==
-   Hvad COVID-19 tilfælde sagde
+   Hvad COVID-19-ramte sagde
                                      Hvad jeg hørte
 
-... men Bobs telefon kan finde ud af om den har "hørt" beskeder fra COVID-19 tilfælde!
+... men Bobs telefon kan finde ud af om den har "hørt" beskeder fra COVID-19-ramte!
 
 == Panel 7 ==
 Hvis den har "hørt" nok beskeder svarende til at Bob har været smitteudsat længe
 nok, bliver han varslet.
 
 == Panel 8 ==
-og det er er ''sådan'' kontaktsporings kan beskytte både dit helbred og dit privatliv!
+og det er er ''sådan'' kontaktsporing kan beskytte både dit helbred og dit privatliv!
 
 ^^^af Nicky Case (ncase.me). CC0/public domain, videresen gerne hvor som helst!
 
