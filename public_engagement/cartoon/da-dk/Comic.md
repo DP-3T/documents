@@ -32,9 +32,9 @@ oversættelse eller giver m.veale@ucl.ac.uk besked, integrerer vi den i
 repositoriet, således at andre kan benytte dem. Vi vil sætte pris på hvis du
 om muligt ligeledes vil benytte CC-0 licensen på din oversættelse.
 
-Denne oversættelse blev startet af Jonas Bardino,
-https://github.com/jonasbardino, og nåede sin endelige form med rettelser og
-nyttige forslag fra Bente Olsen.
+Denne oversættelse blev startet af Jonas Bardino
+(https://github.com/jonasbardino), og nåede sin endelige form med rettelser og
+nyttige forslag fra Bente Olsen og Kasper Laudrup.
 
 Yderligere kommentarer eller rettelser er velkomne via GitHub linket ovenfor.
 Oversættelsen er som originalen gjort tilgængelig for alle under PUBLIC DOMAIN

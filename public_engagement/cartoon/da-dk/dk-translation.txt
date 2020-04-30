@@ -81,12 +81,12 @@ Lad os se hvordan det
 fungerer med hjælp fra
 Alice & Bob…
 
-Alice henter sig en kontaktsporings-app!
+Alice henter en kontaktsporings-app!
 (& dens kildekode er offentligt tilgængelig,
 så enhver kode-kyndig kan kontrollere at
 den gør præcis som beskrevet her...)
 
-Hvert 5. minut "siger" Alices telefon
+Hvert 5. minut "siger" Alices telefon noget
 tilfældigt sludder over Bluetooth til
 alle andre enheder i nærheden. Hver besked
 er unik og bruges kun én gang.
@@ -101,7 +101,7 @@ GPS. De indeholder INGEN INFORMATION
 om Alices identitet, lokation eller noget
 sådant.
 
-Imens hendes telefon udsender tilfældige
+Mens hendes telefon udsender tilfældige
 beskeder, lytter den også efter
 beskeder fra telefoner i nærheden.
 
@@ -124,8 +124,8 @@ deres telefoner unikt sludder.
 == Panel 10 ==
 
 Begge deres telefoner husker alle de
-beskeder de har sagt & hørt i de seneste 14
-dage.
+beskeder de har sagt og hørt i de seneste
+14 dage.
 
 HVAD JEG
 SAGDE
@@ -133,12 +133,12 @@ SAGDE
 HVAD JEG
 HØRTE
 
-Igen: de tilfældige beskeder indeholder
+Igen: De tilfældige beskeder indeholder
 INGEN INFORMATION om Alice. Derfor
 forbliver hendes privatliv skjult for Bob og
 omvendt!
 * 14 dage er også bare et eksempel! Epidemiologer opdager måske senere at
-"smitteperioden" faktisk varer kortere eller længere.
+"smitteperioden" faktisk er kortere eller længere.
 
 
 == Panel 11 ==
@@ -154,7 +154,7 @@ Det er en skidt dag for Alice.
 == Panel 12 ==
 
 Men hun skal ikke lide forgæves!
-Alice uploader sine "Hvad jeg sagde"-beskeder til en hospitalsdatabase v.h.a. en
+Alice uploader sine "Hvad jeg sagde"-beskeder til en hospitalsdatabase vha. en
 engangskode fra sin læge (koden er for at
 forhindre spam).
 
@@ -173,14 +173,15 @@ Databasen gemmer Alices sludder:
 
     HVAD COVID-19-RAMTE SAGDE
 
-Igen: de tilfældige beskeder afslører INGEN
-INFORMATION til hospitalet om hvor Alice
-var, hvem hun var sammen med, hvad de
-lavede, eller hvor mange mennesker Alice
-mødte! De er meningsløse for hospitalet...
+Igen: De tilfældige beskeder afslører
+INGEN INFORMATION til hospitalet om hvor
+Alice var, hvem hun var sammen med, hvad
+de lavede, eller hvor mange mennesker
+Alice mødte! De er meningsløse for
+hospitalet...
 
 * forskellige landes hospitaler kunne udveksle beskederne, men i og med de ikke
-indeholder information krænkes stadig intet privatliv.
+indeholder information, krænkes stadig intet privatliv.
 
 
 == Panel 14 ==
@@ -197,8 +198,8 @@ COVID-19-ramte, og ser om den har "hørt"
 nogen af dem før fra telefoner i nærheden
 de seneste 14 dage.
 
-(Beskedernes sludder giver INGEN ANDRE
-PERSONOPLYSNIGER til Bob.)
+(Beskedernes sludder afslører INGEN
+PERSONOPLYSNINGER til Bob.)
 * den ægte DP-3T-protokol er ENDNU mere sikker! Den bruger et såkaldt "cuckoo filter", så
 telefoner KUN bliver bekendt med de COVID-19 beskeder de selv hørte, uden at afsløre
 ALLE øvrige COVID-19 beskeder.
@@ -209,7 +210,7 @@ ALLE øvrige COVID-19 beskeder.
 Hvis den f.eks. hørte beskeder fra 6 eller
 flere COVID-19-ramte
 (6 x 5 min = 30 min eksponeringstid)
-varsler telefonen Bob om at gå i hjemmekarantæne.
+anmoder telefonen Bob om at gå i selvkarantæne.
 
 Dermed bryder Bob smittekæden - et
 skridt foran virussen!
@@ -302,7 +303,7 @@ Alice sidder ved siden af Bob. Deres telefoner udveksler beskeder.
 
   Hvad jeg sagde    Hvad jeg hørte
 
-Begge telefoner husker hvad de sagde & hørte de seneste 14 dage,
+Begge telefoner husker hvad de sagde og hørte de seneste 14 dage,
 
 
 == Panel 4 ==
@@ -337,7 +338,7 @@ nok, bliver han varslet.
 
 og det er er ''sådan'' kontaktsporing kan beskytte både dit helbred og dit privatliv!
 
-^^^af Nicky Case (ncase.me). CC0/public domain, videresen gerne hvor som helst!
+^^^af Nicky Case (ncase.me). CC0/public domain, videresend gerne hvor som helst!
 
 
 Dansk oversættelse: Jonas Bardino, m.fl. (CC-0)
