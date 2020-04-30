@@ -6,16 +6,21 @@ This repository contains a proposal for a secure and decentralized privacy-prese
 
 We are a international consortium of technologists, legal experts, engineers and epidemiologists with a wide range of experience who are interested in ensuring that any proximity tracing technology does not result in governments obtaining surveillance capabilities which will endanger civil society.
 
-We are led from EPFL in Switzerland by Prof. Carmela Troncoso a leading expert in privacy, and call upon experts from various countries including Belgium, Germany, Italy, the Netherlands, Switzerland and the United Kingdom. Our team consists of people with a wide range of experience
-including:
+The following people are behind this design:
 
-* Prof. Edouard Bugnion: Co-Founder of VMWare, Former Vice President at Cisco
-* Prof. Srdjan Capkun: ERC Awardee, Fellow of the ACM, Director of the Zurich Information and Privacy Centre
-* Prof. James Larus: Former Director of Research and Strategy for Microsoft eXtreme Computing Group
-* Prof. Kenny Paterson: Fellow of the International Association of Cryptologic Research, Former Manager at Hewlett-Packard Laboratories Europe
-* Prof. Mathias Payer: ERC Awardee
-* Prof. Bart Preneel: Former President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research.
-* Prof. Nigel Smart: ERC Awardee, Former Vice-President of the International Association of Cryptologic Research, Fellow of the International Association of Cryptologic Research, Co-Founder of UnBound Tech.
+**EPFL**: Prof. Carmela Troncoso, Prof. Mathias Payer, Prof. Jean-Pierre Hubaux, Prof. Marcel Salathé, Prof. James Larus, Prof. Edouard   Bugnion, Dr. Wouter Lueks, Theresa Stadler, Dr. Apostolos Pyrgelis, Dr. Daniele Antonioli, Ludovic Barman, Sylvain Chatel  
+**ETHZ**: Prof. Kenneth Paterson, Prof. Srdjan Capkun, Prof. David Basin, Dr. Jan Beutel, Dennis Jackson  
+**KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
+**TU Delft**: Prof. Seda Gürses  
+**University College London**: Dr. Michael Veale  
+**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers  
+**University of Oxford**: Dr. Reuben Binns  
+**University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
+**University of Salerno**: Prof. Giuseppe Persiano  
+**IMDEA Software**: Prof. Dario Fiore  
+**INESC TEC**: Prof. Manuel Barbosa  
+**Stanford Univerity**: Prof. Dan Boneh  
+
 
 In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
 
@@ -25,21 +30,13 @@ Open source implementations for iOS, Android, and the back-end server are availa
 
 An explanatory comic [is also available in many languages](public_engagement/cartoon).
 
-
-If you have a similar project and you believe it would be beneficial to collaborate or exchange ideas drop an email here: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
-
-The following people are behind this design:
-
-**EPFL**: Prof. Carmela Troncoso, Prof. Mathias Payer, Prof. Jean-Pierre Hubaux, Prof. Marcel Salathé, Prof. James Larus, Prof. Edouard   Bugnion, Dr. Wouter Lueks, Theresa Stadler, Dr. Apostolos Pyrgelis, Dr. Daniele Antonioli, Ludovic Barman, Sylvain Chatel  
-**ETHZ**: Prof. Kenneth Paterson, Prof. Srdjan Capkun, Prof. David Basin, Dr. Jan Beutel, Dennis Jackson  
-**KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
-**TU Delft**: Prof. Seda Gürses  
-**University College London**: Dr. Michael Veale  
-**CISPA**: Prof. Cas Cremers  
-**University of Oxford**: Dr. Reuben Binns  
-**University of Torino / ISI Foundation**: Prof. Ciro Cattuto
+We also publish privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, and analysis of the [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf) and [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf) protocols.
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
+
+## Joint Statement
+
+DP-3T is listed as one of several privacy-preserving decentralized approaches to contact tracing in a joint statement from over 300 scientists from over 25 countries. The open letter is available [here](https://www.esat.kuleuven.be/cosic/sites/contact-tracing-joint-statement/).
 
 ## Apple and Google Proposal
 
@@ -50,6 +47,8 @@ DP-3T appreciates the endorsement of these two companies for our solution and is
 But, we also strongly believe that Apple and Google should adopt our subsequent enhancements, detailed in later versions of our [white paper](https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf), which increase user privacy. We also strongly encourage both companies to allow an external audit of their code to ensure its functionality corresponds to its specification.
 
 ## April 8th, 2020: The relationship between DP-3T and PEPP-PT
+
+*Please note that since this announcement, DP-3T partners have resigned from the PEPP-PT initiative.*
 
 The Decentralised Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual's phone. It was produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
 
