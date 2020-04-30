@@ -26,14 +26,14 @@
      inkscape:current-layer="svg2"
      inkscape:window-maximized="0"
      inkscape:window-y="0"
-     inkscape:window-x="509"
-     inkscape:cy="1357.5982"
-     inkscape:cx="981.53435"
-     inkscape:zoom="0.20429687"
+     inkscape:window-x="505"
+     inkscape:cy="1848.5387"
+     inkscape:cx="956.33025"
+     inkscape:zoom="0.2889194"
      showgrid="false"
      id="namedview6"
      inkscape:window-height="718"
-     inkscape:window-width="853"
+     inkscape:window-width="857"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -41,7 +41,8 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -75,6 +76,26 @@
          width="1502.1385"
          id="rect103"
          style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask93-3">
+      <path
+         id="path95-5"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         inkscape:connector-curvature="0" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask101-6">
+      <rect
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953"
+         id="rect103-2"
+         width="1502.1385"
+         height="545.83112"
+         x="3518.8103"
+         y="2557.6377" />
     </mask>
   </defs>
   <rect
@@ -143,22 +164,22 @@
        id="tspan59"
        sodipodi:role="line"
        x="91.482468"
-       y="1144.3073"
+       y="1144.3069"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">abyz acząć zarażać, więc jeżeli</tspan><tspan
        id="tspan61"
        sodipodi:role="line"
        x="91.482468"
-       y="1278.5342"
+       y="1278.5334"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">odseparujemy tych którzy byli</tspan><tspan
        id="tspan63"
        sodipodi:role="line"
        x="91.482468"
-       y="1412.761"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">blisko chorego zaraz gdy one się</tspan><tspan
+       y="1412.7599"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">blisko chorego zaraz gdy on się</tspan><tspan
        id="tspan65"
        sodipodi:role="line"
        x="91.482468"
-       y="1546.9879"
+       y="1546.9865"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">dowie o swojej chorobie...</tspan></text>
   <text
      xml:space="preserve"
@@ -175,10 +196,26 @@
        sodipodi:role="line"
        x="88.525352"
        y="2232.552"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">się wirusa i będziemy jeden krok</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">się wirusa i będziemy o jeden</tspan><tspan
        id="tspan86"
        sodipodi:role="line"
        x="88.525352"
        y="2366.7786"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">przed nim!</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">krok przed nim!</tspan></text>
+  <text
+     id="text224"
+     y="2470.7632"
+     x="24.259377"
+     style="font-style:normal;font-weight:normal;font-size:60.5292px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999996"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999996"
+       y="2470.7632"
+       x="24.259377"
+       sodipodi:role="line"
+       id="tspan1083">* a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999996"
+       y="2531.698"
+       x="24.259377"
+       sodipodi:role="line"
+       id="tspan1089">dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu</tspan></text>
 </svg>

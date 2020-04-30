@@ -6,11 +6,45 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1706.6667 2560"
-   height="2560"
-   width="1706.6667"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="72"
+   inkscape:export-xdpi="72"
+   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0007.png"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   sodipodi:docname="panel0007.svg"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="1706.6667"
+   height="2560"
+   viewBox="0 0 1706.6667 2560">
+  <sodipodi:namedview
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     inkscape:snap-global="false"
+     inkscape:snap-page="true"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox="false"
+     inkscape:current-layer="svg2"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="505"
+     inkscape:cy="1284.9093"
+     inkscape:cx="987.97354"
+     inkscape:zoom="0.1767767"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="718"
+     inkscape:window-width="857"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -24,11 +58,49 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6" />
+     id="defs6">
+    <rect
+       id="rect42"
+       height="623.14129"
+       width="1600.9255"
+       y="64.073854"
+       x="-1483.759" />
+    <mask
+       id="mask93"
+       maskUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         id="path95" />
+    </mask>
+    <mask
+       id="mask101"
+       maskUnits="userSpaceOnUse">
+      <rect
+         y="2557.6377"
+         x="3518.8103"
+         height="545.83112"
+         width="1502.1385"
+         id="rect103"
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953" />
+    </mask>
+    <rect
+       x="-1483.759"
+       y="64.073854"
+       width="1616.5485"
+       height="634.85623"
+       id="rect58" />
+    <rect
+       id="rect69"
+       height="166.47582"
+       width="1637.8179"
+       y="64.073854"
+       x="-1483.759" />
+  </defs>
   <image
-     y="0"
-     x="0"
-     id="image10"
+     sodipodi:insensitive="true"
+     id="image36"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAeACAIAAAAeqW1RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
 IGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
@@ -1138,5 +1210,52 @@ YII=
 "
      preserveAspectRatio="none"
      height="2560"
-     width="1706.6667" />
+     width="1706.6667"
+     x="0"
+     y="0" />
+  <text
+     transform="translate(1576.0223,11.296479)"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect42);fill:#000000;fill-opacity:1;stroke:none;"
+     id="text40"
+     xml:space="preserve"><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="171.05027"><tspan>Alicja pobiera aplikację monitoru-</tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="321.05027"><tspan>jącą! (jej kod jest publicznie </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="471.05027"><tspan>dostępny i ziomki mogą ją </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="621.05027"><tspan>zweryfikować i faktycznie to robią...)</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     id="text56"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect58);fill:#000000;fill-opacity:1;stroke:none;"
+     transform="translate(1615.9874,1677.9679)"><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="171.05027"><tspan>Co 5 minut, jej telefon wysyła </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="321.05027"><tspan>unikatowe i losowe wiadomości to </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="471.05027"><tspan>wszystkich pobliskich telefonów, </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="621.05027"><tspan>używając Bluetooth.</tspan></tspan></text>
+  <text
+     transform="translate(1516.7019,2314.1742)"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:66.6667px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect69);fill:#626262;fill-opacity:1;stroke:none;"
+     id="text67"
+     xml:space="preserve"><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="123.50539"><tspan>* 5 minut to tylko przykład! i technicznie jest &quot;pseudolosowa&quot;, </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="-1483.7598"
+       y="206.83876"><tspan>ponieważ nie jest kwantowa... aaa NIE ważne.</tspan></tspan></text>
 </svg>

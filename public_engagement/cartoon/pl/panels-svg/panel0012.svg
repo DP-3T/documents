@@ -6,11 +6,46 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 1706.6667 2560"
    height="2560"
    width="1706.6667"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   sodipodi:docname="panel0012.svg"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0012.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#ff00ff"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="857"
+     inkscape:window-height="718"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="1085.8215"
+     inkscape:cy="1386.8813"
+     inkscape:window-x="505"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-page="true"
+     inkscape:snap-global="false"
+     borderlayer="true"
+     showborder="true"
+     inkscape:showpageshadow="false" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,16 +54,56 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6" />
+     id="defs6">
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask93">
+      <path
+         id="path95"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         inkscape:connector-curvature="0" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask101">
+      <rect
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953"
+         id="rect103"
+         width="1502.1385"
+         height="545.83112"
+         x="3518.8103"
+         y="2557.6377" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask93-3">
+      <path
+         id="path95-5"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         inkscape:connector-curvature="0" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask101-6">
+      <rect
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953"
+         id="rect103-2"
+         width="1502.1385"
+         height="545.83112"
+         x="3518.8103"
+         y="2557.6377" />
+    </mask>
+  </defs>
   <image
-     y="0"
-     x="0"
-     id="image10"
+     sodipodi:insensitive="true"
+     id="image42"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAeACAIAAAAeqW1RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
 IGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
@@ -1356,5 +1431,72 @@ AAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAc7BiQ7WQzflAAAAAElFTkSuQmCC
 "
      preserveAspectRatio="none"
      height="2560"
-     width="1706.6667" />
+     width="1706.6667"
+     x="0"
+     y="0" />
+  <text
+     id="text188"
+     y="153.70435"
+     x="99.866455"
+     style="font-style:normal;font-weight:normal;font-size:120px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;inline-size:1538.19;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     xml:space="preserve"><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="153.70435"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">Ale nie będzie cierpieć na próżno. </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="304.50852"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">Alicja wysyła jej wiadomości &quot;TO </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="455.31269"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">CO WYSŁAŁEM&quot; do szpitalnej bazy </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="606.11686"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">danych używając jednorazowego </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="756.92099"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">kodu danego przez doktora. (Kod </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="907.72519"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand'">zabezpiecza przed spamowaniem)</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;line-height:1.25;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';letter-spacing:0px;word-spacing:0px;inline-size:1560.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     x="99.866455"
+     y="2036.7542"
+     id="text96"><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="2036.7542"><tspan>Alicja może również ukryć </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="2186.7541"><tspan>wiadomości z okresów które chce </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="2336.7541"><tspan>zachować dla siebie, jak popołudnia </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="99.866455"
+       y="2486.7541"><tspan>w domu.</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.0126px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#626262;fill-opacity:1;stroke:none;stroke-width:0.999998"
+     x="935.94501"
+     y="1357.8439"
+     id="text100"
+     transform="rotate(-13.028912)"><tspan
+       sodipodi:role="line"
+       id="tspan98"
+       x="935.94501"
+       y="1357.8439"
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999998">TO CO</tspan><tspan
+       sodipodi:role="line"
+       x="935.94501"
+       y="1420.8564"
+       id="tspan104"
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999998">WYSŁAŁEM</tspan></text>
 </svg>

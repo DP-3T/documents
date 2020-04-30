@@ -6,11 +6,46 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 1706.6667 2560"
    height="2560"
    width="1706.6667"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   sodipodi:docname="panel0010.svg"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0010.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#ff00ff"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="857"
+     inkscape:window-height="718"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="1574.7962"
+     inkscape:cy="1181.9951"
+     inkscape:window-x="505"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-page="true"
+     inkscape:snap-global="false"
+     borderlayer="true"
+     showborder="true"
+     inkscape:showpageshadow="false" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,16 +54,36 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6" />
+     id="defs6">
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask93">
+      <path
+         id="path95"
+         style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
+         inkscape:connector-curvature="0" />
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask101">
+      <rect
+         style="fill:#cccccc;fill-opacity:1;stroke:#008000;stroke-width:0.377953"
+         id="rect103"
+         width="1502.1385"
+         height="545.83112"
+         x="3518.8103"
+         y="2557.6377" />
+    </mask>
+  </defs>
   <image
-     y="0"
-     x="0"
-     id="image10"
+     sodipodi:insensitive="true"
+     id="image42"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAeACAIAAAAeqW1RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
 IGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
@@ -1397,5 +1452,95 @@ AABAEARgAAAAgiAAAwAAEAQBGAAAgCD8/wGpdk4evn7kDQAAAABJRU5ErkJggg==
 "
      preserveAspectRatio="none"
      height="2560"
-     width="1706.6667" />
+     width="1706.6667"
+     x="0"
+     y="0" />
+  <text
+     id="text188"
+     y="193.52271"
+     x="114.18848"
+     style="font-style:normal;font-weight:normal;font-size:120px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;inline-size:1605.88;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     xml:space="preserve"><tspan
+       sodipodi:role="line"
+       x="114.18848"
+       y="193.52271"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">Oba ich telefony zapamiętują </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="114.18848"
+       y="344.32688"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">wszystkie wysłane i odebrane </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="114.18848"
+       y="495.13105"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">wiadomości przez 14 dni.</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:66.6667px;line-height:1.1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;inline-size:1662.68;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     x="39.767483"
+     y="2447.2808"
+     id="text224"><tspan
+       sodipodi:role="line"
+       x="39.767483"
+       y="2447.2808"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999995">* 14 dni to tylko kolejny przykład! epidemiolodzy mogą odkryć, że </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="39.767483"
+       y="2521.0608"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999995">okres zarażania jest krótszy lub dłuższy.</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:120px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;inline-size:1605.88;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
+     x="107.48546"
+     y="1842.2128"
+     id="text96"><tspan
+       sodipodi:role="line"
+       x="107.48546"
+       y="1842.2128"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">Ponownie: ponieważ losowe </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="107.48546"
+       y="1993.0169"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">wiadomości nie zawierają ŻADNYCH </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="107.48546"
+       y="2143.8211"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">danych osobowych, to prywatność </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="107.48546"
+       y="2294.6252"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">Alicji i Boba jest chroniona.</tspan></tspan></text>
+  <text
+     transform="rotate(-1.7564209)"
+     id="text100"
+     y="804.19952"
+     x="407.90152"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:115.91px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#626262;fill-opacity:1;stroke:none;stroke-width:0.999999"
+     xml:space="preserve"><tspan
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999999"
+       y="804.19952"
+       x="407.90152"
+       id="tspan98"
+       sodipodi:role="line">TO CO</tspan><tspan
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999999"
+       id="tspan104"
+       y="920.1095"
+       x="407.90152"
+       sodipodi:role="line">WYSŁAŁEM</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:115.91px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#626262;fill-opacity:1;stroke:none;stroke-width:0.999999"
+     x="1300.1759"
+     y="747.23389"
+     id="text110"
+     transform="rotate(1.7216195)"><tspan
+       sodipodi:role="line"
+       id="tspan106"
+       x="1300.1759"
+       y="747.23389"
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999999">TO CO</tspan><tspan
+       sodipodi:role="line"
+       x="1300.1759"
+       y="863.14392"
+       id="tspan108"
+       style="fill:#626262;fill-opacity:1;stroke-width:0.999999">ODEBRAŁEM</tspan></text>
 </svg>
