@@ -1,0 +1,43 @@
+Panel 1: A title says "Protecting Lives & Liberty: How contact tracing apps can foil both COVID-19 and Big Brother" as two mysterious characters wearing yellow and blue PPE gear fend off a life size COVID-19 virus and a tall greedy cyclops with a green pyramid for a head.
+
+Panel 2: We see the COVID-19 virus spread from our mysterious yellow character to our mysterious blue character. The caption says, "A problem with COVID-19: You're contagious for roughly two days before you know you're infected. But it takes roughly three days to become contagious, so if we quarantine folks exposed to you the day you know you're infected...we stop the spread, by staying one step ahead!"
+
+Footnote: what about never-symptomatic people? turns out they don't play a large role in COVID-19 spread! see citations at end
+
+Panel 3: A picture of the path the COVID-19 virus takes as it moves from home to home is shown. The caption says, "This is called "contact tracing." It's a core part of how South Korea & Taiwan are already containing COVID-19, and what we must do, too. We wouldn't even need to find all the contacts! We only need to find roughly 60 percent of them...
+
+Panel 4:...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow. Hence, why we need contact tracing apps." The greedy cyclops returns, reaching out to grab a worried looking phone. A caption says, "But do we have to sacrifice privacy for health?"
+
+Panel 5: "Heck No!" Our mysterious yellow and blue characters return and defeat the greedy cyclops with a couple swift kicks!
+
+Panel 6: A caption says "It's entirely possible to protect peoples' lives AND liberties, with a really simple process!", as we are introduced to our mysterious characters, the caption continues, "Let's see how it works, with the help of Alice & Bob." Alice, in yellow, and Bob, in blue, have rescued the phone while the greedy cyclops lies unconscious in the distance.
+
+Panel 7: Alice, cheerfully looks at her phone as it sends out invisible codes: "5lPomk", "8jUIL4", "l1wda6." A caption says, "Alice gets a tracing app! (and its code is open to the public, so folks can verify it in fact does the following...) Every 5 minutes or so, her phone says uniquely random gibberish to all nearby devices, using Bluetooth."
+
+Footnote: 5 minutes is just an example! and technically it's "pseudo-random," since it's not quantum....does NOT matter.
+
+Panel 8: Alice sits at a table eating her lunch. Her phone looks curious as it receives an invisible message: "3klfw9." A caption says, "Because the messages are random and don't use GPS, they contain NO INFO about Alice's identify, location, or anything. Now, while her phone sends out random messages, it also listens for messages from nearby phones."
+
+Panel 9: A caption says, "For example, Bob's. Bob also has a privacy-first tracing app, that's compatible with (or the same as) Alice's." We zoom out and notice that Alice is sitting next to Bob. As the two eat their lunch, their phones are busy sending messages: "aSt5yv", "89ckxj". Alice has to cough and a small particle makes its way over to Bob before Alice has time to cover her mouth! Another caption says, "If Alice and Bob stay close to each other for 5 or so minutes, their phones will exchange unique gibberish."
+
+Panel 10: Alice's phone is examining two tables of data: "What I Said" and "What I Heard." A caption says, "Both their phones remember all the messages they said and heard over the last 14 days. Again: because the random messages contain NO INFO, Alice's privacy is protected from Bob, and vice versa!"
+
+Footnote: 14 days is also just an example! Epidemiologists may learn that the "infectious period" is actually shorter or longer.
+
+Panel 11: A caption says, "The next day, Alice develops a dry cough and fever. Alice gets tested." Feverish, Alice patiently waits as a gloved hand swaps her nostril. Another caption says, "Alice has COVID-19. It is not a good day for Alice."
+
+Panel 12: Feverish and frustrated, Alice gets out her phone and sends a message. A caption says, "But she shan't suffer in vain! Alice uploads her "What I Said" messages to a hospital database, using a one-time passcode given by her doctor. (The code is to prevent spam). Alice can also hide messages from times she wants to keep private, like evenings at home!"
+
+Panel 13: A database table of messages titled "What COVID-19 Cases Said" is shown receiving a message sent from Alice's phone. A caption says, "The database stores Alice's gibberish. Again: the random messages give the hospital NO INFO on where Alice was, who she was with, what they were doing, or even how many people Alice met! It's meaningless to the hospital..."
+
+Footnote: different countries hospitals could exchange messages, but because the contain no info, no privacy is lost.
+
+Panel 14: "...but not to Bob!" Bob's phone is comparing messages between its "What I Heard" table and the "What COVID-19 Cases Said" table at the hospital. A caption says, "Bob's phone often checks the hospital's list of random messages from COVID-19 cases, and see if it "heard" any of them from nearby phones in the last 14 days. (The gibberish gives bob NO OTHER PERSONAL INFO.)"
+
+Footnote: the real DP-3% protocol is even MORE secure! It uses a "cuckoo filter" so phones know ONLY the COVID-19 messages they heard, without revealing ALL COVID-19 messages.
+
+Panel 15:A caption says, "If it heard, say 6 or more COVID-19 cases' messages (6 x 5 min = 30 min total exposure), the phone warns Bob to self-quarantine." Bob looks worried as his phone chirps out an alert. Another caption says, "And thus, Bob cuts the chain of transmission--one step ahead of the virus!"
+
+Footnote: again, these numbers are just examples!
+
+Panel 16: A caption says, "And that's it! That's how digital contact tracing can proactively prevent the spread of COVID-19 while also protecting our rights." Alice and Bob, still appearing feverish, hold their thumbs up high as they reside safely inside their homes. A final caption says, "Thanks, Alice and Bob! Stay safe."
