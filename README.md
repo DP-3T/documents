@@ -19,8 +19,7 @@ The following people are behind this design:
 **University of Salerno**: Prof. Giuseppe Persiano  
 **IMDEA Software**: Prof. Dario Fiore  
 **INESC TEC**: Prof. Manuel Barbosa  
-**Stanford Univerity**: Prof. Dan Boneh  
-
+**Stanford University**: Prof. Dan Boneh  
 
 In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
 
