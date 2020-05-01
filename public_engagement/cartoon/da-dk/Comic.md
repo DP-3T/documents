@@ -42,7 +42,7 @@ Oversættelsen er som originalen gjort tilgængelig for alle under PUBLIC DOMAIN
 
 # Andet
 
-Tegneserien blev oprindeligt lavet af [Nicky Case](https://ncase.me/, for at
+Tegneserien blev oprindeligt lavet af [Nicky Case](https://ncase.me/), for at
 forklare hvordan DP-3T funktionerer til et bredere publikum. Den er fokuseret på
 at kommunikere budskabet enkelt og klart snarere end en fuldstændig eksakt
 gengivelse af protokollen. F.eks. er det i dem forenklede viste udgave ikke
