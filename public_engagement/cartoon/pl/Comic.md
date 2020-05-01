@@ -1,8 +1,9 @@
+# Spis treści
 
 1. [Pełna wersja komiksu](#pełna-wersja)
 2. [Skrócona wersja komiksu](#skrócona-wersja)
 
-# Pełna wersja
+# Pełna wersja *[góra](#spis-treści)*
 
 ![Panel 1](panels/panel0001.png)
 ![Panel 2](panels/panel0002.png)
@@ -23,7 +24,7 @@
 ![Panel 17](panels/panel0017.png)
 ![Panel 18](panels/panel0018.png)
 
-# Skrócona wersja
+# Skrócona wersja *[góra](#spis-treści)*
 
 ![Krótka wersja](shortened_onepage.png)
 
