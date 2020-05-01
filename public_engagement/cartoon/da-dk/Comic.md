@@ -1,6 +1,6 @@
 # Tegneserien på dansk
 
-[Download tegneserien som PDF](https://github.com/DP-3T/documents/raw/master/public_engagement/cartoon/da-dk/comic-dk.pdf)
+[Download tegneserien som PDF](comic-dk.pdf)
 
 ![Side 1](dk_panel0001.png)
 ![Side 2](dk_panel0002.png)
