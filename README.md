@@ -18,7 +18,7 @@ The following people are behind this design:
 **University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
 **University of Salerno**: Prof. Giuseppe Persiano  
 **IMDEA Software**: Prof. Dario Fiore  
-**INESC TEC**: Prof. Manuel Barbosa  
+**University of Porto (FCUP) and INESC TEC**: Prof. Manuel Barbosa  
 **Stanford Univerity**: Prof. Dan Boneh  
 
 
