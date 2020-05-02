@@ -1,0 +1,35 @@
+HOW PRIVACY-FIRST CONTACT TRACING WORKS
+JAK DZIAŁA ANONIMOWE MONITOROWANIE KONTAKTÓW MIĘDZYLUDZKICH
+
+Alice's phone broadcasts a random message every few minutes.
+Telefon Alicji rozsyła wiadomości o losowej treści co kilka minut.
+
+Alice sits next to Bob. Their phones exchange messages.
+Alicja siedzi obok Roberta. Ich telefony wymieniają wiadomości.
+
+WHAT I SAID
+TO CO WYSŁAŁEM
+
+WHAT I HEARD
+TO CO ODEBRAŁEM
+
+Both phones remember what they said & heard in the past 14 days.
+Oba telefony zapamiętują co wysłały i odebrały przez ostatnie 14 dni.
+
+If Alice gets Covid-19, she sends her messages to a hospital.
+Jeżeli Alicja zachoruje na Covid-19, to przekaże swoje wiadomości szpitalowi.
+
+WHAT COVID-19 CASES SAID
+TO CO WYSŁAŁY PRZYPADKI Z COVID-19
+
+Because the messages are random, no info's revealed to the hospital...
+Ponieważ treści wiadomości są losowe, to szpital nie uzyskuje żadnych danych osobowych...
+
+...but Bob's phone can find out if it "heard" any messages from Covid-19 cases!
+...ale telefon Roberta może sprawdzić, czy nie odebrał którejś z wiadomości od zarażonej osoby.
+
+If it "heard" enough messages, meaning Bob was exposed for a long enough time, he'll be alerted.
+Jeżeli odebrał dostatecznie dużo takich wiadomości, to oznacza że Robert miał kontakt z osobami zakażonymi zbyt długo i otrzyma ostrzeżenie.
+
+And that's how contact tracing can protect our health and privacy!
+W taki sposób monitorowanie kontaktów międzyludzkich może chronić twoje zdrowie i prywatność jednocześnie.
