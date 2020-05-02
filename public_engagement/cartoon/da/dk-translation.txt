@@ -1,5 +1,6 @@
 = Fuld version =
-Tekst til den fulde udgave af striben
+Tekst til den fulde udgave af striben. Tegneserien udfyldes i praksis i
+ODT-filen med LibreOffice/OpenOffice/... og eksporteres som PDF.
 
 
 == Panel 1 ==
@@ -279,64 +280,81 @@ Dansk oversættelse: Jonas Bardino, m.fl. (CC-0)
 
 
 = Kort udgave =
-Tekst til den korte udgave
-
+Tekst til den korte udgave. Det er nemmest at rette i den med en SVG-editor som
+Inkscape el.lign. og eksportere som PNG.
 
 == Overskrift ==
 
-Hvordan privatlivssikret kontaktsporing fungerer
+SÅDAN FUNGERER PRIVATLIVSSIKRET KONTAKTSPORING
 
 
 == Panel 1 ==
 
-Alices telefon udsender en tilfældig besked hvert 5. minut.
+Alices telefon udsender en
+tilfældig besked hvert 5. minut.
 
 
 == Panel 2 ==
 
   host
   
-Alice sidder ved siden af Bob. Deres telefoner udveksler beskeder.
+Alice sidder ved siden af Bob. Deres
+telefoner udveksler beskeder.
 
 
 == Panel 3 ==
 
-  Hvad jeg sagde    Hvad jeg hørte
+  HVAD JEG
+  SAGDE
+	HVAD JEG
+	HØRTE
 
-Begge telefoner husker hvad de sagde og hørte de seneste 14 dage,
+Begge telefoner husker hvad de sagde
+og hørte de seneste 14 dage.
 
 
 == Panel 4 ==
 
-            Hvad jeg sagde
+            HVAD JEG
+	    SAGDE
 
-Hvis Alice får COVID-19 sender hun ''sine'' beskeder til et hospital.
+Hvis Alice får COVID-19, sender hun
+''sine'' beskeder til et hospital.
 
 
 == Panel 5 ==
 
-   Hvad COVID-19-ramte sagde
+   HVAD COVID-19-RAMTE SAGDE
 
-Fordi beskederne er tilfældige afsløres ingen privat information til hospitalet...
+Fordi beskederne er tilfældige
+afsløres ingen privat information til
+hospitalet...
 
 
 == Panel 6 ==
 
-   Hvad COVID-19-ramte sagde
-                                     Hvad jeg hørte
+   HVAD COVID-19-RAMTE
+   SAGDE
+                                     HVAD JEG
+				     HØRTE
 
-... men Bobs telefon kan finde ud af om den har "hørt" beskeder fra COVID-19-ramte!
+... men Bobs telefon kan finde ud af
+om den har "hørt" beskeder fra
+COVID-19-ramte!
 
 
 == Panel 7 ==
 
-Hvis den har "hørt" nok beskeder svarende til at Bob har været smitteudsat længe
-nok, bliver han varslet.
+Hvis den har "hørt" nok beskeder, svarende
+til at Bob har været smitteudsat længe
+nok, bliver han advaret.
 
 
 == Panel 8 ==
 
-og det er er ''sådan'' kontaktsporing kan beskytte både dit helbred og dit privatliv!
+Det er er ''sådan'' kontaktsporing
+kan beskytte både vores
+helbred ''og'' privatliv!
 
 ^^^af Nicky Case (ncase.me). CC0/public domain, videresend gerne hvor som helst!
 
