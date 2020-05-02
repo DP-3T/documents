@@ -4,7 +4,7 @@ PROTECTING LIVES & LIBERTY
 OCHRONA ŻYCIA I PRYWATNOŚCI
 
 how contact tracing apps can foil both COVID-19 and Big Brother
-jak aplikacja monitorująca kontakty międzyludzkie możne chronić zarówno przed COVID-19 jak i rządem
+jak aplikacja monitorująca kontakty międzyludzkie można chronić zarówno przed COVID-19 jak i rządem
 
 
 panel0002.png
@@ -19,7 +19,7 @@ But it takes ~3 days to become contagious, so if we quarantine folks exposed to 
 Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz gdy on się dowie o swojej chorobie...
 
 We stop the spread, by staying one step ahead!
-Zatrzymam rozprzestrzenianie się wirusa i będziemy o jeden krok przed nim!
+Zatrzymamy rozprzestrzenianie się wirusa i będziemy o jeden krok przed nim!
 
 * what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
 * a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu
@@ -66,7 +66,7 @@ Alice gets a tracing app! (& its code is open to the public, so folks can verify
 Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny i ziomki mogą ją zweryfikować i faktycznie to robią...)
 
 Every 5 minutes, her phone says uniquely random gibberish to all nearby devices, using Bluetooth.
-Co 5 minut, jej telefon wysyła unikatowe i losowe wiadomości to wszystkich pobliskich telefonów, używając Bluetooth.
+Co 5 minut, jej telefon wysyła unikatowe i losowe wiadomości do wszystkich pobliskich telefonów, używając Bluetooth.
 
 * 5 minutes is just an example! and technically it's "pseudorandom", since it's not quantum... does NOT matter.
 * 5 minut to tylko przykład! i technicznie jest "pseudolosowa", ponieważ nie jest kwantowa... aaa NIE ważne.
@@ -106,7 +106,7 @@ WHAT I HEARD
 TO CO ODEBRAŁEM
 
 Again: because the random messages contain NO INFO, Alice's privacy is protected from Bob, and vice versa!
-Ponownie: ponieważ losowe wiadomości nie zawierają ŻADNYCH danych osobowych, to prywatność Alicji i Boba jest chroniona.
+Ponownie: ponieważ losowe wiadomości nie zawierają ŻADNYCH danych osobowych, to prywatność Alicji i Roberta jest chroniona.
 
 * 14 days is also just an example! epidemiologists may learn that the "infectious period" is actually shorter or longer.
 * 14 dni to tylko kolejny przykład! epidemiolodzy mogą odkryć, że okres zarażania jest krótszy lub dłuższy.
