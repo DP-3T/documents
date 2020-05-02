@@ -6,43 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:export-ydpi="72"
-   inkscape:export-xdpi="72"
-   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0002.png"
-   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
-   sodipodi:docname="panel0002.svg"
    version="1.1"
    id="svg2"
    width="1706.6667"
    height="2560"
    viewBox="0 0 1706.6667 2560">
-  <sodipodi:namedview
-     inkscape:snap-global="false"
-     inkscape:snap-page="true"
-     inkscape:bbox-nodes="false"
-     inkscape:snap-bbox="false"
-     inkscape:current-layer="svg2"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="505"
-     inkscape:cy="1848.5387"
-     inkscape:cx="956.33025"
-     inkscape:zoom="0.2889194"
-     showgrid="false"
-     id="namedview6"
-     inkscape:window-height="718"
-     inkscape:window-width="857"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     inkscape:document-rotation="0" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -51,7 +19,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,7 +29,6 @@
        id="mask93"
        maskUnits="userSpaceOnUse">
       <path
-         inkscape:connector-curvature="0"
          d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
          style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
          id="path95" />
@@ -83,8 +50,7 @@
       <path
          id="path95-5"
          style="fill:#ffffff;stroke:#008000;stroke-width:0.377953"
-         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z"
-         inkscape:connector-curvature="0" />
+         d="M 2674.9242,139.06123 H 4184.7535 V 752.06551 H 2674.9242 Z" />
     </mask>
     <mask
        maskUnits="userSpaceOnUse"
@@ -99,8 +65,6 @@
     </mask>
   </defs>
   <rect
-     sodipodi:insensitive="true"
-     inkscape:label="background"
      y="4.9541842e-07"
      x="1.074161e-06"
      height="2560"
@@ -138,46 +102,38 @@
        id="tspan16"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
        y="173.89185"
-       x="91.746346"
-       sodipodi:role="line">Problem z COVID-19:</tspan><tspan
+       x="91.746346">Problem z COVID-19:</tspan><tspan
        id="tspan22"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
        y="308.11835"
-       x="91.746346"
-       sodipodi:role="line">Zaraża się około 2 dni nim</tspan><tspan
+       x="91.746346">Zaraża się około 2 dni nim</tspan><tspan
        id="tspan26"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
        y="442.34488"
-       x="91.746346"
-       sodipodi:role="line">się wie, że jest się chorym.</tspan></text>
+       x="91.746346">się wie, że jest się chorym.</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:133.333px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999995"
      x="91.482468"
      y="1010.0804"
      id="text10-5"><tspan
-       sodipodi:role="line"
        x="91.482468"
        y="1010.0804"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
        id="tspan26-9">Ale potrzeba około trzech dni</tspan><tspan
        id="tspan59"
-       sodipodi:role="line"
        x="91.482468"
        y="1144.3069"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">abyz acząć zarażać, więc jeżeli</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">aby zacząć zarażać, więc jeżeli</tspan><tspan
        id="tspan61"
-       sodipodi:role="line"
        x="91.482468"
        y="1278.5334"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">odseparujemy tych którzy byli</tspan><tspan
        id="tspan63"
-       sodipodi:role="line"
        x="91.482468"
        y="1412.7599"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">blisko chorego zaraz gdy on się</tspan><tspan
        id="tspan65"
-       sodipodi:role="line"
        x="91.482468"
        y="1546.9865"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">dowie o swojej chorobie...</tspan></text>
@@ -187,18 +143,16 @@
      x="88.525352"
      y="2098.3254"
      id="text73"><tspan
-       sodipodi:role="line"
+       rotate="0 0 0 0 0 0 0 0"
        x="88.525352"
        y="2098.3254"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995"
-       id="tspan71">Zatrzymam rozprzestrzenianie</tspan><tspan
+       id="tspan71">Zatrzymamy rozprzestrzenianie</tspan><tspan
        id="tspan80"
-       sodipodi:role="line"
        x="88.525352"
        y="2232.552"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">się wirusa i będziemy o jeden</tspan><tspan
        id="tspan86"
-       sodipodi:role="line"
        x="88.525352"
        y="2366.7786"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';stroke-width:0.999995">krok przed nim!</tspan></text>
@@ -211,11 +165,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999996"
        y="2470.7632"
        x="24.259377"
-       sodipodi:role="line"
        id="tspan1083">* a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają</tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Patrick Hand';-inkscape-font-specification:'Patrick Hand';fill:#626262;fill-opacity:1;stroke-width:0.999996"
        y="2531.698"
        x="24.259377"
-       sodipodi:role="line"
        id="tspan1089">dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu</tspan></text>
 </svg>
