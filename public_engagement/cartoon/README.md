@@ -25,6 +25,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
 [Hindi](hi) (currently short version only, by Vikas Dhiman GH:[wecacuee](https://github.com/wecacuee))  
 [German](de) (by [@heapspark](https://twitter.com/heapspark)) (CC-0)  
+[Greek](el) (by [tdiam](https://tdiam.me)) (CC-0)  
 [Italian](it) (by A: GH:therealpecus, B: GH:robypez, C:Sergio Guida, D:Alberto di Meglio - we did not have Italian, and then lots of translations came before we could upload. Thanks all) (CC-0)  
 [Lithuanian](lt) (by Ieva Mockute) (CC-0)  
 [Norwegian](no) (by Johannes Brodwall) (CC-0)  
