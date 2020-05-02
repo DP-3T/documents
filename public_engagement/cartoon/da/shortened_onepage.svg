@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.10005015"
-     inkscape:cx="2780.3725"
-     inkscape:cy="4515.2792"
+     inkscape:zoom="1"
+     inkscape:cx="288.29423"
+     inkscape:cy="4002.8409"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -348,22 +348,22 @@
        sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.76579285px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#747474;fill-opacity:1;stroke:none;stroke-width:0.33716637"
-       x="141.28586"
-       y="437.29489"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.74596262px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#747474;fill-opacity:1;stroke:none;stroke-width:0.33600679"
+       x="143.14745"
+       y="436.50339"
        id="text74-3"
-       transform="rotate(-16.88262)"
+       transform="matrix(0.95361069,-0.29141419,0.28941314,0.96020411,0,0)"
        inkscape:label="panel5c"><tspan
          sodipodi:role="line"
-         x="141.28586"
-         y="437.29489"
-         style="line-height:1;text-align:center;text-anchor:middle;fill:#747474;fill-opacity:1;stroke-width:0.33716637"
-         id="tspan76-2">TO CO</tspan><tspan
+         x="143.14745"
+         y="436.50339"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#747474;fill-opacity:1;stroke-width:0.33600679"
+         id="tspan1122">HVAD JEG</tspan><tspan
          sodipodi:role="line"
-         x="141.28586"
-         y="443.06067"
-         style="line-height:1;text-align:center;text-anchor:middle;fill:#747474;fill-opacity:1;stroke-width:0.33716637"
-         id="tspan1122">WYSŁAŁEM</tspan></text>
+         x="143.14745"
+         y="442.24936"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#747474;fill-opacity:1;stroke-width:0.33600679"
+         id="tspan84">SAGDE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.82888603px;line-height:1;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#747474;fill-opacity:1;stroke:none;stroke-width:0.33716637"

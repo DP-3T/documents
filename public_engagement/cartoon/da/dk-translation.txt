@@ -324,7 +324,10 @@ Hvis Alice får COVID-19, sender hun
 
 == Panel 5 ==
 
-   HVAD COVID-19-RAMTE SAGDE
+  HVAD JEG
+  SAGDE
+
+    HVAD COVID-19-RAMTE SAGDE
 
 Fordi beskederne er tilfældige
 afsløres ingen privat information til
