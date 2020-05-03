@@ -4,8 +4,7 @@ PROTECTING LIVES & LIBERTY
 OCHRONA ŻYCIA I PRYWATNOŚCI
 
 how contact tracing apps can foil both COVID-19 and Big Brother
-jak aplikacja monitorująca kontakty międzyludzkie można chronić zarówno przed COVID-19 jak i rządem
-
+jak aplikacje monitorujące kontakty międzyludzkie mogą chronić zarówno przed COVID-19 jak i Wielkim Bratem
 
 panel0002.png
 
@@ -13,13 +12,13 @@ A problem with COVID-19:
 Problem z COVID-19:
 
 You're contagious ~2 days before you know you're infected.
-Zaraża się około 2 dni nim się wie, że jest się chorym.
+Można zacząć zarażać innych na około 2 dni przed tym, zanim dowie się że jest się chorym.
 
 But it takes ~3 days to become contagious, so if we quarantine folks exposed to you the day you know you're infected...
-Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz gdy on się dowie o swojej chorobie...
+Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz po tym gdy on dowie się o swojej chorobie...
 
 We stop the spread, by staying one step ahead!
-Zatrzymamy rozprzestrzenianie się wirusa i będziemy o jeden krok przed nim!
+Zatrzymamy rozprzestrzenianie się wirusa, będąc o jeden krok przed nim!
 
 * what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
 * a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu
@@ -30,7 +29,7 @@ This is called "contact tracing". It's a core part of how South Korea & Taiwan a
 Nazywamy to "monitorowaniem kontaktów międzyludzkich". To tak Korea Południowa i Taiwan zatrzymały rozprzestrzenianie się COVID-19, i my też musimy to zrobić.
 
 We wouldn't even need to find all the contacts! We only need to find ~60% of them...
-Nie musimy nawet wykryć wszystkich przypadków! Wystarczy znaleźć około 60% z nich...
+Nie musimy nawet wykryć wszystkich przypadków kontaktów z chorym! Wystarczy znaleźć około 60% z nich...
 
 * ~60%? again, see citations at the end!
 * odnośnie 60% zobacz przypisy na końcu!
@@ -38,7 +37,7 @@ Nie musimy nawet wykryć wszystkich przypadków! Wystarczy znaleźć około 60% 
 panel0004.png
 
 ...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow.
-...ale potrzebujemy je szybko znaleźć. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
+...ale potrzebujemy znaleźć je szybko. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
 
 Hence, why we need contact tracing apps.
 Dlatego potrzeba aplikacji do monitorowania.
@@ -50,7 +49,6 @@ panel0005.png
 
 HECK NO!
 NIE MA MOWY!
-MOWY NIE MA!
 
 panel0006.png
 
@@ -63,10 +61,10 @@ Z pomocą Alicji i Roberta zobaczymy jak to działa...
 panel0007.png
 
 Alice gets a tracing app! (& its code is open to the public, so folks can verify it in fact does the following...)
-Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny i ziomki mogą ją zweryfikować i faktycznie to robią...)
+Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny, więc każdy może zweryfikować że aplikacja robi to co opisaliśmy poniżej...)
 
 Every 5 minutes, her phone says uniquely random gibberish to all nearby devices, using Bluetooth.
-Co 5 minut, jej telefon wysyła unikatowe i losowe wiadomości do wszystkich pobliskich telefonów, używając Bluetooth.
+Co 5 minut jej telefon wysyła unikatowe i losowe wiadomości do wszystkich pobliskich telefonów, używając Bluetooth.
 
 * 5 minutes is just an example! and technically it's "pseudorandom", since it's not quantum... does NOT matter.
 * 5 minut to tylko przykład! i technicznie jest "pseudolosowa", ponieważ nie jest kwantowa... aaa NIE ważne.
@@ -85,7 +83,7 @@ For example, Bob's.
 Na przykład Roberta.
 
 Bob also has a privacy-first tracing app, that's compatible with (or the same as) Alice's.
-Robert również posiada aplikację monitorującą, która jest kompatybilna lub taka sama jak Alicji.
+Robert również posiada aplikację monitorującą, która jest taka sama lub kompatybilna z aplikacją Alicji.
 
 cough
 kaszl
@@ -131,7 +129,7 @@ But she shan't suffer in vain!
 Ale nie będzie cierpieć na próżno.
 
 Alice uploads her "What I Said" messages to a hospital database, using a one-time passcode given by her doctor.
-Alicja wysyła jej wiadomości "TO CO WYSŁAŁEM" do szpitalnej bazy danych używając jednorazowego kodu danego przez doktora.
+Alicja wysyła wiadomości nadane ostatnio przez jej telefon do szpitalnej bazy danych używając jednorazowego kodu danego przez doktora.
 
 (The code is to prevent spam)
 (Kod zabezpiecza przed spamowaniem)
@@ -168,13 +166,13 @@ WHAT I HEARD
 TO CO ODEBRAŁEM
 
 Bob's phone often checks the hospital's list of random messages from COVID-19 cases, and see if it "heard" any of them from nearby phones in the last 14 days.
-Telefon Roberta regularnie sprawdza listy ze szpitali z przypadków z COVID-19, i może sprawdzić czy nie odebrał którejś z nich w przeciągu ostatnich 14 dni.
+Telefon Roberta regularnie sprawdza udostępniane przez szpitale listy wiadomości wysyłanych przez przypadki z COVID-19, i może sprawdzić czy nie odebrał którejś z nich w przeciągu ostatnich 14 dni.
 
 (The gibberish gives Bob NO OTHER PERSONAL INFO.)
 (Losowe wiadomości nie dają Robertowi ŻADNYCH DANYCH OSOBOWYCH.)
 
 * the real DP-3T protocol is even MORE secure! it uses a "cuckoo filter" so phones know ONLY the covid-19 messages they heard, without revealing ALL covid-19 messages.
-* prawdziwy protokół DP-3T jest nawet bardziej zabezpieczony! używa "filtra cuckoo" więc telefon zna TYLKO wiadomości przypadków z covid-19 które odebrał, bez ujawniania wszystkich wiadomości przypadków z covid-19
+* prawdziwy protokół DP-3T jest nawet bardziej zabezpieczony! używa "filtra cuckoo" więc telefon zna TYLKO wiadomości przypadków z COVID-19 które odebrał, bez ujawniania wszystkich wiadomości przypadków z COVID-19
 
 
 panel0015.png
@@ -183,7 +181,7 @@ If it heard, say, 6 or more COVID-19 cases' messages (6 x 5 min = 30 min total e
 Jeżeli odebrał, powiedzmy, 6 lub więcej wiadomości od chorych (6 x 5 min = 30 min czasu wystawienia), to telefon ostrzeże go aby udał się na kwarantannę.
 
 And thus, Bob cuts the chain of transmission - one step ahead of the virus!
-I zatem Robert przerywa proces zarażania - o jeden krok przed wirusem!
+A zatem Robert przerywa proces zarażania - o jeden krok przed wirusem!
 
 * again, these numbers are just examples!
 * ponownie, te liczby to tylko przykłady!
@@ -229,16 +227,16 @@ That means you already have permission to re-post this on your news site.
 Oznacza to, że już masz pozwolenia by zamieścić go na swojej stronie.
 
 Heck, we'd love it if you included it in your own contact tracing app!
-Ba, bylibyśmy zachwyceni gdybyś dołączył go do twojej własnej aplikacji!
+Ba, bylibyśmy zachwyceni gdybyś dołączył go do twojej własnej aplikacji monitorującej!
 
 (as long as it actually follows the described privacy-protecting protocol)
-(tak długo jak faktycznie implementuje ona opisany protokół chroniący prywatność)
+(o ile faktycznie implementuje ona opisany protokół chroniący prywatność)
 
 (You also already have permission to translate this!
 (Masz również pozwolenie aby go przetłumaczyć!
 
 The fonts used are "Patrick Hand" and "Open Sans")
-Użyty font to "Patrick Hand" i "Open Sans")
+Użyte fonty to "Patrick Hand", "Open Sans" i "Courier Prime")
 
 by Nicky Case
 autor Nick Case
