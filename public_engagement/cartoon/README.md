@@ -16,7 +16,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
 
-[Arabic](ar) (by GH:forzagreen) (CC-0)  
+[Arabic](ar) (by GH:forzagreen (onepager), full version by Ali Filali) (CC-0)  
 [Catalan](ca) (by Xavi R. Pinteño) (CC-0)  
 [Chinese](zh) (by Shengchen (Shauna) Zhang, GH:shaunabanana) (CC-0)  
 [Danish](da) (by Jonas Bardino) (CC-0)  
