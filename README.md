@@ -13,7 +13,7 @@ The following people are behind this design:
 **KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
 **TU Delft**: Prof. Seda Gürses  
 **University College London**: Dr. Michael Veale  
-**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers  
+**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes  
 **University of Oxford**: Dr. Reuben Binns  
 **University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
 **University of Salerno**: Prof. Giuseppe Persiano  
