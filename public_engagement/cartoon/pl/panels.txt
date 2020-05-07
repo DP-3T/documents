@@ -4,7 +4,7 @@ PROTECTING LIVES & LIBERTY
 OCHRONA ŻYCIA I PRYWATNOŚCI
 
 how contact tracing apps can foil both COVID-19 and Big Brother
-jak aplikacje monitorujące kontakty międzyludzkie mogą chronić zarówno przed COVID-19 jak i Wielkim Bratem
+jak aplikacje monitorujące kontakty międzyludzkie mogą chronić zarówno przed COVID-19 jak i rządem
 
 panel0002.png
 
@@ -12,7 +12,7 @@ A problem with COVID-19:
 Problem z COVID-19:
 
 You're contagious ~2 days before you know you're infected.
-Można zacząć zarażać innych na około 2 dni przed tym, zanim dowie się że jest się chorym.
+Zaraża się innych na ok. 2 dni przed tym, nim dowie się że jest się chorym.
 
 But it takes ~3 days to become contagious, so if we quarantine folks exposed to you the day you know you're infected...
 Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz po tym gdy on dowie się o swojej chorobie...
@@ -37,7 +37,7 @@ Nie musimy nawet wykryć wszystkich przypadków kontaktów z chorym! Wystarczy z
 panel0004.png
 
 ...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow.
-...ale potrzebujemy znaleźć je szybko. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
+...ale potrzebujemy je szybko znaleźć. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
 
 Hence, why we need contact tracing apps.
 Dlatego potrzeba aplikacji do monitorowania.
@@ -61,7 +61,7 @@ Z pomocą Alicji i Roberta zobaczymy jak to działa...
 panel0007.png
 
 Alice gets a tracing app! (& its code is open to the public, so folks can verify it in fact does the following...)
-Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny, więc każdy może zweryfikować że aplikacja robi to co opisaliśmy poniżej...)
+Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny i ziomki mogą ją zweryfikować i faktycznie to robią...)
 
 Every 5 minutes, her phone says uniquely random gibberish to all nearby devices, using Bluetooth.
 Co 5 minut jej telefon wysyła unikatowe i losowe wiadomości do wszystkich pobliskich telefonów, używając Bluetooth.
@@ -83,7 +83,7 @@ For example, Bob's.
 Na przykład Roberta.
 
 Bob also has a privacy-first tracing app, that's compatible with (or the same as) Alice's.
-Robert również posiada aplikację monitorującą, która jest taka sama lub kompatybilna z aplikacją Alicji.
+Robert również posiada aplikację monitorującą, która jest kompatybilna lub taka sama jak Alicji.
 
 cough
 kaszl
@@ -129,7 +129,7 @@ But she shan't suffer in vain!
 Ale nie będzie cierpieć na próżno.
 
 Alice uploads her "What I Said" messages to a hospital database, using a one-time passcode given by her doctor.
-Alicja wysyła wiadomości nadane ostatnio przez jej telefon do szpitalnej bazy danych używając jednorazowego kodu danego przez doktora.
+Alicja wysyła jej wiadomości "TO CO WYSŁAŁEM" do szpitalnej bazy danych używając jednorazowego kodu danego przez doktora.
 
 (The code is to prevent spam)
 (Kod zabezpiecza przed spamowaniem)
@@ -166,7 +166,7 @@ WHAT I HEARD
 TO CO ODEBRAŁEM
 
 Bob's phone often checks the hospital's list of random messages from COVID-19 cases, and see if it "heard" any of them from nearby phones in the last 14 days.
-Telefon Roberta regularnie sprawdza udostępniane przez szpitale listy wiadomości wysyłanych przez przypadki z COVID-19, i może sprawdzić czy nie odebrał którejś z nich w przeciągu ostatnich 14 dni.
+Telefon Roberta regularnie sprawdza listy ze szpitali z przypadków z COVID-19, i może sprawdzić czy nie odebrał którejś z nich w przeciągu ostatnich 14 dni.
 
 (The gibberish gives Bob NO OTHER PERSONAL INFO.)
 (Losowe wiadomości nie dają Robertowi ŻADNYCH DANYCH OSOBOWYCH.)
@@ -227,7 +227,7 @@ That means you already have permission to re-post this on your news site.
 Oznacza to, że już masz pozwolenia by zamieścić go na swojej stronie.
 
 Heck, we'd love it if you included it in your own contact tracing app!
-Ba, bylibyśmy zachwyceni gdybyś dołączył go do twojej własnej aplikacji monitorującej!
+Ba, bylibyśmy zachwyceni gdybyście dołączyli go do waszej własnej aplikacji monitorującej!
 
 (as long as it actually follows the described privacy-protecting protocol)
 (o ile faktycznie implementuje ona opisany protokół chroniący prywatność)
@@ -236,7 +236,7 @@ Ba, bylibyśmy zachwyceni gdybyś dołączył go do twojej własnej aplikacji mo
 (Masz również pozwolenie aby go przetłumaczyć!
 
 The fonts used are "Patrick Hand" and "Open Sans")
-Użyte fonty to "Patrick Hand", "Open Sans" i "Courier Prime")
+Użyty font to "Patrick Hand" i "Open Sans")
 
 by Nicky Case
 autor Nick Case
