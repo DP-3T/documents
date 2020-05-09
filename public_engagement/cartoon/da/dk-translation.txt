@@ -19,7 +19,7 @@ Big Brother
 == Panel 2 ==
 
 Et problem med COVID-19:
-Du kan allerede smitte ca. 2 dage før du
+Du kan allerede smitte ca. 2 dage inden du
 opdager at du er smittet.
 
     Virus
@@ -34,7 +34,7 @@ du opdager du er smittet ...
 ... kan vi holde os et skridt foran og stoppe
 smittespredningen!
 * hvad med smittede, som slet ikke får symptomer? Det viser sig at de ikke spiller
-en væsentlig rolle i spredning af COVID-19! mere om det i kilderne til sidst.
+en væsentlig rolle i spredning af COVID-19! Mere om det i kilderne til sidst.
 
 
 == Panel 3 ==
@@ -47,7 +47,7 @@ hvad vi også skulle gøre.
 Vi behøver ikke engang at finde alle
 kontakterne! Det er nok at finde ca. 60% af
 dem...
-* ca. 60%? igen, mere om det i kilderne til sidst!
+* ca. 60%? Igen, mere om det i kilderne til sidst!
 
 
 == Panel 4 ==
@@ -161,8 +161,8 @@ forhindre spam).
 
         HVAD JEG SAGDE
 
-Alice kan også skjule beskeder om
-tidspunkter hun vil holde for sig selv,
+Alice kan også skjule beskeder fra
+tidspunkter, hun vil holde for sig selv,
 eksempelvis hjemmeaftener!
 
 
@@ -195,9 +195,9 @@ indeholder information, krænkes stadig intet privatliv.
 
 Bobs telefon tjekker jævnligt hospitalets
 liste med tilfældige beskeder fra
-COVID-19-ramte, og ser om den har "hørt"
-nogen af dem før fra telefoner i nærheden
-de seneste 14 dage.
+COVID-19-ramte, og ser om den de seneste
+14 dage har "hørt" nogen af dem fra
+telefoner i nærheden.
 
 (Beskedernes sludder afslører INGEN
 PERSONOPLYSNINGER til Bob.)
@@ -242,13 +242,14 @@ Se materialet bag på:
 github.com/DP-3T/documents
 
 Der findes også den lignende
-privatlivssikrende TCN Protocol:
+privatlivssikrende TCN Protocol.
+Den er beskrevet nærmere på:
 github.com/TCNCoalition/TCN
 
-og slutteligt er der studierne fra Oxford
-Universitet, som viste at
-kontaktsporings-apps kunne inddæmme
-COVID-19... uden lang tids nedlukninger!
+Endelig er der studiet fra Oxford
+Universitet, som viste at kontaktsporings-
+apps kunne inddæmme COVID-19...
+uden lang tids nedlukninger!
 
 Ferretti & Wymant et al. "Quantifying
 SARS-CoV-2 transmission suggests
@@ -324,7 +325,10 @@ Hvis Alice får COVID-19, sender hun
 
 == Panel 5 ==
 
-   HVAD COVID-19-RAMTE SAGDE
+  HVAD JEG
+  SAGDE
+
+    HVAD COVID-19-RAMTE SAGDE
 
 Fordi beskederne er tilfældige
 afsløres ingen privat information til
