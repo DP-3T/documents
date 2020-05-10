@@ -1,1 +1,16 @@
 #Romanian translation
+title=Cum funcționează contact tracing cu protecția intimității
+slide1=Telefonul lui Alice trimite câte un mesaj aleator la câteva minute
+slide2=Alice sta lângă Bob. Telefoanele lor schimbă mesaje
+slide3.1=Ce am zis
+slide3.2=Ce am auzit
+slide3.3=Ambele telefoane memorează ce au zis și ce au auzit in ultimele 14 zile
+slide4.1=Ce am zis
+slide4.2=Dacă Alice ia Covid-19, trimite mesajele ei catre spital
+slide5.1=Mesaje de la pacienții COVID-19
+slide5.2=Mesajele fiind aleatoare, nimic important nu ajunge la spital...
+slide6.1=Mesaje de la pacienții COVID-19
+slide6.2=Ce am auzit
+slide6.3=...dar telefonul lui Bob poate afla dacă a "auzit" mesaje de la pacienți Covid-19!
+slide7=Dacă "a auzit" suficiente mesaje, însemnând că Bob a fost expus o perioadă, va primi o alertă.
+slide8=Iată cum contact tracing ne poate proteja atât sănătatea cât și intimitatea
