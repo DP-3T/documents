@@ -6,39 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
-   sodipodi:docname="panel0001.svg"
    version="1.1"
    id="svg2"
    width="1706.6667"
    height="2560"
-   viewBox="0 0 1706.6667 2560"
-   inkscape:export-filename="/home/irek/proj/comic-pl/public_engagement/cartoon/pl/panels/panel0001.png"
-   inkscape:export-xdpi="72"
-   inkscape:export-ydpi="72">
-  <sodipodi:namedview
-     inkscape:document-rotation="0"
-     inkscape:current-layer="svg2"
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="480"
-     inkscape:cy="761.94942"
-     inkscape:cx="1195.8021"
-     inkscape:zoom="0.15999999"
-     showgrid="false"
-     id="namedview6"
-     inkscape:window-height="633"
-     inkscape:window-width="882"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff" />
+   viewBox="0 0 1706.6667 2560">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -47,7 +19,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,8 +39,6 @@
        x="-796.61249" />
   </defs>
   <image
-     inkscape:label="panel0001"
-     sodipodi:insensitive="true"
      width="1706.6667"
      height="2560"
      preserveAspectRatio="none"
@@ -85,15 +55,13 @@
        style="fill:#ffffff;stroke-width:1"
        y="362.72256"
        x="177.79776"
-       id="tspan104"
-       sodipodi:role="line">OCHRONA</tspan></text>
+       id="tspan104">OCHRONA</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:399.926px;line-height:701.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1"
      x="196.04068"
      y="750.51843"
      id="text106-0"><tspan
-       sodipodi:role="line"
        id="tspan104-8"
        x="196.04068"
        y="750.51843"
@@ -107,8 +75,7 @@
        style="fill:#ffffff;stroke-width:0.999992"
        y="946.83643"
        x="181.57449"
-       id="tspan104-8-8"
-       sodipodi:role="line">PRYWATNOŚCI</tspan></text>
+       id="tspan104-8-8">PRYWATNOŚCI</tspan></text>
   <text
      transform="matrix(2.0724608,0,0,2.0724608,2876.6509,-280.28508)"
      y="0"
@@ -116,43 +83,30 @@
      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect152);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.482518;"
      id="text150"
      xml:space="preserve"><tspan
-       sodipodi:role="line"
-       x="-1105.6992"
+       x="-1100.4258"
        y="709.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">jak aplikacja </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1116.2461"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">jak aplikacje </tspan></tspan><tspan
+       x="-1110.9727"
        y="759.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">monitorująca </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1072.3398"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">monitorujące </tspan></tspan><tspan
+       x="-1067.1445"
        y="809.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">kontakty </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1124.3711"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">kontakty </tspan></tspan><tspan
+       x="-1119.1758"
        y="859.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">międzyludzkie </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1128.5898"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">międzyludzkie </tspan></tspan><tspan
+       x="-1112.2617"
        y="909.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">można chronić </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1129.6055"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">mogą chronić </tspan></tspan><tspan
+       x="-1124.4102"
        y="959.79743"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">zarówno przed </tspan><tspan
-         dx="10.390625" /></tspan><tspan
-       sodipodi:role="line"
-       x="-1106.0508"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">zarówno przed </tspan></tspan><tspan
+       x="-1111.2461"
        y="1009.7974"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">COVID-19 jak</tspan><tspan
-         dx="22.890625" /></tspan><tspan
-       sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">COVID-19 jak 
+</tspan></tspan><tspan
        x="-1064.9961"
        y="1059.7974"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">i rządem</tspan></tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">i </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.482518">rządem</tspan></tspan></text>
 </svg>
