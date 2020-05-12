@@ -33,8 +33,9 @@ du opdager du er smittet ...
 
 ... kan vi holde os et skridt foran og stoppe
 smittespredningen!
-* hvad med smittede, som slet ikke får symptomer? Det viser sig at de ikke spiller
-en væsentlig rolle i spredning af COVID-19! Mere om det i kilderne til sidst.
+* hvad med smittede, som slet ikke får symptomer? Det viser sig at de ikke
+spiller en væsentlig rolle i spredning af COVID-19!
+Mere om det i kilderne til sidst.
 
 
 == Panel 3 ==
@@ -63,16 +64,15 @@ Men skal det absolut
 være på bekostning af
 vores privatliv?
 
+Nej
 
-== Panel 5 ==
-
-Nej,
 nej
 
-        NEJ
+nej
+nej
 
+NEJ!
 
-== Panel 6 ==
 
 Vi kan sagtens beskytte folks liv OG
 frihedsrettigheder på en
@@ -115,7 +115,7 @@ Bob har også en privatlivssikret
 kontaktsporings-app, som er kompatibel
 (eller identisk) med Alices.
 
-    host
+host
 
 Hvis Alice & Bob opholder sig tæt på
 hinanden i mere end 5 minutter udveksler
@@ -201,9 +201,9 @@ telefoner i nærheden.
 
 (Beskedernes sludder afslører INGEN
 PERSONOPLYSNINGER til Bob.)
-* den ægte DP-3T-protokol er ENDNU mere sikker! Den bruger et såkaldt "cuckoo filter", så
-telefoner KUN bliver bekendt med de COVID-19 beskeder de selv hørte, uden at afsløre
-ALLE øvrige COVID-19 beskeder.
+* den ægte DP-3T-protokol er ENDNU mere sikker! Den bruger et såkaldt
+"cuckoo filter", så telefoner KUN bliver bekendt med de COVID-19 beskeder
+de selv hørte, uden at afsløre ALLE COVID-19 beskeder.
 
 
 == Panel 15 ==
@@ -215,6 +215,7 @@ anmoder telefonen Bob om at gå i selvkarantæne.
 
 Dermed bryder Bob smittekæden - et
 skridt foran virussen!
+
 * disse tal er igen bare eksempler!
 
 
@@ -234,21 +235,20 @@ Pas godt på jer selv.
 == Citations ==
 
 Kilder:
-Denne tegneserie er en grov opsummering
-af DP-3T protokollen, af den 9. april 2020.
-Den virkelige løsning er mere kompleks og
-endnu mere sikker!
-Se materialet bag på:
+Denne tegneserie er en grov opsummering af
+DP-3T protokollen, af den 9. april 2020. Den
+virkelige løsning er mere kompleks og endnu
+mere sikker! Se materialet her:
 github.com/DP-3T/documents
 
 Der findes også den lignende
-privatlivssikrende TCN Protocol.
+privatlivsbeskyttende TCN Protocol.
 Den er beskrevet nærmere på:
 github.com/TCNCoalition/TCN
 
-Endelig er der studiet fra Oxford
-Universitet, som viste at kontaktsporings-
-apps kunne inddæmme COVID-19...
+Endelig er der studiet fra Oxford Universitet,
+som viste at kontaktsporings-apps kunne
+inddæmme COVID-19...
 uden lang tids nedlukninger!
 
 Ferretti & Wymant et al. "Quantifying
@@ -263,19 +263,18 @@ Denne tegneserie er
 
 PUBLIC DOMAIN
 
-Det vil sige du allerede har tilladelse til at
-dele den på din egen nyhedsside. Ja,
-hvorfor ikke endda integrere den i din egen
-kontaktsporings-app?! (så længe den
-faktisk følger den beskrevne
-privatlivssikrende protokol)
+Det vil sige du allerede har tilladelse til at dele
+den på din egen nyhedsside. Ja, hvorfor ikke
+endda integrere den i din egen
+kontaktsporings-app?! (så længe den faktisk
+følger den beskrevne privatlivssikrende
+protokol)
 
-(Du har også allerede tilladelse til at
-oversætte den! De brugte skrifttyper er
-"Patrick Hand" og "Open Sans".
-
-Brug gerne den engelske originaludgave
-som forlæg!)
+(Du har også allerede tilladelse til at oversætte
+den! De brugte skrifttyper er "Patrick Hand" og
+"Open Sans".
+Brug gerne den engelske originaludgave som
+forlæg!)
 
 Dansk oversættelse: Jonas Bardino, m.fl. (CC-0)
 
