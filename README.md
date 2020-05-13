@@ -13,12 +13,12 @@ The following people are behind this design:
 **KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
 **TU Delft**: Prof. Seda Gürses  
 **University College London**: Dr. Michael Veale  
-**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers  
+**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes  
 **University of Oxford**: Dr. Reuben Binns  
 **University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
 **University of Salerno**: Prof. Giuseppe Persiano  
 **IMDEA Software**: Prof. Dario Fiore  
-**INESC TEC**: Prof. Manuel Barbosa  
+**University of Porto (FCUP) and INESC TEC**: Prof. Manuel Barbosa  
 **Stanford Univerity**: Prof. Dan Boneh  
 
 
@@ -30,7 +30,7 @@ Open source implementations for iOS, Android, and the back-end server are availa
 
 An explanatory comic [is also available in many languages](public_engagement/cartoon).
 
-We also publish privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, and analysis of the [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf) and [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf) protocols.
+We also publish privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, and analysis of the [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf) and [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf) protocols. We have also published proposals for and analysis of potential [mechanisms for upload authorisation](DP3T%20-%20Upload%20Authorisation%20Analysis%20and%20Guidelines.pdf).
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 

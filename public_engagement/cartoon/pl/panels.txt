@@ -1,0 +1,252 @@
+panel0001.png
+
+PROTECTING LIVES & LIBERTY
+OCHRONA ŻYCIA I PRYWATNOŚCI
+
+how contact tracing apps can foil both COVID-19 and Big Brother
+jak aplikacje monitorujące kontakty międzyludzkie mogą chronić zarówno przed COVID-19 jak i rządem
+
+panel0002.png
+
+A problem with COVID-19:
+Problem z COVID-19:
+
+You're contagious ~2 days before you know you're infected.
+Zaraża się innych na ok. 2 dni przed tym, nim dowie się że jest się chorym.
+
+But it takes ~3 days to become contagious, so if we quarantine folks exposed to you the day you know you're infected...
+Ale potrzeba około trzech dni aby zacząć zarażać, więc jeżeli odseparujemy tych którzy byli blisko chorego zaraz po tym gdy on dowie się o swojej chorobie...
+
+We stop the spread, by staying one step ahead!
+Zatrzymamy rozprzestrzenianie się wirusa, będąc o jeden krok przed nim!
+
+* what about never-symptomatic people? turns out they don't play large role in COVID-19 spread! see citations at end
+* a co z osobami nie wykazującymi objawów? okazuje się, że nie odgrywają dużej roli w rozprzestrzenianiu się wirusa! zobacz przypisy na końcu
+
+panel0003.png
+
+This is called "contact tracing". It's a core part of how South Korea & Taiwan are already containing COVID-19, and what we must do, too.
+Nazywamy to "monitorowaniem kontaktów międzyludzkich". To tak Korea Południowa i Taiwan zatrzymały rozprzestrzenianie się COVID-19, i my też musimy to zrobić.
+
+We wouldn't even need to find all the contacts! We only need to find ~60% of them...
+Nie musimy nawet wykryć wszystkich przypadków kontaktów z chorym! Wystarczy znaleźć około 60% z nich...
+
+* ~60%? again, see citations at the end!
+* odnośnie 60% zobacz przypisy na końcu!
+
+panel0004.png
+
+...but we do need to find them quickly. Traditional contact tracing, with interviews, is too slow.
+...ale potrzebujemy je szybko znaleźć. Tradycyjne monitorowanie kontaktu międzyludzkiego poprzez wywiady jest zbyt wolne.
+
+Hence, why we need contact tracing apps.
+Dlatego potrzeba aplikacji do monitorowania.
+
+But do we have to sacrifice privacy for health?
+Ale czy musimy poświęcić naszą prywatność w zamian za zdrowie?
+
+panel0005.png
+
+HECK NO!
+NIE MA MOWY!
+
+panel0006.png
+
+It's entirely possible to protect peoples' lives AND liberties, with a really simple process!
+Całkowicie możliwa jest jednoczesna ochrona zdrowia i prywatności, używając pewnego prostego procesu!
+
+Let's see how it works, with the help of Alice & Bob...
+Z pomocą Alicji i Roberta zobaczymy jak to działa...
+
+panel0007.png
+
+Alice gets a tracing app! (& its code is open to the public, so folks can verify it in fact does the following...)
+Alicja pobiera aplikację monitorującą! (jej kod jest publicznie dostępny i ziomki mogą ją zweryfikować i faktycznie to robią...)
+
+Every 5 minutes, her phone says uniquely random gibberish to all nearby devices, using Bluetooth.
+Co 5 minut jej telefon wysyła unikatowe i losowe wiadomości do wszystkich pobliskich telefonów, używając Bluetooth.
+
+* 5 minutes is just an example! and technically it's "pseudorandom", since it's not quantum... does NOT matter.
+* 5 minut to tylko przykład! i technicznie jest "pseudolosowa", ponieważ nie jest kwantowa... aaa NIE ważne.
+
+panel0008.png
+
+Because the messages are random & don't use GPS, they contain NO INFO about Alice's identity, location or anything.
+Ponieważ wiadomości są losowe i nie używają GPS, to nie zawierają ŻADNYCH danych osobowych Alicji, lokalizacji czy czegokolwiek.
+
+Now - wile her phone sends out random messages, it also listens for messages from nearby phones.
+Teraz - gdy jej telefon wysyła losowe wiadomości, to także nasłuchuje takich wiadomości od pobliskich telefonów.
+
+panel0009.png
+
+For example, Bob's.
+Na przykład Roberta.
+
+Bob also has a privacy-first tracing app, that's compatible with (or the same as) Alice's.
+Robert również posiada aplikację monitorującą, która jest kompatybilna lub taka sama jak Alicji.
+
+cough
+kaszl
+
+If Alica & Bob stay close to each other for 5+ minutes, their phones will exchange unique gibberish.
+Jeżeli Alicja i Robert będą blisko siebie przez 5+ minut, to ich telefony wymienią się unikatowymi wiadomościami.
+// wiem, że "wiadomości" brzmi nudnie w porównaniu do "gibberish" ale nie wymyśliłem zastępstwa
+
+panel0010.png
+
+Both their phones remember all the messages they said & heard over the last 14 days.
+Oba ich telefony zapamiętują wszystkie wysłane i odebrane wiadomości przez 14 dni.
+
+WHAT I SAID
+TO CO WYSŁAŁEM
+
+WHAT I HEARD
+TO CO ODEBRAŁEM
+
+Again: because the random messages contain NO INFO, Alice's privacy is protected from Bob, and vice versa!
+Ponownie: ponieważ losowe wiadomości nie zawierają ŻADNYCH danych osobowych, to prywatność Alicji i Roberta jest chroniona.
+
+* 14 days is also just an example! epidemiologists may learn that the "infectious period" is actually shorter or longer.
+* 14 dni to tylko kolejny przykład! epidemiolodzy mogą odkryć, że okres zarażania jest krótszy lub dłuższy.
+
+panel0011.png
+
+The next day, Alice develops a dry cough and fever.
+Następnego dnia u Alicji pojawia się suchy kaszel i gorączka.
+
+Alice gets tested.
+Alicja jest zbadana.
+
+Alice has COVID-19.
+Alicja ma COVID-19.
+
+It is not a good day for Alice.
+To nie jest dobry dzień dla Alicji.
+
+panel0012.png
+
+But she shan't suffer in vain!
+Ale nie będzie cierpieć na próżno.
+
+Alice uploads her "What I Said" messages to a hospital database, using a one-time passcode given by her doctor.
+Alicja wysyła jej wiadomości "TO CO WYSŁAŁEM" do szpitalnej bazy danych używając jednorazowego kodu danego przez doktora.
+
+(The code is to prevent spam)
+(Kod zabezpiecza przed spamowaniem)
+
+WHAT I SAID
+TO CO WYSŁAŁEM
+
+Alice can also hide messages from times she wants to keep private, like evenings at home.
+Alicja może również ukryć wiadomości z okresów które chce zachować dla siebie, jak popołudnia w domu.
+
+panel0013.png
+
+The database stores Alice's gibberish:
+Baza danych przechowuje wiadomości Alicji:
+
+WHAT COVID-19 CASES SAID
+TO CO WYSŁAŁY PRZYPADKI Z COVID-19
+
+Again: the random messages given the hospital NO INFO on where Alice was, who she was with, what they were doing, or event how many people Alice met! It's meaningless to the hospital...
+Ponownie: losowa treść wiadomości przekazanych do szpitala nie zawiera ŻADNYCH danych osobowych Alicji odnośnie tego gdzie była, z kim była, co robili czy nawet z iloma osobami miała kontakt! Dla szpitala nie mają one sensu...
+
+* different countries' hospitals could exchange messages, but because they contain no info, no privacy is lost.
+* szpitale w różnych kraja mogą wymieniać się wiadomościami, ale ponieważ nie zawierają one żadnych informacji, to żadne dane osobowe nie wyciekają.
+
+panel0014.png
+
+...but not to Bob!
+...ale nie dla Roberta!
+
+WHAT COVID-19 CASES SAID
+TO CO WYSŁAŁY PRZYPADKI Z COVID-19
+
+WHAT I HEARD
+TO CO ODEBRAŁEM
+
+Bob's phone often checks the hospital's list of random messages from COVID-19 cases, and see if it "heard" any of them from nearby phones in the last 14 days.
+Telefon Roberta regularnie sprawdza listy ze szpitali z przypadków z COVID-19, i może sprawdzić czy nie odebrał którejś z nich w przeciągu ostatnich 14 dni.
+
+(The gibberish gives Bob NO OTHER PERSONAL INFO.)
+(Losowe wiadomości nie dają Robertowi ŻADNYCH DANYCH OSOBOWYCH.)
+
+* the real DP-3T protocol is even MORE secure! it uses a "cuckoo filter" so phones know ONLY the covid-19 messages they heard, without revealing ALL covid-19 messages.
+* prawdziwy protokół DP-3T jest nawet bardziej zabezpieczony! używa "filtra cuckoo" więc telefon zna TYLKO wiadomości przypadków z COVID-19 które odebrał, bez ujawniania wszystkich wiadomości przypadków z COVID-19
+
+
+panel0015.png
+
+If it heard, say, 6 or more COVID-19 cases' messages (6 x 5 min = 30 min total exposure), the phone warns Bob to self-quarantine.
+Jeżeli odebrał, powiedzmy, 6 lub więcej wiadomości od chorych (6 x 5 min = 30 min czasu wystawienia), to telefon ostrzeże go aby udał się na kwarantannę.
+
+And thus, Bob cuts the chain of transmission - one step ahead of the virus!
+A zatem Robert przerywa proces zarażania - o jeden krok przed wirusem!
+
+* again, these numbers are just examples!
+* ponownie, te liczby to tylko przykłady!
+
+panel0016.png
+
+And that's it!
+I to tyle!
+
+That's how digital contact tracing can proactively prevent the spread of COVID-19 while also protecting our rights.
+W taki sposób cyfrowe monitorowanie kontaktów międzyludzkich zapobiega rozprzestrzenianiu się COVID-19 jednocześnie chroniąc naszych praw.
+
+Thanks, Alice & Bob!
+Dzięki Alicjo i Robercie!
+
+Stay safe.
+Bądźcie bezpieczni.
+
+panel0017.png
+
+CITATIONS:
+PRZYPISY:
+
+This comic is a rough summary of the DP-3T protocol, as of April 9th 2020.
+Ten komiks w przybliżeniu podsumowuje protokół DP-3T na dzień 9 kwietnia 2020.
+
+The real thing is more complex, and even more secure! See their paper:
+Faktyczny protokół jest bardziej złożony i nawet bardziej bezpieczny! Zobacz ich pracę:
+
+There's also another similar privacy-protecting system called TCN Protocol. Check that out here:
+Istnieje również inny podobny protokół o nazwie TCN. Zapoznaj się z nim tutaj:
+
+And finally, here's the University of Oxford study that showed contact tracing apps could contain COVID-19... without long-term lockdowns!
+I oczywiście tutaj praca naukowa z Uniwersytetu w Oksfordzie, pokazująca że aplikacje monitorujące kontakty międzyludzkie może powstrzymać COVID-19... bez długotrwałych zakazów przemieszczania się!
+
+panel0018.png
+
+This comic is PUBLIC DOMAIN
+Ten komiks to DOMENA PUBLICZNA
+https://pl.wikipedia.org/wiki/Domena_publiczna
+
+That means you already have permission to re-post this on your news site.
+Oznacza to, że już masz pozwolenia by zamieścić go na swojej stronie.
+
+Heck, we'd love it if you included it in your own contact tracing app!
+Ba, bylibyśmy zachwyceni gdybyście dołączyli go do waszej własnej aplikacji monitorującej!
+
+(as long as it actually follows the described privacy-protecting protocol)
+(o ile faktycznie implementuje ona opisany protokół chroniący prywatność)
+
+(You also already have permission to translate this!
+(Masz również pozwolenie aby go przetłumaczyć!
+
+The fonts used are "Patrick Hand" and "Open Sans")
+Użyty font to "Patrick Hand" i "Open Sans")
+
+by Nicky Case
+autor Nick Case
+
+with huge help from
+z wielką pomocą od
+
+(security)
+(bezpieczeństwo)
+
+(epidemiology)
+(epidemiologia)
+
