@@ -276,7 +276,7 @@ den! De brugte skrifttyper er "Patrick Hand" og
 Brug gerne den engelske originaludgave som
 forlæg!)
 
-Dansk oversættelse: Jonas Bardino, m.fl. (CC-0)
+Dansk oversættelse: Jonas Bardino, Bente Olsen, m.fl. (CC-0)
 
 
 = Kort udgave =
