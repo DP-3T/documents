@@ -23,6 +23,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Darija (Moroccan Arabic)](ar-ma) (by Amine Saidi) (CC-0)  
 [Dutch](nl) (by A: GH:[maaike](www.github.com/maaike), B: GH:[BjornW](www.github.com/bjornw); GH:[mtwestra](www.github.com/mtwestra)) (CC-0)  
 [Egyptian Arabic](ar-eg) (by GH:ezzeldinadel) (CC-0)  
+[Persian](fa) (by GH:omidshy) (CC-0)  
 [Finnish](fi) (by Salu Ylirisku and GH:sylirisk) (CC-0)  
 [French](fr) (by Michel "Meï" MANCIER [@MeiVongola](https://twitter.com/meivongola), [GH:MeixDev](github.com/MeixDev)) (CC-0)  
 [Hindi](hi) (currently short version only, by Vikas Dhiman GH:[wecacuee](https://github.com/wecacuee))  
