@@ -1,6 +1,6 @@
 # Decentralized Privacy-Preserving Proximity Tracing
 
-This repository contains a proposal for a secure and decentralized privacy-preserving proximity tracing system. Its goal is to simplify and accelerate the process of identifying people who have been in contact with an infected person, thus providing a technological foundation to help slow the spread of the SARS-CoV-2 virus. The system aims to minimise privacy and security risks for individuals and communities and guarantee the highest level of data protection.
+This repository contains a proposal for a secure and decentralized privacy-preserving proximity tracing system. Its goal is to simplify and accelerate the process of identifying people who have been in contact with an infected person, thus providing a technological foundation to help slow the spread of the SARS-CoV-2 virus. The system aims to minimize privacy and security risks for individuals and communities and guarantee the highest level of data protection.
 
 # Who we are
 
@@ -24,13 +24,13 @@ The following people are behind this design:
 
 In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
 
-By publishing these documents we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. We feel it is vital that designs are made public so the wider community can verify their claimed privacy gaurantees before they are deployed across a whole population.
+By publishing these documents, we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. We feel it is vital that designs are made public so the wider community can verify their claimed privacy guarantees before they are deployed across a whole population.
 
 Open source implementations for iOS, Android, and the back-end server are available on the [other DP-3T repositories](https://github.com/DP-3T/). DP-3T alphas are public for testing and feedback: [Android](https://github.com/DP-3T/dp3t-app-android) and [iOS](https://github.com/DP-3T/dp3t-app-ios).
 
 An explanatory comic [is also available in many languages](public_engagement/cartoon).
 
-We also publish privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, and analysis of the [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf) and [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf) protocols. We have also published proposals for and analysis of potential [mechanisms for upload authorisation](DP3T%20-%20Upload%20Authorisation%20Analysis%20and%20Guidelines.pdf).
+We also publish privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, and analysis of the [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf) and [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf) protocols. We have also published proposals for and analysis of potential [mechanisms for upload authorization](DP3T%20-%20Upload%20Authorisation%20Analysis%20and%20Guidelines.pdf).
 
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 
@@ -50,7 +50,7 @@ But, we also strongly believe that Apple and Google should adopt our subsequent 
 
 *Please note that since this announcement, DP-3T partners have resigned from the PEPP-PT initiative.*
 
-The Decentralised Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual's phone. It was produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
+The Decentralized Privacy-Preserving Proximity Tracing (DP-3T) project is an open protocol for COVID-19 proximity tracing using Bluetooth Low Energy functionality on mobile devices that ensures personal data and computation stays entirely on an individual's phone. It was produced by a core team of over 25 scientists and academic researchers from across Europe. It has also been scrutinized and improved by the wider community.
 
 DP-3T is a free-standing effort, originally started at EPFL and ETHZ, that has now broadened out to include stakeholders from across Europe and beyond. We develop the protocol and implement it in an open-sourced app and server on this repository.
 
