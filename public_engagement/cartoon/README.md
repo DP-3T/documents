@@ -15,6 +15,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 *We have not checked these community translations for the faithfulness of language used. If you plan to use them in any official reporting or communication capacity, we strongly advise you check them against the original English version.*
 
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
+[Accessible Transcript in English](en/accessible_transcript.txt) (GH:m5b) (CC-0)  
 
 [Arabic](ar) (by GH:forzagreen (onepager), full version by Ali Filali) (CC-0)  
 [Catalan](ca) (by Xavi R. Pinteño) (CC-0)  
