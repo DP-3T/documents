@@ -13,7 +13,7 @@ The following people are behind this design:
 **KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
 **TU Delft**: Prof. Seda Gürses  
 **University College London**: Dr. Michael Veale  
-**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes  
+**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes, Dr. Nils Ole Tippenhauer  
 **University of Oxford**: Dr. Reuben Binns  
 **University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
 **University of Salerno**: Prof. Giuseppe Persiano  
@@ -22,9 +22,9 @@ The following people are behind this design:
 **Stanford Univerity**: Prof. Dan Boneh  
 
 
-In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf).
+In this repository you will find various documents defining our specification. The [white paper document](DP3T%20White%20Paper.pdf) is accompanied by an [overview of the data protection aspects of the design](DP3T%20-%20Data%20Protection%20and%20Security.pdf), and a [three page simplified introduction to the protocol](DP3T%20-%20Simplified%20Three%20Page%20Brief.pdf). 
 
-By publishing these documents we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. We feel it is vital that designs are made public so the wider community can verify their claimed privacy gaurantees before they are deployed across a whole population.
+In line with the [aims of the project](DP3T%20-%20Aims%20of%20the%20Project.pdf), by publishing these documents we seek feedback from a broad audience on the high-level design, its security and privacy properties, and the functionality it offers; so that further protection mechanisms can be added if weaknesses are identified. We feel it is vital that designs are made public so the wider community can verify their claimed privacy gaurantees before they are deployed across a whole population.
 
 Open source implementations for iOS, Android, and the back-end server are available on the [other DP-3T repositories](https://github.com/DP-3T/). DP-3T alphas are public for testing and feedback: [Android](https://github.com/DP-3T/dp3t-app-android) and [iOS](https://github.com/DP-3T/dp3t-app-ios).
 

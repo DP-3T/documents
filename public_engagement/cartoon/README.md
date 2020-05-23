@@ -15,6 +15,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 *We have not checked these community translations for the faithfulness of language used. If you plan to use them in any official reporting or communication capacity, we strongly advise you check them against the original English version.*
 
 [English](en) ([original](https://ncase.me/contact-tracing/)) (CC-0)  
+[Accessible Transcript in English](en/accessible_transcript.txt) (GH:m5b) (CC-0)  
 
 [Arabic](ar) (by GH:forzagreen (onepager), full version by Ali Filali) (CC-0)  
 [Catalan](ca) (by Xavi R. Pinteño) (CC-0)  
@@ -31,6 +32,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Italian](it) (by A: GH:therealpecus, B: GH:robypez, C:Sergio Guida, D:Alberto di Meglio - we did not have Italian, and then lots of translations came before we could upload. Thanks all) (CC-0)  
 [Lithuanian](lt) (by Ieva Mockute) (CC-0)  
 [Norwegian](no) (by Johannes Brodwall) (CC-0)  
+[Persian](fa) (by GH:omidshy) (CC-0)  
 [Polish](pl) (by [GH:gabr](https://github.com/gabr))  
 [Portuguese (Brazil)](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
 [Portuguese (Portugal)](pt-pt) (by Rui Carlos Oliveira)  
