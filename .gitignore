@@ -26,3 +26,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Visual Studio
+/.vs
+
+# NOT TO PUSH
+public_engagement/cartoon/cz/gimp
+#.gitignore
