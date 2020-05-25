@@ -32,6 +32,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Italian](it) (by A: GH:therealpecus, B: GH:robypez, C:Sergio Guida, D:Alberto di Meglio - we did not have Italian, and then lots of translations came before we could upload. Thanks all) (CC-0)  
 [Lithuanian](lt) (by Ieva Mockute) (CC-0)  
 [Norwegian](no) (by Johannes Brodwall) (CC-0)  
+[Persian](fa) (by GH:omidshy) (CC-0)  
 [Polish](pl) (by [GH:gabr](https://github.com/gabr))  
 [Portuguese (Brazil)](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
 [Portuguese (Portugal)](pt-pt) (by Rui Carlos Oliveira)  
