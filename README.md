@@ -9,16 +9,16 @@ We are a international consortium of technologists, legal experts, engineers and
 The following people are behind this design:
 
 **EPFL**: Prof. Carmela Troncoso, Prof. Mathias Payer, Prof. Jean-Pierre Hubaux, Prof. Marcel Salathé, Prof. James Larus, Prof. Edouard Bugnion, Dr. Wouter Lueks, Theresa Stadler, Dr. Apostolos Pyrgelis, Dr. Daniele Antonioli, Ludovic Barman, Sylvain Chatel 
-**ETHZ**: Prof. Kenneth Paterson, Prof. Srdjan Capkun, Prof. David Basin, Dr. Jan Beutel, Dennis Jackson
-**KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin
-**TU Delft**: Prof. Seda Gürses
-**University College London**: Dr. Michael Veale
-**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes, Dr. Nils Ole Tippenhauer
-**University of Oxford**: Dr. Reuben Binns
-**University of Torino / ISI Foundation**: Prof. Ciro Cattuto
-**University of Salerno**: Prof. Giuseppe Persiano
-**IMDEA Software**: Prof. Dario Fiore
-**University of Porto (FCUP) and INESC TEC**: Prof. Manuel Barbosa
+**ETHZ**: Prof. Kenneth Paterson, Prof. Srdjan Capkun, Prof. David Basin, Dr. Jan Beutel, Dennis Jackson  
+**KU Leuven**: Prof. Bart Preneel, Prof. Nigel Smart, Dr. Dave Singelee, Dr. Aysajan Abidin  
+**TU Delft**: Prof. Seda Gürses  
+**University College London**: Dr. Michael Veale  
+**CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes, Dr. Nils Ole Tippenhauer  
+**University of Oxford**: Dr. Reuben Binns  
+**University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
+**University of Salerno**: Prof. Giuseppe Persiano  
+**IMDEA Software**: Prof. Dario Fiore  
+**University of Porto (FCUP) and INESC TEC**: Prof. Manuel Barbosa  
 **Stanford University**: Prof. Dan Boneh
 
 
