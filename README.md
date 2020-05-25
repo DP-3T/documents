@@ -1,4 +1,4 @@
-# DP3T - Decentralized Privacy-Preserving Proximity Tracing
+﻿# DP3T - Decentralized Privacy-Preserving Proximity Tracing
 
 This repository documents a secure, decentralized, privacy-preserving proximity tracing system. Its goal is to simplify and accelerate the process of identifying people who have been in contact with an infected person, thus providing a technological foundation to help slow the spread of the SARS-CoV-2 virus. The system aims to minimise privacy and security risks for individuals and communities and guarantee the highest level of data protection.
 
@@ -16,6 +16,7 @@ The following people are behind this design:
 **CISPA Helmholtz Center for Information Security**: Prof. Cas Cremers, Prof. Michael Backes, Dr. Nils Ole Tippenhauer  
 **University of Oxford**: Dr. Reuben Binns  
 **University of Torino / ISI Foundation**: Prof. Ciro Cattuto  
+**Aix Marseille Univ, Université de Toulon, CNRS, CPT**: Dr. Alain Barrat  
 **University of Salerno**: Prof. Giuseppe Persiano  
 **IMDEA Software**: Prof. Dario Fiore  
 **University of Porto (FCUP) and INESC TEC**: Prof. Manuel Barbosa  
