@@ -33,7 +33,7 @@ There is a folder full of [empty panels](empty_panels) for ease of preparation (
 [Lithuanian](lt) (by Ieva Mockute) (CC-0)  
 [Norwegian](no) (by Johannes Brodwall) (CC-0)  
 [Persian](fa) (by GH:omidshy) (CC-0)  
-[Polish](pl) (by [GH:gabr](https://github.com/gabr))  
+[Polish](pl) (by [GH:gabr](https://github.com/gabr), [GH:gum3n](https://github.com/gum3n) and [GH:mjarosie](https://github.com/mjarosie)) (CC-0)  
 [Portuguese (Brazil)](pt-br) (by Chico Camargo [@evoluchico](https://twitter.com/evoluchico), and Yayoi Teramoto [@teramotoki](https://twitter.com/teramotoki))  (CC-0)  
 [Portuguese (Portugal)](pt-pt) (by Rui Carlos Oliveira)  
 [Slovak](sk) (by Martin Nagy) (CC-0)  
