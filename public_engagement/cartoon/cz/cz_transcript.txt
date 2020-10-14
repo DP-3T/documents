@@ -1,0 +1,120 @@
+OCHRANA ŽIVOTŮ I SOUKROMÍ
+Jak může aplikace pro sledování kontaktů odvrátit COVID-19 i Velkého bratra
+
+Problém s COVID-19:
+jste nakažlivý ~2 dny *před* projevem příznaků.
+virus se šíří!
+Po nakažení ale trvá ~3 dny, než se *stanete* nakažlivým. Pokud izolujeme lidi, se kterými jste přišel do styku, tentýž *den*, kdy se u vás nákaza potvrdila...
+Zastavíme šíření nákazy tak, že budeme o krok před ní!
+* A co bezsymptomatičtí nemocní? Ukazuje se, že v šíření COVID-19 nehrají velkou roli! Viz odkazy pod článkem.
+
+Tomuhle se říká „sledování kontaktů“. Jde o jeden ze stavebních kamenů Jihokorejského a Taiwanského *zastavení* šíření COVID-19, který musíme také využít.
+Dokonce nepotřebujeme najít všechny kontakty. Stačí najít ~60% z nich...
+~60%? Opět viz odkazy pod článkem!
+
+...ale potřebujeme je najít rychle. Tradiční sledování kontaktů pomocí rozhovorů je příliš pomalé.
+Odtud ta potřeba sledovací mobilní *aplikace*.
+Ale musíme obětovat své soukromí pro zdraví?
+
+VÁŽNĚ
+NE!
+
+Je možné chránit lidské životy A ZÁROVEŇ svobody skutečně jednoduchým způsobem!
+Podívejme se, jak to funguje. Pomůžou nám Alice s Bobem...
+
+Alice si nainstaluje sledovací aplikaci (její kód je veřejně dostupný, takže si můžete ověřit, že opravdu dělá následující...)
+Její telefon vyšle každých 5 minut unikátní náhodnou zprávu všem okolním zařízením pomocí Bluetooth.
+5 min je jen příklad! A technicky vzato jde o pseudonáhodnost, protože mobil není kvantový počítač... na konceptu to ale nic NEMĚNÍ.
+
+Protože jsou zprávy náhodné (ani nepoužívají GPS), neobsahují ŽÁDNOU informaci o Alicině totožnosti, poloze, ani ničem jiném.
+Dále - zatímco její telefon vysílá tyto náhodné zprávy, zároveň *poslouchá* zprávy z okolních telefonů.
+
+Například z Bobova.
+Bob má také soukromí respektující aplikaci, ktera je kompatibilní (nebo stejná) s Alicinou.
+pčík!
+Když budou Alice s Bobem blízko sebe déle než 5 min, jejich telefony si vymění jedinečné náhodné zprávy.
+
+Oba jejich telefony si pamatují zprávy, které poslaly a slyšely v posledních 14 dnech.
+CO JSEM ODESLAL
+CO JSEM SLYŠEL
+Znovu: protože náhodné zprávy neobsahují samy o sobě žádnou informaci, Alicino soukromí je před Bobem chráněno, a vice versa!
+* 14 dní je opět jen příklad! Epidemiologové mohou zjistit, že "infekční doba" je kratší nebo delší.
+
+Příští den se u Alice objeví suchý kašel a teplota.
+Alice se nechá otestovat.
+Alice má COVID-19.
+Není to Alicin nejlepší den.
+
+Ale neměla by trpět nadarmo!
+Alice nahraje zprávy "Co jsem odeslal", do nemocniční databáze pomocí jednorázového hesla, které jí dá lékař (to kvůli zamezení spamu).
+CO JSEM ODESLAL
+Alice může *odstranit* zprávy z období, která si chce nechat pro sebe (večer strávený doma).
+
+Databáze skladuje Aliciny náhodné zprávy.
+CO JSEM ODESLAL
+CO ODESLALI PACIENTI S COVID-19
+Znovu: náhodné zprávy nedávají nemocnici ŽÁDNOU INFORMACI - ani kde byla, ani s kým, ani co dělali, dokonce ani *kolik* lidí Alice potkala. Pro nemocnici jsou nesmyslné...
+* Nemocnice různých zemí si mohou zprávy vyměňovat, ale protože pro ně nemají smysl, nenaruší to soukromí.
+
+...ale ne pro Boba!
+CO ODESLALI PACIENTI S COVID-19
+CO JSEM SLYŠEL
+Bobův telefon často prochází seznam náhodných zpráv od pacientů s COVID-19 a kontroluje, jestli některou z nich v posledních 14 dnech neslyšel od kolemjdoucího.
+(tato hatmatilka nedá Bobovi ŽÁDNÉ OSOBNÍ INFO)
+* Kompletní DP-3T protokol je ještě BEZPEČNĚJŠÍ! Používá "cuckoo filtr", takže telefony vědí pouze o zprávách, které slyšely bez nutnosti odhalení VŠECH zpráv.
+
+Pokud telefon slyšel, řekněme, 6 a více zpráv od pacientů s COVID-19 (6 * 5 min = 30 min celkového kontaktu), vyzve Boba, aby se izoloval do karantény.
+A tím Bob přetrhne řetězec přenosu - bude o krok před virem!
+* Konkrétní čísla jsou opět jen příklady!
+
+A to je vše!
+Takto digitální sledování kontaktů proaktivně brání šíření COVID-19 a *zároveň* respektuje vaše práva.
+Díky Alice a Bobe!
+Opatrujte se.
+
+ODKAZY:
+Tento komiks je hrubé shrnutí *DP-3T* protokolu - verze z 9. dubna 2020. Celý protokol je komplexnější a ještě *bezpečnější*! Viz jejich článek:
+Existuje další podobný soukromí chránící systém nazvaný *TCN Protocol*. Ten najdete pod:
+A konečně, studie Oxfordské university ukázala, že kontakty sledující aplikace může zabránit šíření COVID-19 *bez* dlouhodobých omezení pohybu:
+
+Tento komiks je
+VOLNÉ DÍLO (public domain)
+To znamená, že *už teď* máte povolení publikovat ho na svých stránkách. Fakticky budeme rádi, pokud ho zahrnete do Vaší vlastní kontakty sledující aplikace! (Pokud *dodržuje* zde popsaný soukromí chránící protokol.)
+(Také máte povolení komiks přeložit! Použité fonty jsou „Patrick Hand“ a „Open Sans“.)
+autor *Nicky Case*
+ncase.me + patreon.com/ncase
+s obrovskou pomocí
+Prof. Carmela Troncoso (bezpečnost)
+& Prof. Marcel Salathé (epidemiologie)
+přeložil Martin Brajer
+
+
+ONEPAGE VERSION
+---------------
+JAK FUNGUJE SOUKROMÍ RESPEKTUJÍCÍ SLEDOVÁNÍ KONTAKTŮ
+
+Alicin telefon vyšle každých pár minut náhodnou zprávu.
+
+pčík!
+Alice sedí vedle Boba. Jejich telefony si vymění zprávy.
+
+CO JSEM ODESLAL
+CO JSEM SLYŠEL
+Oba telefony si pamatují, co odeslaly i slyšely, za posledních 14 dní.
+
+CO JSEM ODESLAL
+Pokud Alice onemocní COVID-19, odešle *svoje* zprávy do nemocnice.
+
+CO JSEM ODESLAL
+CO ODESLALI PACIENTI S COVID-19
+Protože jsou zprávy náhodné, nedají nemocnici žádné info...
+
+CO ODESLALI PACIENTI S COVID-19
+CO JSEM SLYŠEL
+...ale Bobův telefon může zjistit, jestli neslyšel zprávy od pacientů s COVID-19!
+
+Pokud jich slyšel více a Bob byl tedy nemocným vystaven delší dobu, upozorní ho.
+
+*Takto* sledování kontaktů chrání naše zdraví *i* soukromí!
+
+autor: Nicky Case (ncase.me). CC0/volné dílo, můžete publikovat kdekoliv!
