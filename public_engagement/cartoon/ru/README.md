@@ -1,0 +1,1 @@
+#### Russian translation of the comic.
