@@ -33,6 +33,8 @@ An explanatory comic [available in many languages](public_engagement/cartoon).
 
 We publish our privacy and security analysis of specific and general proximity tracing systems. We have published a [guidebook](Security%20analysis/Privacy%20and%20Security%20Attacks%20on%20Digital%20Proximity%20Tracing%20Systems.pdf) to privacy and security risks of the entire spectrum of digital proximity tracing tools, an analysis of [PEPP-PT-NTK](Security%20analysis/PEPP-PT_%20Data%20Protection%20Architechture%20-%20Security%20and%20privacy%20analysis.pdf), and an analysis of [PEPP-PT-ROBERT](Security%20analysis/ROBERT%20-%20Security%20and%20privacy%20analysis.pdf). We have also published proposals for and an analysis of [mechanisms for upload authorisation](DP3T%20-%20Upload%20Authorisation%20Analysis%20and%20Guidelines.pdf).
 
+In 2022, we published a retrospective analysis of the deployment of decentralised proximity tracing systems, "Deploying Decentralised, Privacy-Preserving Proximity Tracing" as Troncoso et al., 2022, available open access [here](https://dl.acm.org/doi/pdf/10.1145/3524107) and mirrored on this repository.
+
 Contact email: [dp3t@groupes.epfl.ch](mailto:dp3t@groupes.epfl.ch).
 
 ## Joint Statement
