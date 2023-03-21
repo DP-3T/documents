@@ -1,6 +1,6 @@
 # FAQ: Decentralized Proximity Tracing
 
-This FAQ attempts to answer frequently asked questions about the DP-3T project, the problems it tries to address, and its design choices. It is by no means complete. We’ll be updating this FAQ as we go, for now we have been focussing on answering the technical questions first. Feedback is very welcome.
+This FAQ attempts to answer frequently asked questions about the DP-3T project, the problems it tries to address, and its design choices. It is by no means complete. We’ll be updating this FAQ as we go, for now we have been focusing on answering the technical questions first. Feedback is very welcome.
 
  * [Protocol Questions](#protocol-questions)
    * [P1: Why don’t infected users upload the ephemeral Bluetooth identifiers (EphIDs) they have observed to the backend server, so that other apps can download them and check for contacts locally?](#p1-why-dont-infected-users-upload-the-ephemeral-bluetooth-identifiers-ephids-they-have-observed-to-the-backend-server-so-that-other-apps-can-download-them-and-check-for-contacts-locally)
@@ -32,8 +32,8 @@ close physical proximity to) an infected patient.
 This option, however, is very costly. In Europe there are more than 30,000
 patients a day. The number of observed EphIDsis also high. We expect people to
 be in close physical proximity with many people. For instance, spending 24 hours
-at home with your partner will already yield 96 recorded EphIDs(assuming they
-change every 15 minutes). So let’s say an infected person uploads 5000 unique
+at home with your partner will already yield 96 recorded EphIDs (assuming they
+change every 15 minutes). So, let’s say an infected person uploads 5000 unique
 contact events for 21 days. We then need to transfer 150 million records. Even
 using efficient representations (e.g., a cuckoo filter) this would take at least
 600MB to be downloaded by every app, every day.
@@ -50,7 +50,7 @@ contacts with other users.
 ### P2: Why don’t infected users upload the ephemeral Bluetooth identifiers (`EphIDs`) they have observed to the backend server, so that other apps can ask the server if there is a match with their own `EphIDs`?
 
 *Short answer:* This results in a high load on the server and either reveals
-privacy sensitive information to the server, or requires anonymous
+privacy sensitive information to the server or requires anonymous
 communication.
 
 *Long answer:** In this solution, rather than apps downloading a list of all
@@ -84,7 +84,7 @@ deployed in a mobile application.
 
 ### P4: Why is the system not using public key cryptography when broadcasting identifiers?
 
-In DP-3T any device must communicate with all of their neighbours, meaning that
+In DP-3T any device must communicate with all of their neighbors, meaning that
 authentication is impossible. Thus, a malicious party can inject their own
 traffic and hence participate in any exchange.
 
@@ -114,18 +114,18 @@ We considered using an anonymous communication system. However, we decided again
     global passive adversary or not? How well does the system protect against
     intersection attacks?
 
-In future versions of the app, if an approppriate anonymous communication network appears, we may include the option of submitting data anonymously to the backend.
+In future versions of the app, if an appropriate anonymous communication network appears, we may include the option of submitting data anonymously to the backend.
 
-### P6: Why do infected people upload a seed (which enables recreating `EphIDs`) instead of their individual EphIDs ?
+### P6: Why do infected people upload a seed (which enables recreating `EphIDs`) instead of their individual EphIDs?
 
 This is a choice that is made purely for performance reasons. It is much more
-efficient to send a single 32 byte seed than sending all EphIDs generated during
+efficient to send a single 32-Byte seed than sending all EphIDs generated during
 the infectious period (e.g., 21 days). We are aware that this makes the EphIDs
 of infected patients linkable during the infectious period.
 
 For comparison, sending 21 days of EphIDs rotated every 15 minutes requires
 sending 32kB per infected patient. Even when compressing these EphIDs in a
-cuckoo filter, we’d need around 8kB per infected patient. So smartphones would need
+cuckoo filter, we’d need around 8kB per infected patient. So, smartphones would need
 to download at least 2 orders of magnitude more (e.g., for 30k infected a day:
 from around 1 MB to 230 MB per day).
 
@@ -144,4 +144,4 @@ security and privacy. All critical operations: creating EphIDs and matching
 observations are done locally in each phone. The backend server is only needed
 to ensure availability. However, it does not maintain any secrets. Attackers do
 not gain anything by compromising the backend. All privacy-sensitive information
-is decentralized, and stored on individual’s phones.
+is decentralized and stored on individual’s phones.
