@@ -70,3 +70,15 @@ DP-3T is a free-standing effort, originally started at EPFL and ETHZ, that has n
 DP-3T members have been participating in the loose umbrella of the 'Pan-European Privacy-Preserving Proximity Tracing' (PEPP-PT) project. DP-3T is not the only protocol under this umbrella. PEPP-PT also endorses centralized approaches with very different privacy properties. Pandemics do not respect borders, so there is substantial value in PEPP-PT's role of encouraging dialogue, knowledge-sharing, and interoperability.
 
 Nevertheless, as the systems endorsed by PEPP-PT have technical differences that yield very different privacy properties, it is a mistake to use the term 'PEPP-PT' to describe a specific solution or to refer to PEPP-PT as if it embodies a single approach rather than several very different ones.
+
+## How to help
+
+The project uses GitHub [issues](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue). You can help by participating in the existing [open issues](https://github.com/DP-3T/documents/issues) or by creating a new issue.
+
+What is helpful right now:
+
+* reviewing the designs,
+* finding security/privacy flaws, or
+* reporting on potential implementation issues or limitations, and working together to fix them.
+
+If you're a specialist in the topics of some hard questions (the most notable one being the Bluetooth communications, distance measurement, i.e., Bluetooth contact-tracing) and you have specific inputs that would help our team.
